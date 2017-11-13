@@ -16,14 +16,17 @@
 }
 
 /* Navbar */
+
+/* Map */
+
 #map_section{
-  height:600px;
+  height:800px;
 }
 
 #map-container {
   position: relative;
   display:block;
-  padding-top: 50px;
+  padding-top: 20px;
   height: 100%;
   width: 100%;
 }
@@ -37,11 +40,11 @@
   left: 0;
   z-index: -10;
   height: 550px;;
-
 }
 
 #map {
-  max-height: 550px;
+  max-height: 700px;
+  height: 100%;
   width: 100%;
 
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -58,6 +61,8 @@
 #map .active-state {
   fill: #008FBA;
 }
+/* Map */
+
 /* What we do */
 .what_we_do-background{
     background-color:#FFF;
