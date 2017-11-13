@@ -1,5 +1,39 @@
 /* CSS declarations go here */
 
+/* Navbar */
+
+.navbar-brand{
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.nav-item{
+  color: #fff;
+}
+
+/* Navbar */
+
+/* What we do */
+.what_we_do-background{
+    background-color:#FFF;
+    height:200px;
+    width:100%;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background: linear-gradient(rgba(0,0,0,.10));
+}
+
+.what_we_do-background h1{
+    padding:70px 0px;
+    font-weight:900;
+    z-index: 1;
+}
+
+
+/* What we do */
+
+
+
 
 /* Meet the Team */
 body{
@@ -92,6 +126,19 @@ body{
   margin: auto;
 }
 
+.MIT img{
+  display: block;
+  max-width:140px;
+  max-height:50px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.MIT {
+  padding-bottom:100px;
+}
+
 .ubc i{
     padding:3px;
     border-radius: 2px;
@@ -136,3 +183,42 @@ body{
 .section-danger .section2 h1{
 }
 /* Meet the Team */
+
+/* footer */
+.footer{
+    background-color:#00004d;
+    height:50px;
+  }
+
+.footer h1 {
+  color:#cccccc;
+  padding-top: 17px;
+  font-weight:500;
+  font-size: 14px;
+}
+
+/* footer */
+
+/* Disclaimer Section */
+#disclaimer_section{
+  height:270px;
+  background-color:#00004d;
+}
+#disclaimer_section h1{
+  color:#cccccc;
+  padding-top: 17px;
+  padding-left:17px;
+  font-weight:900;
+  font-size: 14px;
+}
+
+#disclaimer_section p{
+  color:#cccccc;
+  padding-top: 17px;
+  padding-left: 35px;
+  padding-right: 40px;
+  font-weight:500;
+  font-size: 14px;
+}
+
+/* Disclaimer Section */
