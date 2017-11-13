@@ -1,7 +1,11 @@
 /* CSS declarations go here */
 
 /* Navbar */
-
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #52527a;
+}
 .navbar-brand{
   font-weight: 300;
   font-size: 30px;
@@ -12,7 +16,48 @@
 }
 
 /* Navbar */
+#map_section{
+  height:600px;
+}
 
+#map-container {
+  position: relative;
+  display:block;
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+#map-background {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 550px;;
+
+}
+
+#map {
+  max-height: 550px;
+  width: 100%;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+#map path:hover {
+  fill: #008FBA;
+}
+
+#map .active-state {
+  fill: #008FBA;
+}
 /* What we do */
 .what_we_do-background{
     background-color:#FFF;
@@ -200,16 +245,44 @@ body{
 /* footer */
 
 /* Disclaimer Section */
+
+           /* Customized Scrollbar */
+
+        /*  #disclaimer_section::-webkit-scrollbar-track
+          {
+          	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          	border-radius: 10px;
+          	background-color: #F5F5F5;
+          }
+
+          #disclaimer_section::-webkit-scrollbar
+          {
+          	width: 12px;
+          	background-color: #00004d;
+          }
+
+          #disclaimer_section::-webkit-scrollbar-thumb
+          {
+          	border-radius: 10px;
+          	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          	background-color: #52527a;
+          }
+
+          /* Customized Scrollbar */
+
 #disclaimer_section{
-  height:270px;
+  height:170px;
   background-color:#00004d;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
 #disclaimer_section h1{
   color:#cccccc;
   padding-top: 17px;
   padding-left:17px;
-  font-weight:900;
-  font-size: 14px;
+  font-weight:500;
+  font-size: 16px;
 }
 
 #disclaimer_section p{
@@ -219,6 +292,7 @@ body{
   padding-right: 40px;
   font-weight:500;
   font-size: 14px;
+  width: auto;
 }
 
 /* Disclaimer Section */
