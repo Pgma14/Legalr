@@ -1,6 +1,7 @@
 /* CSS declarations go here */
 
 /* Navbar */
+
 .navbar{
   padding: 0px;
 }
@@ -29,13 +30,58 @@
 
 /* Navbar */
 
+
+/* Carousel */
+.carousel-control-next {
+  padding-left:50px;
+  padding-bottom: 30px;
+}
+
+.carousel-control-prev {
+  padding-right:5px;
+  padding-bottom: 30px
+}
+
+
+.carousel-control-next-icon {
+    height: 25px;
+    width: 100%;
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#8c8c8c' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+.carousel-control-prev-icon {
+    height: 25px;
+    width: 100%;
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#8c8c8c' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+@media screen and (max-width: 600px) { .carousel-control-prev-icon { height: 26px; width: 100%;} }
+@media screen and (max-width: 500px) { .carousel-control-prev-icon { height: 16px; width: 100%;} }
+@media screen and (max-width: 400px) { .carousel-control-prev-icon { height: 11px; width: 100%;} }
+
+
+@media screen and (max-width: 600px) {.carousel-control-next  { padding-left:40px;} }
+@media screen and (max-width: 500px) {.carousel-control-next  { padding-left:52px;} }
+@media screen and (max-width: 450px) {.carousel-control-next  { padding-left:58px;} }
+@media screen and (max-width: 430px) {.carousel-control-next  { padding-left:58px;} }
+@media screen and (max-width: 400px) {.carousel-control-next  { padding-left:36px;} }
+
+/* Carousel */
+
+
+
+
+
+
+
 /* Map */
 
-#map_section{
+#us_map_section{
   height:800px;
 }
 
-#map-container {
+#us_map-container {
   position: relative;
   display:block;
   padding-top: 20px;
@@ -43,7 +89,7 @@
   width: 100%;
 }
 
-#map-background {
+#us_map-background {
   width: 100%;
   max-width: 300px;
   position: absolute;
@@ -54,7 +100,7 @@
   height: 550px;;
 }
 
-#map {
+#us_map {
   max-height: 700px;
   height: 100%;
   width: 100%;
@@ -66,11 +112,42 @@
             animation: fadein 1s;
 }
 
-#map path:hover {
+#us_map path:hover {
   fill: #008FBA;
 }
 
-#map .active-state {
+#us_map .active-state {
+  fill: #008FBA;
+}
+
+#canada_map-background {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 550px;;
+}
+
+#canada_map1 {
+  max-height: 900px;
+  height: 100%;
+  width: 100%;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+#canada_map1 path:hover {
+  fill: #008FBA;
+}
+
+#canada_map1 .active-state {
   fill: #008FBA;
 }
 /* Map */
