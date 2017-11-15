@@ -17,7 +17,7 @@
 
 #navbarTogglerDemo02 ul{
   margin: 0px;
-   line-height: 50px;
+   line-height: 63px;
 }
 .navbar-brand{
   font-weight: 700;
@@ -178,7 +178,14 @@
             animation: fadein 1s;
 }
 
+path{
+  pointer-events: all;
+}
 #eu_map path:hover {
+  fill: #008FBA;
+}
+
+#eu_map polygon:hover {
   fill: #008FBA;
 }
 
