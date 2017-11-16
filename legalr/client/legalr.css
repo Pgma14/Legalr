@@ -19,14 +19,27 @@
   margin: 0px;
    line-height: 63px;
 }
-.navbar-brand{
+.navbar-brand_text{
   font-weight: 700;
   font-size: 30px;
   color:  #00004d;
   padding-left: 10px;
   font-family: sans-serif;
+
 }
 
+.navbar-brand_logo{
+  padding-left: 10px;
+}
+
+#r {
+  color: #3971a9;
+}
+
+#alpha {
+  font-weight: 300;
+  font-size: 13px;
+}
 
 #navbarTogglerDemo02 a{
   color: #00004d;
