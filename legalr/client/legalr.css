@@ -290,7 +290,13 @@ path{
 }
 
 #what_we_do_container{
-  padding-top: 55px;
+  padding-top: 40px;
+}
+#what_we_do_container h1{
+  font-size: 43px;
+  padding-top: 65px;
+  font-weight: bold;
+  font-family: 'lato', Arial, sans-serif;
 }
 .what_we_do-background h1{
     padding:50px 0px;
@@ -431,7 +437,7 @@ body{
 }
 
 .MIT {
-  padding-bottom:100px;
+  padding-bottom:50px;
 }
 
 .ubc i{
