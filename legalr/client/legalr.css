@@ -4,7 +4,6 @@
 
 .navbar{
   padding: 0px;
-  height: 85px;
   box-shadow: 0px 1px 12px #cccccc;
 }
 .toggler-container{
@@ -15,10 +14,8 @@
   padding-right: 8px;
 }
 
-#navbarTogglerDemo02 ul{
-  margin: 0px;
-   line-height: 63px;
-}
+
+
 .navbar-brand_text{
   font-weight: 700;
   font-size: 30px;
@@ -30,6 +27,8 @@
 
 .navbar-brand_logo{
   padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #r {
@@ -43,10 +42,15 @@
 
 #navbarTogglerDemo02 a{
   color: #00004d;
-  padding: 12px;
+  text-align: right;
+  padding-right: 10px;
   font-size: 20px;
   font-weight: 600;
   height: auto;
+}
+
+#navbarTogglerDemo02 a:hover {
+  color: #3971a9;
 }
 
 #navbarTogglerDemo02 a:hover {
@@ -278,13 +282,16 @@ path{
 /* What we do */
 .what_we_do-background{
     background-color:#FFF;
-    height:500px;
+    height:520px;
     width:100%;
     background-size:100% 100%;
     background-repeat:no-repeat;
     background: linear-gradient(rgba(0,0,0,.10));
 }
 
+#what_we_do_container{
+  padding-top: 55px;
+}
 .what_we_do-background h1{
     padding:50px 0px;
     font-weight:900;
@@ -328,7 +335,7 @@ body{
 }
 .ourTeam-hedding{
     background-color:#00004d;
-    height:200px;
+    height:100px;
     width:100%;
     background-size:100% 100%;
     background-repeat:no-repeat;
@@ -336,7 +343,7 @@ body{
 }
 .ourTeam-hedding h1{
     color:#fff;
-    padding:70px 0px;
+    padding-top: 21px;
     font-weight:900;
     z-index: 1;
 }
