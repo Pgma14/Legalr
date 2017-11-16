@@ -50,8 +50,7 @@
 }
 
 #navbarTogglerDemo02 a:hover {
-  background-color: #ccddff;
-  background: rgba(204, 221, 255, 0.5);
+  color: #3971a9;
 }
 
 /* Navbar */
@@ -287,7 +286,7 @@ path{
 }
 
 .what_we_do-background h1{
-    padding:70px 0px;
+    padding:50px 0px;
     font-weight:900;
     z-index: 1;
 }
@@ -301,8 +300,8 @@ path{
 
 .heading-subtext-bolder {
   font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 2em;
+  font-weight: 900;
 }
 .heading-subtext {
   font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
@@ -539,4 +538,12 @@ body{
   width: auto;
 }
 
+#copyrightleft
+{
+  float: left;
+}
+
+#disclaimerright{
+  float: right;
+}
 /* Disclaimer Section */

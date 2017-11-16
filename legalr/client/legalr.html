@@ -448,13 +448,27 @@
     	<div class="row">
     		<div class="col-md-12 col-sm-12 col-xs-12 what_we_do-background text-center">
     			<h1>What We Do</h1>
+
+              <center>
           <p class="heading-subtext-bolder">
               Legalr gives you unbiased access to the laws that affect you.
+              <style>
+                @media screen and (max-width: 500px) { .heading-subtext-bolder { max-width: 407px; } }
+              </style>
           </p>
-          <p class="heading-subtext">
-              Legalr is a legal database which aims to create a more informed public by organizing laws into clear, navigable, and comprehensive categories.
-              We enable individuals to easily find and learn about the laws that affect their lives without relying on third party interpretation.
-          </p>
+            </center>
+          <center>
+            <p class="heading-subtext">
+              Legalr is a legal database which aims to create a more informed public by organizing laws into simple, easily navigable categories.
+              <style>
+                @media screen and (max-width: 1400px) { .heading-subtext { max-width: 800px; } }
+                @media screen and (max-width: 1200px) { .heading-subtext { max-width: 600px; } }
+                @media screen and (max-width: 1000px) { .heading-subtext { max-width: 600px; } }
+                @media screen and (max-width: 800px) { .heading-subtext { max-width: 600px; } }
+              </style>
+            </p>
+          </center>
+
     		</div>
     	</div>
     </div>
@@ -581,12 +595,9 @@
 <footer class="footer">
   <div class="container-fluid">
     <div class="row">
-  		<div class="col-md-6 col-sm-6 col-xs-12 footer text-left">
-        <h1>© 2017-2018 Legalr</h1>
-      </div>
-
-      <div class="col-md-6 col-sm-6 col-xs-12 footer text-right" data-toggle="collapse" href="#disclaimer_section">
-        <h1>Disclaimer</h1>
+  		<div class="col-md-12 col-sm-12 col-xs-12 footer" style="clear: both;">
+        <h1 id="copyrightleft">© 2017-2018 Legalr</h1>
+        <h1 id="disclaimerright" data-toggle="collapse" href="#disclaimer_section">Disclaimer</h1>
       </div>
     </div>
   </div>
