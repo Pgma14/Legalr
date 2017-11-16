@@ -103,8 +103,9 @@
 
 
 
-/* Map */
+/* Maps */
 
+/* US Map */
 #us_map_section{
   height:800px;
 }
@@ -160,6 +161,9 @@
   fill: #008FBA;
 }
 
+/* US Map */
+
+/* Canada Map */
 #canada_map-background {
   width: 100%;
   max-width: 300px;
@@ -194,7 +198,9 @@
   fill: #008FBA;
 }
 
+/* Canada Map */
 
+/* EU Mao */
 #eu_map {
   max-height: 900px;
   height: 100%;
@@ -231,7 +237,9 @@ path{
   fill: #008FBA;
 }
 
+/* EU Map */
 
+/* France Mao */
 #france_map {
   max-height: 900px;
   height: 100%;
@@ -263,12 +271,15 @@ path{
 #france_map .active-state {
   fill: #008FBA;
 }
-/* Map */
+
+/*France Map*/
+
+/* Maps */
 
 /* What we do */
 .what_we_do-background{
     background-color:#FFF;
-    height:200px;
+    height:500px;
     width:100%;
     background-size:100% 100%;
     background-repeat:no-repeat;
@@ -279,6 +290,32 @@ path{
     padding:70px 0px;
     font-weight:900;
     z-index: 1;
+}
+
+.heading-text {
+  font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.heading-subtext-bolder {
+  font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.heading-subtext {
+  font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.heading-text-small {
+  font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25em;
+  line-height: 40px;
+  font-weight: normal;
+  color: #2c3e50;
 }
 
 
