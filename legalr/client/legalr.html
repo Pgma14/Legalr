@@ -54,7 +54,7 @@
 
       <ul class="navbar-nav navbar-expand-md ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-                <a class="nav-link" href="#what_we_do">What We Do</a>
+                <a class="nav-link" href="#what_we_do-background">What We Do</a>
 
           </li>
 
@@ -447,9 +447,168 @@
   </div>
 
   <!-- Main Container-->
+
+<!-- Data Table -->
+<div class="container-fluid data_table_header" id="data_table_header">
+
+  <div class="row" id="data_table_header_row">
+
+          <div class="col-md-12 col-sm-12 col-xs-12 results_container_background text-center" id="results_container_background">
+              <div id="results-container">
+        <h3 class="heading-text">Recent laws for...</h3>
+              </div>
+          </div>
+
+<div class="container-fluid data_table" id="filters">
+
+      <div class="row" id="data_table_row">
+
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background text-center" id="filters_background">
+                          <select id="choose-country" name="country">
+                              <option value="">Any Country</option>
+                              <option value="US">United States</option>
+                              <option value="CA">Canada</option>
+                              <option value="EU">European Union</option>
+                              <option value="FR">France</option>
+                          </select>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background text-center" id="filters_background">
+                          <select id="choose-state" name="state">
+                            <option value="">Any State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background text-center" id="filters_background">
+                          <select id="choose-category" name="category">
+                            <option value="">Any Category</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="animals">Animals</option>
+                            <option value="banking">Banking</option>
+                            <option value="business">Business</option>
+                            <option value="civil rights">Civil Rights</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="construction">Construction</option>
+                            <option value="consumable substances">Consumable Substances</option>
+                            <option value="criminal law">Criminal Law</option>
+                            <option value="disability">Disability</option>
+                            <option value="economic">Economic</option>
+                            <option value="education">Education</option>
+                            <option value="elderly">Elderly</option>
+                            <option value="emergency">Emergency</option>
+                            <option value="environment">Environment</option>
+                            <option value="firearms/weapons">Firearms/Weapons</option>
+                            <option value="government">Government</option>
+                            <option value="health">Health</option>
+                            <option value="housing">Housing</option>
+                            <option value="insurance">Insurance</option>
+                            <option value="judicial">Judicial</option>
+                            <option value="juvenile">Juvenile</option>
+                            <option value="labor">Labor</option>
+                            <option value="law enforcement">Law Enforcement</option>
+                            <option value="licensing">Licensing</option>
+                            <option value="military">Military</option>
+                            <option value="motor vehicles">Motor Vehicles</option>
+                            <option value="municipal">Municipal</option>
+                            <option value="non-profit organizations">Non-profit Organizations</option>
+                            <option value="recreation">Recreation</option>
+                            <option value="safety">Safety</option>
+                            <option value="science/technology">Science/Technology</option>
+                            <option value="taxes">Taxes</option>
+                            <option value="traffic">Traffic</option>
+                            <option value="transportation">Transportation</option>
+                            <option value="voting">Voting</option>
+                          </select>
+                </div>
+
+                        <input id="choose-title" type="text" name="title" placeholder="Title" style="display: none;">
+                        <input id="choose-id" type="text" name="id" placeholder="ID" style="display: none;">
+                        <input id="choose-date" type="text" name="date" placeholder="YYYY(-MM(-DD))" style="display: none;">
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background text-center" id="filters_background">
+                          &nbsp;&nbsp;<a id="advanced-search" style="cursor: pointer; vertical-align: bottom; line-height: 26px;">Advanced Search <span id="arrow">&#10147;</span></a>
+                </div>
+
+        </div>
+
+</div>
+
+
+
+          <ul id="recent-laws">
+            {{#each laws}}
+              {{> law}}
+            {{/each}}
+          </ul>
+
+  <div id="results-divider"><div id="results-divider-line"></div></div>
+
+  <div id="result-details">
+
+  </div>
+</div>
+</div>
+
+<!-- Data Table -->
+
+
+
+
+
+  <!-- What We Do -->
   <div class="container-fluid section-what_we_do" id="what_we_do">
     <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 what_we_do-background text-center">
+      <div class="col-md-12 col-sm-12 col-xs-12 what_we_do-background text-center" id="what_we_do-background">
         <div id="what_we_do_container">
         <style>
         @media screen and (max-width: 800px) { #what_we_do_container { padding-bottom: 0px; padding-top: 90px;} }
@@ -483,6 +642,8 @@
       </div>
     </div>
   </div>
+<!-- What We Do -->
+
   <!-- Main Container-->
 </main>
 <!-- Main Layout-->
@@ -490,103 +651,134 @@
 <!-- Meet the Team Section -->
 
 <div class="container-fluid section-ourTeam" id="Our_Team">
-<div class="row">
-  <div class="col-md-12 col-sm-12 col-xs-12 ourTeam-hedding text-center">
-    <h1>Our Team</h1>
+
+  <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 ourTeam-hedding text-center">
+          <h1>Our Team</h1>
+      </div>
   </div>
-</div>
+
 <div class="row">
-  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="row section-success ourTeam-box text-center">
+
       <div class="col-md-12 section1">
         <img src="George.jpg">
       </div>
+
       <div class="col-md-12 section2">
         <p>George Mgaloblishvili</p><br>
         <h1>Founder, CEO</h1><br>
       </div>
+
       <div class="col-md-12 section3">
         <p>
         </p>
       </div>
+
       <div class="col-md-12 columbia">
           <img src="ColumbiaUniversity.png">
       </div>
+
     </div>
   </div>
-  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="row section-info ourTeam-box text-center">
+
       <div class="col-md-12 section1">
         <img src="Vladyslav.jpg">
       </div>
+
       <div class="col-md-12 section2">
         <p>Vladyslav Bobrovnyk</p><br>
         <h1>CFO</h1><br>
       </div>
+
       <div class="col-md-12 section3">
         <p>
         </p>
       </div>
+
       <div class="col-md-12 columbia">
           <img src="ColumbiaUniversity.png">
       </div>
+
     </div>
   </div>
-  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="row section-danger ourTeam-box text-center">
+
       <div class="col-md-12 section1">
         <img src="Athena.jpg">
       </div>
+
       <div class="col-md-12 section2">
         <p>Athena Kerins</p><br>
         <h1>Director of Operations, Canada</h1>
       </div>
+
       <div class="col-md-12 section3">
         <p>
         </p>
       </div>
+
       <div class="col-md-12 ubc">
         <img src="ubc.png">
       </div>
+
     </div>
   </div>
+
   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
     <div class="row section-danger ourTeam-box text-center">
+
       <div class="col-md-12 section1">
         <img src="Alexandra.jpg">
       </div>
+
       <div class="col-md-12 section2">
         <p>Alexandra Junge</p><br>
         <h1>Director of Operations, France</h1>
       </div>
+
       <div class="col-md-12 section3">
         <p>
         </p>
       </div>
+
       <div class="col-md-12 sciencespo">
           <img src="SciencesPo.png">
       </div>
+
     </div>
   </div>
-  <div class="col-md-6 col-sm-6 col-xs-12">
+
+  <div class="col-md-6 col-sm-12 col-xs-12">
     <div class="row section-danger ourTeam-box text-center">
+
       <div class="col-md-12 section1">
         <img src="Matthew.jpg">
       </div>
+
       <div class="col-md-12 section2">
         <p>Matthew Huggins</p><br>
         <h1>Advisor, CSO at Point</h1>
       </div>
+
       <div class="col-md-12 section3">
         <p>
         </p>
       </div>
+
       <div class="col-md-12 MIT">
           <img src="MIT.svg">
       </div>
+
+      </div>
     </div>
   </div>
-</div>
 </div>
 <!-- Meet the Team Section -->
 
