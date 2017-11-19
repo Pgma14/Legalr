@@ -83,117 +83,122 @@
                         background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#8c8c8c' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
                     }
 
-                    @media screen and (max-width: 600px) { .carousel-control-prev-icon { height: 26px; width: 100%;} }
-                    @media screen and (max-width: 500px) { .carousel-control-prev-icon { height: 16px; width: 100%;} }
-                    @media screen and (max-width: 450px) { .carousel-control-prev-icon { height: 15px; width: 100%;} }
-                    @media screen and (max-width: 430px) { .carousel-control-prev-icon { height: 14px; width: 100%;} }
-                    @media screen and (max-width: 400px) { .carousel-control-prev-icon { height: 13px; width: 100%;} }
+        /*Making prev and next icons responsive */
+                      @media screen and (max-width: 600px) { .carousel-control-prev-icon { height: 26px; width: 100%;} }
+                      @media screen and (max-width: 500px) { .carousel-control-prev-icon { height: 16px; width: 100%;} }
+                      @media screen and (max-width: 450px) { .carousel-control-prev-icon { height: 15px; width: 100%;} }
+                      @media screen and (max-width: 430px) { .carousel-control-prev-icon { height: 14px; width: 100%;} }
+                      @media screen and (max-width: 400px) { .carousel-control-prev-icon { height: 13px; width: 100%;} }
 
 
-                    @media screen and (max-width: 600px) {.carousel-control-next  { padding-left:40px;} }
-                    @media screen and (max-width: 500px) {.carousel-control-next  { padding-left:47px;} }
-                    @media screen and (max-width: 450px) {.carousel-control-next  { padding-left:43px;} }
-                    @media screen and (max-width: 430px) {.carousel-control-next  { padding-left:43px;} }
-                    @media screen and (max-width: 400px) {.carousel-control-next  { padding-left:36px;} }
+                      @media screen and (max-width: 600px) {.carousel-control-next  { padding-left:40px;} }
+                      @media screen and (max-width: 500px) {.carousel-control-next  { padding-left:47px;} }
+                      @media screen and (max-width: 450px) {.carousel-control-next  { padding-left:43px;} }
+                      @media screen and (max-width: 430px) {.carousel-control-next  { padding-left:43px;} }
+                      @media screen and (max-width: 400px) {.carousel-control-next  { padding-left:36px;} }
+        /*Making prev and next icons responsive */
+
 /* Carousel */
 
 
 /* Maps */
 
           /* US Map */
-          #us_map_section{
-              height:800px;
-          }
-                  #us_map-container {
-                    position: relative;
-                    display:block;
-                    padding-top: 20px;
-                    height: 100%;
-                    width: 100%;
-                  }
+          #us_map {
+              max-height: 700px;
+              height: 100%;
+              width: 100%;
 
-                  #us_map-background {
-                    width: 100%;
-                    max-width: 300px;
-                    position: absolute;
-                    overflow: hidden;
-                    top: 0;
-                    left: 0;
-                    z-index: -10;
-                    height: 550px;;
-                  }
+              -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+                   -moz-animation: fadein 1s; /* Firefox < 16 */
+                    -ms-animation: fadein 1s; /* Internet Explorer */
+                     -o-animation: fadein 1s; /* Opera < 12.1 */
+                        animation: fadein 1s;
+            }
+              #us_map_section{
+                height:800px;
+            }
+                    #us_map-container {
+                      position: relative;
+                      display:block;
+                      padding-top: 20px;
+                      height: 100%;
+                      width: 100%;
+                    }
 
-                  #us_map {
-                    max-height: 700px;
-                    height: 100%;
-                    width: 100%;
+                    #us_map-background {
+                      width: 100%;
+                      max-width: 300px;
+                      position: absolute;
+                      overflow: hidden;
+                      top: 0;
+                      left: 0;
+                      z-index: -10;
+                      height: 550px;;
+                    }
 
-                    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-                         -moz-animation: fadein 1s; /* Firefox < 16 */
-                          -ms-animation: fadein 1s; /* Internet Explorer */
-                           -o-animation: fadein 1s; /* Opera < 12.1 */
-                              animation: fadein 1s;
-                  }
 
-                  #us_map path:hover {
-                    fill: #008FBA;
-                  }
 
-                  #us_map polygon:hover {
-                    fill: #008FBA;
-                  }
+                    #us_map path:hover {
+                      fill: #008FBA;
+                    }
 
-                  #us_map path {
-                    fill: #cccccc;
-                  }
+                    #us_map polygon:hover {
+                      fill: #008FBA;
+                    }
 
-                  #us_map polygon {
-                    fill: #cccccc;
-                  }
+                    #us_map path {
+                      fill: #cccccc;
+                    }
 
-                  #us_map .active-state {
-                    fill: #008FBA;
-                  }
+                    #us_map polygon {
+                      fill: #cccccc;
+                    }
+
+                    #us_map .active-state {
+                      fill: #008FBA;
+                    }
           /* US Map */
 
           /* Canada Map */
-          #canada_map-background {
-            width: 100%;
-            max-width: 300px;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-            z-index: -10;
-            height: 550px;;
-          }
 
-                  #canada_map1 {
-                    max-height: 900px;
-                    height: 100%;
-                    width: 100%;
+          #canada_map {
+                      max-height: 900px;
+                      height: 100%;
+                      width: 100%;
 
-                    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-                         -moz-animation: fadein 1s; /* Firefox < 16 */
-                          -ms-animation: fadein 1s; /* Internet Explorer */
-                           -o-animation: fadein 1s; /* Opera < 12.1 */
-                              animation: fadein 1s;
-                  }
+                      -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+                           -moz-animation: fadein 1s; /* Firefox < 16 */
+                            -ms-animation: fadein 1s; /* Internet Explorer */
+                             -o-animation: fadein 1s; /* Opera < 12.1 */
+                                animation: fadein 1s;
+                    }
+                      #canada_map path:hover {
+                        fill: #008FBA;
+                      }
+                      #canada_map path {
+                        fill: #cccccc;
+                      }
 
-                  #canada_map1 path:hover {
-                    fill: #008FBA;
-                  }
-                  #canada_map1 path {
-                    fill: #cccccc;
-                  }
+                      #canada_map .active-state {
+                        fill: #008FBA;
+                      }
 
-                  #canada_map1 .active-state {
-                    fill: #008FBA;
-                  }
+                      #canada_map-background {
+                        width: 100%;
+                        max-width: 300px;
+                        position: absolute;
+                        overflow: hidden;
+                        top: 0;
+                        left: 0;
+                        z-index: -10;
+                        height: 550px;;
+                      }
+
           /* Canada Map */
 
         /* EU Mao */
-                #eu_map {
+          #eu_map {
                     max-height: 900px;
                     height: 100%;
                     width: 100%;
@@ -231,131 +236,137 @@
         /* EU Map */
 
         /* France Mao */
-              #france_map {
-                  max-height: 900px;
-                  height: 100%;
-                  width: 100%;
+          #france_map {
+                    max-height: 900px;
+                    height: 100%;
+                    width: 100%;
 
-                  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-                       -moz-animation: fadein 1s; /* Firefox < 16 */
-                        -ms-animation: fadein 1s; /* Internet Explorer */
-                         -o-animation: fadein 1s; /* Opera < 12.1 */
-                            animation: fadein 1s;
-                }
+                    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+                         -moz-animation: fadein 1s; /* Firefox < 16 */
+                          -ms-animation: fadein 1s; /* Internet Explorer */
+                           -o-animation: fadein 1s; /* Opera < 12.1 */
+                              animation: fadein 1s;
+                  }
 
-                #france_map path {
-                  fill: #cccccc;
-                }
+                  #france_map path {
+                    fill: #cccccc;
+                  }
 
-                #france_map polygon {
-                  fill: #cccccc;
-                }
+                  #france_map polygon {
+                    fill: #cccccc;
+                  }
 
-                #france_map path:hover {
-                  fill: #008FBA;
-                }
+                  #france_map path:hover {
+                    fill: #008FBA;
+                  }
 
-                #france_map polygon:hover {
-                  fill: #008FBA;
-                }
+                  #france_map polygon:hover {
+                    fill: #008FBA;
+                  }
 
-                #france_map .active-state {
-                  fill: #008FBA;
-                }
+                  #france_map .active-state {
+                    fill: #008FBA;
+                  }
         /*France Map*/
 
 /* Maps */
 
 /* Data Table*/
-#results-container {
-  height: 60px;
-  margin-left: 15px;
-  margin-right: 15px;
-  float: left;
-}
+
+    /* Law section formating */
+    #results-container {
+      height: 60px;
+      margin-left: 15px;
+      margin-right: 15px;
+      float: left;
+    }
+
+    .results_container_background{
+      width: 20px;
+    }
 
 
-#result-details {
-  width: 47.5%;
-  height: 420px;
-  /*
-  Changes not working, temporary fix
+    #result-details {
+      width: 47.5%;
+      height: 420px;
+      float: left;
+      overflow-y: scroll;
+    }
 
-  height: 620px;
-  font-weight: 600;
-  font-size: 1.75em;
-  font-family: 'Microsoft Yi Baiti','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  */
-  float: left;
-  overflow-y: scroll;
-}
+    form {
+      height: 11.5px;
+      padding-bottom: 5px;
+    }
 
-#advanced-search #arrow {
-  display:inline-block;
-  font-size: 1.05em;
-  line-height: 20px;
-  vertical-align: bottom;
-  -webkit-text-shadow: 0px 0px 0px black, 1px 0px 0px black;
-  -moz-text-shadow: 0px 0px 0px black, 1px 0px 0px black;
-  text-shadow: 0px 0px 0px black, 1px 0px 0px black;
-}
+    /* Law section formating */
 
-form {
-  height: 11.5px;
-  padding-bottom: 5px;
-}
+    /* Search Section */
 
-#choose-country {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  vertical-align: middle;
-  padding-right: 30px;
-}
-#choose-state {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  vertical-align: middle;
-}
+    #search-item {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      vertical-align: middle;
+      margin-right: 0px;
+      width: 170px;
+      height: 22px;
+    }
 
-#choose-category {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  vertical-align: middle;
-  margin-right: 30px;
-  width: 180px;
-}
+    .collapse-advanced-search {
 
-#data_table_header_row{
+    }
 
-}
+    #data_table_row{
+      width: 49%;
+      padding-left: 17px;
+    }
 
-#data_table_row{
-  width: 56%;
-  padding-left: 17px;
-}
+    #advanced_search_row{
+      width: 60%;
+      padding-left: 17px;
+    }
+    .fa-arrow-right{
+      font-size: 13px;
+      vertical-align: middle;
+    }
+    #choose-id{
+      width: 169px;
+      height: 25px;
+    }
 
-#advanced_search_row{
-  width: 60%;
-  padding-left: 17px;
-}
+    #choose-title{
+      width: 170px;
+      height: 25px;
+    }
 
-#choose-id{
-  width: 169px;
-}
+    #choose-date{
+      width: 180px;
+      height: 25px;
+    }
 
-#choose-title{
-  width: 170px;
-}
+    form input {
+      vertical-align: middle;
+      height: 11.5px;
+      font-size: 14px;
+    }
 
-#choose-date{
-  width: 180px;
-}
 
-form input {
-  vertical-align: middle;
-  height: 11.5px;
-  font-size: 14px;
-}
+    #filters {
+      margin-bottom: 30px;
+      margin-left: 45px;
+      float: left;
+
+    }
+
+    #filters_background{
+      align: center;
+    }
+
+    #advanced_search_expand{
+      width: 30px;
+
+    }
+
+    /* Search Section */
 
 .page-divider {
   height: 1px;
@@ -386,45 +397,9 @@ form input {
     display: none;
 }
 
-#result-details {
-  width: 47.5%;
-  height: 420px;
-  /*
-  Changes not working, temporary fix
-
-  height: 620px;
-  font-weight: 600;
-  font-size: 1.75em;
-  font-family: 'Microsoft Yi Baiti','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  */
-  float: left;
-  overflow-y: scroll;
-}
-
 #results-container h3 {
   margin-bottom: 10px;
   margin-left: 45px;
-}
-
-#filters {
-  margin-bottom: 30px;
-  margin-left: 45px;
-  float: left;
-
-}
-
-#filters_background{
-  align: center;
-
-}
-
-#advanced_search_background{
-  width: 30px;
-}
-
-#advanced_search_expand{
-  width: 30px;
-  
 }
 
 #results-divider {
@@ -440,10 +415,10 @@ form input {
   margin-right: auto;
   background-color: rgba(0,53,69,0.25);
   position:relative;
-   left:50%;
-   top:10%;
-   bottom:10%;
-   border-left:1px;
+  left:50%;
+  top:10%;
+  bottom:10%;
+  border-left:1px;
 }
 
 #result-details p {
@@ -487,69 +462,60 @@ form input {
 }
 
 
-
-
-
-
-
 /* What we do */
 .what_we_do-background{
-      background-color:#FFF;
-      height:520px;
-      width:100%;
-      background-size:100% 100%;
-      background-repeat:no-repeat;
-      background: linear-gradient(rgba(0,0,0,.10));
-  }
-
-  #what_we_do_container{
-      padding-top: 40px;
-    }
-    #what_we_do_container h1{
-      font-size: 43px;
-      padding-top: 65px;
-      font-weight: bold;
-      font-family: 'lato', Arial, sans-serif;
-    }
-    .what_we_do-background h1{
-        padding:50px 0px;
-        font-weight:900;
-        z-index: 1;
+        background-color:#FFF;
+        height:520px;
+        width:100%;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        background: linear-gradient(rgba(0,0,0,.10));
     }
 
-    .heading-text {
-      font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 2.25em;
-      font-weight: 600;
-      color: #2c3e50;
-    }
+    #what_we_do_container{
+        padding-top: 40px;
+      }
+      #what_we_do_container h1{
+        font-size: 43px;
+        padding-top: 65px;
+        font-weight: bold;
+        font-family: 'lato', Arial, sans-serif;
+      }
+      .what_we_do-background h1{
+          padding:50px 0px;
+          font-weight:900;
+          z-index: 1;
+      }
 
-    .heading-subtext-bolder {
-      font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 2em;
-      font-weight: 900;
-    }
-    .heading-subtext {
-      font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 1.5em;
-      font-weight: 300;
-    }
+      .heading-text {
+        font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 2.25em;
+        font-weight: 600;
+        color: #2c3e50;
+      }
 
-    .heading-text-small {
-      font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 1.25em;
-      line-height: 40px;
-      font-weight: normal;
-      color: #2c3e50;
-    }
+      .heading-subtext-bolder {
+        font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 2em;
+        font-weight: 900;
+      }
+      .heading-subtext {
+        font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+      }
+
+      .heading-text-small {
+        font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 1.25em;
+        line-height: 40px;
+        font-weight: normal;
+        color: #2c3e50;
+      }
 /* What we do */
-
-
 
 
 /* Meet the Team */
-body{
-}
 .ourTeam-hedding{
       background-color:#00004d;
       height:100px;
@@ -711,34 +677,7 @@ body{
 
 /* footer */
 
-
-
-           /* Customized Scrollbar */
-
-        /*  #disclaimer_section::-webkit-scrollbar-track
-          {
-          	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-          	border-radius: 10px;
-          	background-color: #F5F5F5;
-          }
-
-          #disclaimer_section::-webkit-scrollbar
-          {
-          	width: 12px;
-          	background-color: #00004d;
-          }
-
-          #disclaimer_section::-webkit-scrollbar-thumb
-          {
-          	border-radius: 10px;
-          	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-          	background-color: #52527a;
-          }
-
-          /* Customized Scrollbar */
-
 /* Disclaimer Section */
-
 #disclaimer_section{
     height:170px;
     background-color:#00004d;
@@ -773,3 +712,28 @@ body{
     float: right;
   }
 /* Disclaimer Section */
+
+
+           /* Customized Scrollbar */
+
+        /*  #disclaimer_section::-webkit-scrollbar-track
+          {
+          	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          	border-radius: 10px;
+          	background-color: #F5F5F5;
+          }
+
+          #disclaimer_section::-webkit-scrollbar
+          {
+          	width: 12px;
+          	background-color: #00004d;
+          }
+
+          #disclaimer_section::-webkit-scrollbar-thumb
+          {
+          	border-radius: 10px;
+          	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          	background-color: #52527a;
+          }
+
+          /* Customized Scrollbar */
