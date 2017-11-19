@@ -293,7 +293,7 @@
 #advanced-search #arrow {
   display:inline-block;
   font-size: 1.05em;
-  line-height: 26px;
+  line-height: 20px;
   vertical-align: bottom;
   -webkit-text-shadow: 0px 0px 0px black, 1px 0px 0px black;
   -moz-text-shadow: 0px 0px 0px black, 1px 0px 0px black;
@@ -333,6 +333,24 @@ form {
   width: 56%;
   padding-left: 17px;
 }
+
+#advanced_search_row{
+  width: 60%;
+  padding-left: 17px;
+}
+
+#choose-id{
+  width: 169px;
+}
+
+#choose-title{
+  width: 170px;
+}
+
+#choose-date{
+  width: 180px;
+}
+
 form input {
   vertical-align: middle;
   height: 11.5px;
@@ -398,6 +416,15 @@ form input {
 #filters_background{
   align: center;
 
+}
+
+#advanced_search_background{
+  width: 30px;
+}
+
+#advanced_search_expand{
+  width: 30px;
+  
 }
 
 #results-divider {

@@ -277,6 +277,7 @@
           xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           version="1.1"  x="0px" y="0px" width="412.125px" height="363.701px" viewBox="100 182.598 412.125 363.701" enable-background="new 107.636 182.598 412.125 363.701" xml:space="preserve">
     <style>
+                    @media screen and (max-width: 1450px) { #eu_map { height: 460px; } }
                     @media screen and (max-width: 1350px) { #eu_map { height: 460px; } }
                     @media screen and (max-width: 1300px) { #eu_map { height: 440px; } }
                     @media screen and (max-width: 1200px) { #eu_map { height: 400px; } }
@@ -356,6 +357,7 @@
              version="1.1"  x="0px" y="0px" width="864.67px" height="823.877px" viewBox="75.556 61.061 864.67 823.877"
              enable-background="new 75.556 61.061 864.67 823.877" xml:space="preserve" fill="#cccccc">
              <style>
+                             @media screen and (max-width: 1450px) { #france_map { height: 460px; } }
                              @media screen and (max-width: 1350px) { #france_map { height: 460px; } }
                              @media screen and (max-width: 1300px) { #france_map { height: 440px; } }
                              @media screen and (max-width: 1200px) { #france_map { height: 400px; } }
@@ -572,14 +574,35 @@
                           </select>
                 </div>
 
-                        <input id="choose-title" type="text" name="title" placeholder="Title" style="display: none;">
-                        <input id="choose-id" type="text" name="id" placeholder="ID" style="display: none;">
-                        <input id="choose-date" type="text" name="date" placeholder="YYYY(-MM(-DD))" style="display: none;">
-                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background text-center" id="filters_background">
-                          &nbsp;&nbsp;<a id="advanced-search" style="cursor: pointer; vertical-align: bottom; line-height: 26px;">Advanced Search <span id="arrow">&#10147;</span></a>
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background text-center" id="advanced_search_background">
+                          &nbsp;&nbsp;<a id="advanced-search" style="cursor: pointer; vertical-align: middle; line-height: 20px;" data-toggle="collapse" href=".collapse-advanced-search">Advanced Search <span id="arrow">&#10147;</span>
+                            <style type="text/css">
+                                  a:link {color: black;}      /* unvisited link */
+                                  a:visited {color: black;}   /* visited link */
+                                  a:hover {color: black;}     /* mouse over link */
+                                  a:active {color: black;}    /* selected link */
+                               </style>
+                          </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center" id="advanced_search_expand">
+                <input id="choose-title" type="text" name="title" placeholder="Title">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center" id="advanced_search_expand">
+                <input id="choose-id" type="text" name="id" placeholder="ID">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center" id="advanced_search_expand">
+                <input id="choose-date" type="text" name="date" placeholder="YYYY(-MM(-DD))">
                 </div>
 
         </div>
+
+
+
+
+
+
+
 
 </div>
 
@@ -788,7 +811,9 @@
 <div class="row">
   <div class="col-md-12 col-sm-12 col-xs-12 text-left" id="please_note">
     <h1>Please Note</h1>
-      <p>Legalr.co functions as an educational tool and does not substitute formal legal advise. Consult a legal professional before taking any action based on the content of this database. By using Legalr.co you acknowledge that Legalr is not held responsible in the event of any issues, pertaining to law or any other matter, which may arise based on the information presented by the database. You waive any claims against us by using our services. If you reside in a jurisdiction in which your use of Legalr would cause us to have violated a law or out of which could arise a claim of action against us, then you are not permitted to use Legalr.</p>
+      <p>
+        Legalr.co functions as an educational tool and does not substitute formal legal advise. Consult a legal professional before taking any action based on the content of this database. By using Legalr.co you acknowledge that Legalr is not held responsible in the event of any issues, pertaining to law or any other matter, which may arise based on the information presented by the database. You waive any claims against us by using our services. If you reside in a jurisdiction in which your use of Legalr would cause us to have violated a law or out of which could arise a claim of action against us, then you are not permitted to use Legalr.
+      </p>
   </div>
 </div>
 </div>
@@ -811,7 +836,9 @@
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+
 </body>
