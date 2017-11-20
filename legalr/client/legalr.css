@@ -350,7 +350,7 @@
     .fa-arrow-right{
       font-size: 13px;
       vertical-align: middle;
-      padding-bottom: 1px;
+      padding-bottom: 1.5px;
     }
     #choose-id{
       width: 169px;
@@ -489,15 +489,18 @@
 /* What we do */
 .what_we_do-background{
         background-color:#FFF;
-        height:520px;
-        width:100%;
+        height:620px;
+        width:95%;
         background-size:100% 100%;
         background-repeat:no-repeat;
         background: linear-gradient(rgba(0,0,0,.10));
+
     }
 
     #what_we_do_container{
         padding-top: 40px;
+
+
       }
       #what_we_do_container h1{
         font-size: 43px;
