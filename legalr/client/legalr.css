@@ -307,11 +307,13 @@
       margin-top: 5px;
       margin-bottom: 5px;
       vertical-align: middle;
-      text-align: center;
+
       width: 160px;
       height: 24px;
       border-radius: 25px;
     }
+
+
 
 
 
@@ -410,7 +412,7 @@
 
 #recent-laws {
   width: calc(47.5% - 40px);
-  height: 420px;
+  height: 400px;
 
   float: left;
   margin: 0;
@@ -432,16 +434,17 @@
   float: left;
 }
 
+
 #results-divider-line {
   width: 2px;
-  height: 100%;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0,53,69,0.25);
   position:relative;
   left:50%;
   top:10%;
-  bottom:10%;
+
   border-left:1px;
 }
 
@@ -452,6 +455,16 @@
 .selected-result {
   background: rgba(0,143,186,0.25);
 }
+
+
+.table td:hover{
+  background-color: #cccccc;
+}
+
+.fa-file-text {
+  padding-left: 10px;
+}
+
 /* Data Table*/
 
 /* FADEIN */
