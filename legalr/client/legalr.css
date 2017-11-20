@@ -96,6 +96,7 @@
                       @media screen and (max-width: 450px) {.carousel-control-next  { padding-left:43px;} }
                       @media screen and (max-width: 430px) {.carousel-control-next  { padding-left:43px;} }
                       @media screen and (max-width: 400px) {.carousel-control-next  { padding-left:36px;} }
+                      @media screen and (max-width: 330px) {.carousel-control-next  { padding-left:31px;} }
         /*Making prev and next icons responsive */
 
 /* Carousel */
@@ -282,7 +283,7 @@
     }
 
     .results_container_background{
-      width: 20px;
+
     }
 
 
@@ -306,14 +307,36 @@
       margin-top: 5px;
       margin-bottom: 5px;
       vertical-align: middle;
-      margin-right: 0px;
-      width: 170px;
-      height: 22px;
+      text-align: center;
+      width: 160px;
+      height: 24px;
+      border-radius: 25px;
     }
+
+
 
     .collapse-advanced-search {
 
     }
+    @media screen and (max-width: 450px) {.collapse-advanced-search {padding-right: 100px; } }
+    @media screen and (max-width: 380px) {.collapse-advanced-search {padding-right: 78px; } }
+    @media screen and (max-width: 370px) {.collapse-advanced-search {padding-right: 150px; padding-left: 0px;} }
+    @media screen and (max-width: 350px) {.collapse-advanced-search {padding-left: 0px; } }
+
+
+    @media screen and (max-width: 450px) {#advanced-search-item {padding-left: 14px; } }
+    @media screen and (max-width: 380px) {#advanced-search-item {padding-left: 14px; } }
+    @media screen and (max-width: 330px) {#advanced-search-item {padding-left: 12px; } }
+
+#advanced-search-item{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+  width: 160px;
+  height: 24px;
+  border-radius: 25px;
+}
 
     #data_table_row{
       width: 49%;
@@ -327,6 +350,7 @@
     .fa-arrow-right{
       font-size: 13px;
       vertical-align: middle;
+      padding-bottom: 1px;
     }
     #choose-id{
       width: 169px;

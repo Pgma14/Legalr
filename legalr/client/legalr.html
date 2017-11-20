@@ -33,7 +33,7 @@
 <!-- Main Navigation-->
 
 <body id="home">
-  <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:#FFF">
+  <nav class="navbar navbar-expand-md navbar-light static-top" style="background-color:#FFF">
     <div class="container">
         <a class="navbar-brand_logo" href="legalr.html">
             <img src="simpleLogo.png" width="65" height="65" class="d-inline-block align-top" alt="Legalr">
@@ -63,7 +63,7 @@
           </li>
 
           <li class="nav-item">
-              <a class="nav-link" href="#search-head-section"><i class="fa fa-search" aria-hidden="true"></i></a>
+              <a class="nav-link" href="#results_container_background"><i class="fa fa-search" aria-hidden="true"></i></a>
           </li>
       </ul>
 </div>
@@ -284,7 +284,7 @@
                     @media screen and (max-width: 1000px) { #eu_map { height: 380px; } }
                     @media screen and (max-width: 800px)  { #eu_map { height: 320px; } }
                     @media screen and (max-width: 600px)  { #eu_map { height: 315px; } }
-                    @media screen and (max-width: 400px)  { #eu_map { height: 150px; } }
+                    @media screen and (max-width: 400px)  { #eu_map { height: 200px; } }
       </style>
                 <switch>
                         <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1">
@@ -364,7 +364,7 @@
                              @media screen and (max-width: 1000px) { #france_map { height: 380px; } }
                              @media screen and (max-width: 800px)  { #france_map { height: 320px; } }
                              @media screen and (max-width: 600px)  { #france_map { height: 315px; } }
-                             @media screen and (max-width: 400px)  { #france_map { height: 150px; } }
+                             @media screen and (max-width: 400px)  { #france_map { height: 200px; } }
                </style>
              <!-- Attribution: Original image courtesy of Wikimedia Commons. This image was modified from the original form. Original imgage author = "Superbenjamin", Date = Jan 20, 2015 -->
                   <switch>
@@ -437,7 +437,7 @@
   <span class="sr-only">Previous</span>
 </a>
 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  <style>@media screen and (max-width: 300px) {.carousel-control-next  { padding-left:0px;} }</style>
+    <style>@media screen and (max-width: 300px) {.carousel-control-next  { padding-left:0px;} }</style>
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="sr-only">Next</span>
 </a>
@@ -458,7 +458,13 @@
             <div class="col-md-12 col-sm-12 col-xs-12 results_container_background text-center" id="results_container_background">
                 <div id="results-container">
                   <style>
-                    @media screen and (max-width: 572px) { .heading-text {width: 200px;} }
+                    @media screen and (max-width: 572px) { .heading-text {width: 200px; padding-left: 0px;} }
+                    @media screen and (max-width: 500px) { .heading-text {width: 265px; padding-left: 0px;} }
+                    @media screen and (max-width: 400px) { .heading-text {width: 230px; padding-left: 0px;} }
+                    @media screen and (max-width: 380px) { .heading-text {width: 250px; padding-left: 0px;} }
+                    @media screen and (max-width: 360px) { .heading-text {width: 243px; padding-left: 0px;} }
+                    @media screen and (max-width: 330px) { .heading-text {width: 209px; padding-left: 0px;} }
+                    @media screen and (max-width: 380px) { .results_container_background {padding: 0px;} }
                   </style>
                   <h3 class="heading-text">Search Laws</h3>
                 </div>
@@ -482,7 +488,16 @@
         </style>
 
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background text-center">
+                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
+                  <style>
+                  @media screen and (max-width: 500px) { #data_table_row {padding-left: 65px; } }
+                  @media screen and (max-width: 400px) { #data_table_row {padding-left: 40px; } }
+                  @media screen and (max-width: 380px) { #data_table_row {padding-left: 60px; } }
+                  @media screen and (max-width: 370px) { #data_table_row {padding-left: 49px; } }
+                  @media screen and (max-width: 360px) { #data_table_row {padding-left: 58px; } }
+                  @media screen and (max-width: 330px) { #data_table_row {padding-left: 32px; } }
+                  </style>
+
                   <select id="search-item" name="country">
                               <option value="">Any Country</option>
                               <option value="US">United States</option>
@@ -492,7 +507,7 @@
                           </select>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background1 text-center">
+                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
                   <select id="search-item" name="state">
                             <option value="">Any State</option>
                             <option value="AL">Alabama</option>
@@ -549,7 +564,7 @@
                           </select>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background2 text-center">
+                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
                   <select id="search-item" name="category">
                             <option value="">Any Category</option>
                             <option value="agriculture">Agriculture</option>
@@ -591,8 +606,8 @@
                           </select>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background3 text-center">
-                        <a id="search-item" style="cursor: pointer; vertical-align: middle; line-height: 20px; text-align:left;"
+                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
+                        <a id="advanced-search-item" style="cursor: pointer; vertical-align: middle; line-height: 20px;"
                          data-toggle="collapse" href=".collapse-advanced-search"> Advanced Search <i class="fa fa-arrow-right"
                          aria-hidden="true"></i>
                             <style type="text/css">
@@ -616,6 +631,7 @@
     <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center">
         <input id="search-item" type="text" name="date" placeholder="YYYY(-MM(-DD))">
     </div>
+
     <!-- Advanced Search Inputs -->
 
         </div>
