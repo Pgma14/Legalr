@@ -718,6 +718,9 @@
 /* footer */
 
 /* Disclaimer Section */
+#disclaimerright:hover{
+  color: #cccccc;
+}
 #disclaimer_section{
     height:170px;
     background-color:#00004d;
