@@ -59,6 +59,18 @@
 
 
 /* Carousel */
+
+          #carouselExampleControls{
+
+          }
+
+            @media screen and (max-width: 1500px) { #carouselExampleControls { height: 500px;} }
+            @media screen and (max-width: 1000px) { #carouselExampleControls { height: 450px;} }
+            @media screen and (max-width: 800px) { #carouselExampleControls { height: 370px;} }
+            @media screen and (max-width: 600px) { #carouselExampleControls { height: 320px;} }
+            @media screen and (max-width: 500px) { #carouselExampleControls { height: 300px;} }
+            @media screen and (max-width: 420px) { #carouselExampleControls { height: 270px;} }
+
           .carousel-control-next {
             padding-left:50px;
             padding-bottom: 30px;
@@ -284,8 +296,11 @@
 #instructions {
 
 }
+@media screen and (max-width: 3000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 150px;
+  background-color:#00004d;
+  color: #fff;} }
 
-@media screen and (max-width: 1500px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 40px;
+@media screen and (max-width: 1500px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 150px;
   background-color:#00004d;
   color: #fff;} }
 
@@ -576,16 +591,13 @@ color: #00004d;} }
           z-index: 1;
       }
 
-      .heading-text {
+      #search_heading h1 {
         font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
         font-weight: 600;
         color: #00004d;
       }
 
-      @media screen and (max-width: 1500px) {.heading-text {font-size: 50px; } }
-      @media screen and (max-width: 420px) {.heading-text {font-size: 45px;} }
-      @media screen and (max-width: 380px) {.heading-text {font-size: 40px;} }
-      @media screen and (max-width: 330px) {.heading-text {font-size: 30px;} }
+
 
       .heading-subtext-bolder {
         font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
