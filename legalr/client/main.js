@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
-import './legalr.html';
+import './index.html';
 
 
 import Popper from 'popper.js';
