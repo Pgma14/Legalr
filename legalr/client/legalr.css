@@ -63,7 +63,7 @@
           #carouselExampleControls{
 
           }
-
+            @media screen and (max-width: 3000px) { #carouselExampleControls { height: 530px;} }
             @media screen and (max-width: 1500px) { #carouselExampleControls { height: 500px;} }
             @media screen and (max-width: 1000px) { #carouselExampleControls { height: 450px;} }
             @media screen and (max-width: 800px) { #carouselExampleControls { height: 370px;} }
@@ -131,6 +131,7 @@
               #us_map_section{
                 height:800px;
             }
+            @media screen and (max-width: 3000px) {#us_map_section {max-height: 550px; } }
             @media screen and (max-width: 1500px) {#us_map_section {max-height: 520px; } }
             @media screen and (max-width: 1100px) {#us_map_section {max-height: 510px; } }
             @media screen and (max-width: 800px) {#us_map_section {max-height: 460px; } }
@@ -293,8 +294,8 @@
 /* Maps */
 
 /* Instructions */
-#instructions {
-
+#instructions:hover {
+opacity: 0.8;
 }
 @media screen and (max-width: 3000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 150px;
   background-color:#00004d;
@@ -304,11 +305,15 @@
   background-color:#00004d;
   color: #fff;} }
 
-@media screen and (max-width: 420px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 20px; margin-bottom: 240px;
+@media screen and (max-width: 420px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 50px; margin-bottom: 230px;
 background-color:#fff;
 color: #00004d;} }
 
-@media screen and (max-width: 380px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 50px; margin-bottom: 220px;
+@media screen and (max-width: 380px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 60px; margin-bottom: 200px;
+background-color:#fff;
+color: #00004d;} }
+
+@media screen and (max-width: 360px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 60px; margin-bottom: 190px;
 background-color:#fff;
 color: #00004d;} }
 
@@ -594,9 +599,21 @@ color: #00004d;} }
       #search_heading h1 {
         font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
         font-weight: 600;
-        color: #00004d;
+
       }
 
+      #search_heading{
+        background-color: #00004d;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      @media screen and (max-width: 3000px) {#search_heading {background-color: #fff; color: #00004d; } }
+      @media screen and (max-width: 420px) {#search_heading {background-color: #00004d; color: #fff; } }
+
+      @media screen and (max-width: 1500px) {#search_heading h1 {font-size: 50px;} }
+      @media screen and (max-width: 420px) {#search_heading h1 {font-size: 45px;} }
+      @media screen and (max-width: 380px) {#search_heading h1 {font-size: 40px;} }
+      @media screen and (max-width: 330px) {#search_heading h1 {font-size: 35px;} }
 
 
       .heading-subtext-bolder {

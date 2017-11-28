@@ -22,7 +22,7 @@ Template.body.events({
 
     // Scroll to Results
     // target element id
-    var id = $("#results-container");
+    var id = $("#search_heading");
 
     // target element
     var $id = $(id);
@@ -56,7 +56,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
@@ -89,7 +89,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
@@ -121,7 +121,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
@@ -154,7 +154,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
@@ -186,7 +186,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
@@ -218,7 +218,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
@@ -250,7 +250,7 @@ Template.body.events({
 
   // Scroll to Results
   // target element id
-  var id = $("#results-container");
+  var id = $("#search_heading");
 
   // target element
   var $id = $(id);
