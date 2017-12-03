@@ -70,7 +70,6 @@
       </ul>
 </div>
   <!-- (Temporary cut of search bar)
-
   <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -90,7 +89,6 @@
       <!-- Carousel -->
       <div id="carouselExampleControls" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
-
               <!-- United States Map Slide-->
                               <div class="carousel-item active">
                               <img class="d-block w-100">
@@ -477,13 +475,13 @@
 
 
               <div class="col-md-12 col-sm-12 col-xs-12 instructions text-center" id="search_heading">
-                  <h1>Search laws</h1>
+                  <h1 data-toggle="collapse" href="#table_container">Search laws</h1>
               </div>
 
 
 
-    <div class="container-fluid search_section" id="filters">
-      <div class="row" id="data_table_row">
+    <div class="container-fluid search_section" id="filters"  style="padding-right: 0px; padding-left: 0px" >
+      <div class="row" id="data_table_row" style="padding-right: 0px;">
 
         <style>
           @media screen and (max-width: 3000px) { #data_table_row { width: 56%; margin-right: 0px; margin-left: 320px;} }
@@ -497,11 +495,10 @@
           @media screen and (max-width: 900px) { #data_table_row { width: 92%;} }
           @media screen and (max-width: 850px) { #data_table_row { width: 94%;} }
           @media screen and (max-width: 800px) { #data_table_row { width: 100%; margin-right: 0px; margin-left: 0px; padding-left: 0px;} }
-
         </style>
 
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
                   <style>
                   @media screen and (max-width: 500px) { #data_table_row {padding-left: 0px; padding-right: 70px; padding-top: 10px; } }
                   @media screen and (max-width: 420px) { #data_table_row {padding-left: 0px; padding-right: 50px; padding-top: 10px;} }
@@ -510,8 +507,8 @@
                   @media screen and (max-width: 330px) { #data_table_row {padding-left: 0px; padding-right: 45px; } }
                   </style>
 
-                  <select id="search-item" name="country">
-                              <option value="">Any Country</option>
+                  <select id="search-item-country" name="country">
+                              <option value="">Country</option>
                               <option value="US">United States</option>
                               <option value="CA">Canada</option>
                               <option value="EU">European Union</option>
@@ -519,9 +516,9 @@
                           </select>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
-                  <select id="search-item" name="state">
-                            <option value="">Any State</option>
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
+                  <select id="search-item-state" name="state">
+                            <option value="">State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -576,9 +573,9 @@
                           </select>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
-                  <select id="search-item" name="category">
-                            <option value="">Any Category</option>
+                <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
+                  <select id="search-item-category" style="text-align: center" name="category">
+                            <option value="">Category</option>
                             <option value="agriculture">Agriculture</option>
                             <option value="animals">Animals</option>
                             <option value="banking">Banking</option>
@@ -617,11 +614,12 @@
                             <option value="voting">Voting</option>
                           </select>
                 </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-6 results_container_background">
+                </div>
+              <div class="row" id="advanced_search_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 advanced_search text-center">
                         <a id="advanced-search-item" style="cursor: pointer; vertical-align: middle; line-height: 20px;"
-                         data-toggle="collapse" href=".collapse-advanced-search"> Advanced Search <i class="fa fa-arrow-right"
-                         aria-hidden="true"></i>
+                         data-toggle="collapse" href=".collapse-advanced-search"><p> Advanced Search <i class="fa fa-arrow-right"
+                         aria-hidden="true"></i> </p>
                             <style type="text/css">
                                   a:link {color: black;}      /* unvisited link */
                                   a:visited {color: black;}   /* visited link */
@@ -629,20 +627,22 @@
                                   a:active {color: black;}    /* selected link */
                                </style>
                           </a>
-                </div>
+              </div>
 
     <!-- Advanced Search Inputs -->
-    <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center">
-        <input id="search-item" type="text" name="title" placeholder="Title">
+  <div class="row collapse-advanced-search collapse">
+    <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
+        <input id="advanced-search-item" type="text" name="title" placeholder="Title">
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center">
-        <input id="search-item" type="text" name="id" placeholder="ID">
+    <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
+        <input id="advanced-search-item" type="text" name="id" placeholder="ID">
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-4 collapse-advanced-search collapse text-center">
-        <input id="search-item" type="text" name="date" placeholder="YYYY(-MM(-DD))">
+    <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
+        <input id="advanced-search-item" type="text" name="date" placeholder="YYYY(-MM(-DD))">
     </div>
+  </div>
 
     <!-- Advanced Search Inputs -->
 
@@ -652,7 +652,7 @@
 
 
 
-<div class="container" id="table_container" >
+<div class="container collapse" id="table_container" >
   <style>
   @media screen and (max-width: 3000px) { #table_container { margin-left: 380px;} }
   @media screen and (max-width: 2100px) { #table_container { margin-left: 330px;} }
@@ -859,7 +859,6 @@
         <style>
         @media screen and (max-width: 800px) { #what_we_do_container { padding-bottom: 0px; padding-top: 90px;} }
         @media screen and (max-width: 600px) { #what_we_do_container { padding-bottom: 10px; padding-top: 0px;} }
-
         </style>
         <h1 id="what_we_do_h1">What We Do</h1>
         <style>
