@@ -2,6 +2,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './index.html';
+import './law_results.html';
 
 
 import Popper from 'popper.js';

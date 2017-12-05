@@ -350,10 +350,22 @@ color: #00004d;} }
       margin-right: 15px;
     }
 
+  #search_item_row{
+    width: 50%;
+  }
+
+  select{
+    text-align-last: center;
+    text-align: center;
+  }
     .results_container_background{
         max-width: 100px;
         padding: 0px;
+        display: block;
+        margin: 0 auto;
     }
+
+
 
 
     #result-details {
@@ -367,6 +379,45 @@ color: #00004d;} }
       height: 11.5px;
       padding-bottom: 5px;
     }
+
+    .wrimagecard{
+	margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.wrimagecard .fa{
+	position: relative;
+    font-size: 70px;
+}
+.wrimagecard-topimage_header{
+padding: 20px;
+}
+a.wrimagecard:hover, .wrimagecard-topimage:hover {
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+}
+.wrimagecard-topimage a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.wrimagecard-topimage_title {
+    padding: 20px 24px;
+    height: 80px;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+.wrimagecard-topimage a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #525c65;
+    transition: color 0.3s ease;
+}
+
 
     /* Law section formating */
 
@@ -397,19 +448,28 @@ color: #00004d;} }
       width: 100px;
       height: 24px;
       border-radius: 25px;
+
+
     }
 
-    @media screen and (max-width: 450px) {#search-item-category {padding-left: 2em; } }
-    @media screen and (max-width: 380px) {#search-item-category {padding-left: 2em; } }
-    @media screen and (max-width: 330px) {#search-item-category {padding-left: 0.6em; margin-left: 15px; margin-right: 5px; } }
 
-    @media screen and (max-width: 450px) {#search-item-state {padding-left: 2em; } }
-    @media screen and (max-width: 380px) {#search-item-state {padding-left: 2em; } }
-    @media screen and (max-width: 330px) {#search-item-state {padding-left: 1.6em; margin-left: 10px; margin-right: 15px;} }
 
-    @media screen and (max-width: 450px) {#search-item-country {padding-left: 2em; } }
-    @media screen and (max-width: 380px) {#search-item-country {padding-left: 2em; } }
-    @media screen and (max-width: 330px) {#search-item-country {padding-left: 1.1em; margin-left: 4px; margin-right: 5px; } }
+    @media screen and (max-width: 3000px) {#search-item-category {padding-left: 0.6em; } }
+    @media screen and (max-width: 450px) {#search-item-category {padding-left: 0em; } }
+    @media screen and (max-width: 380px) {#search-item-category {padding-left: 0em; } }
+    @media screen and (max-width: 330px) {#search-item-category {padding-left: 0.6em; margin-left: 0px; } }
+
+    @media screen and (max-width: 3000px) {#search-item-state {padding-left: 0.8em; } }
+    @media screen and (max-width: 450px) {#search-item-state {padding-left: 0.8em; } }
+    @media screen and (max-width: 380px) {#search-item-state {padding-left: 0.8em; } }
+    @media screen and (max-width: 330px) {#search-item-state {padding-left: 0.8em; margin-left: 0px; margin-right: 20px;} }
+
+    @media screen and (max-width: 3000px) {#search-item-country {padding-left: 0.6em; } }
+    @media screen and (max-width: 450px) {#search-item-country {padding-left: 0em; } }
+    @media screen and (max-width: 380px) {#search-item-country {padding-left: 0em; } }
+    @media screen and (max-width: 330px) {#search-item-country {padding-left: 1.1em; } }
+
+    @media screen and (max-width: 330px) {#search_item_row {width: 100%} }
 
 .advanced-search-drop{
 max-width: 100px;
@@ -439,7 +499,7 @@ max-width: 100px;
 }
 
     #data_table_row{
-      width: 49%;
+      width: 100%;
 
       text-align: center;
     }
@@ -489,8 +549,8 @@ max-width: 100px;
 
 
     #filters {
-
-
+padding-left: 0px;
+padding-right: 0px;
     }
 
     #filters_background{
@@ -616,6 +676,8 @@ max-width: 100px;
         background-size:100% 100%;
         background-repeat:no-repeat;
         background: linear-gradient(rgba(0,0,0,.10));
+        padding-left: 0px;
+        padding-right: 0px;
 
     }
 

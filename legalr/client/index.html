@@ -475,15 +475,15 @@
 
 
               <div class="col-md-12 col-sm-12 col-xs-12 instructions text-center" id="search_heading">
-                  <h1 data-toggle="collapse" href="#table_container">Search laws</h1>
+                  <h1>Search laws</h1>
               </div>
 
 
 
-    <div class="container-fluid search_section" id="filters"  style="padding-right: 0px; padding-left: 0px" >
-      <div class="row" id="data_table_row" style="padding-right: 0px;">
+    <div class="container-fluid search_section" id="filters"  style="margin: 0 auto" >
+      <div class="row" id="data_table_row" style="margin: 0 auto">
 
-        <style>
+      <!--  <style>
           @media screen and (max-width: 3000px) { #data_table_row { width: 56%; margin-right: 0px; margin-left: 320px;} }
           @media screen and (max-width: 1800px) { #data_table_row { width: 56%; margin-right: 0px; margin-left: 280px;} }
           @media screen and (max-width: 1500px) { #data_table_row { width: 56%; margin-right: 0px; margin-left: 260px; padding-top: 30px;} }
@@ -495,17 +495,17 @@
           @media screen and (max-width: 900px) { #data_table_row { width: 92%;} }
           @media screen and (max-width: 850px) { #data_table_row { width: 94%;} }
           @media screen and (max-width: 800px) { #data_table_row { width: 100%; margin-right: 0px; margin-left: 0px; padding-left: 0px;} }
-        </style>
+        </style> -->
 
-
+<div class="row" style="margin: 0 auto" id="search_item_row">
                 <div class="col-md-3 col-sm-4 col-xs-4 results_container_background">
-                  <style>
+                  <!-- <style>
                   @media screen and (max-width: 500px) { #data_table_row {padding-left: 0px; padding-right: 70px; padding-top: 10px; } }
                   @media screen and (max-width: 420px) { #data_table_row {padding-left: 0px; padding-right: 50px; padding-top: 10px;} }
                   @media screen and (max-width: 400px) { #data_table_row {padding-left: 0px; padding-right: 45px; padding-top: 10px;} }
                   @media screen and (max-width: 360px) { #data_table_row {padding-left: 0px; padding-right: 40px; padding-top: 0px;} }
                   @media screen and (max-width: 330px) { #data_table_row {padding-left: 0px; padding-right: 45px; } }
-                  </style>
+                </style> -->
 
                   <select id="search-item-country" name="country">
                               <option value="">Country</option>
@@ -615,6 +615,7 @@
                           </select>
                 </div>
                 </div>
+            </div>
               <div class="row" id="advanced_search_row">
                 <div class="col-md-12 col-sm-12 col-xs-12 advanced_search text-center">
                         <a id="advanced-search-item" style="cursor: pointer; vertical-align: middle; line-height: 20px;"
@@ -652,7 +653,7 @@
 
 
 
-<div class="container collapse" id="table_container" >
+<div class="container" id="table_container" >
   <style>
   @media screen and (max-width: 3000px) { #table_container { margin-left: 380px;} }
   @media screen and (max-width: 2100px) { #table_container { margin-left: 330px;} }
@@ -673,170 +674,111 @@
   </style>
 
   <!-- Results Table -->
-    <div class="table-responsive"  >
+  <div class="container-fluid">
+	<div class="row">
+	<div class="col-md-3 col-sm-4">
+	<div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+          <div class="wrimagecard-topimage_header" style="background-color:rgba(187, 120, 36, 0.1) ">
+            <center><i class="fa fa-area-chart" style="color:#BB7824"></i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Charts
+            <div class="pull-right badge">18</div></h4>
+          </div>
+        </a>
+      </div>
+      </div>
+    <div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+          <div class="wrimagecard-topimage_header" style="background-color: rgba(22, 160, 133, 0.1)">
+            <center><i class = "fa fa-cubes" style="color:#16A085"></i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Controls
+            <div class="pull-right badge" id="WrControls"></div></h4>
+          </div>
+        </a>
+      </div>
+</div>
+<div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+          <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
+            <center><i class="fa fa-pencil-square-o" style="color:#d50f25"> </i></center>
+          </div>
+          <div class="wrimagecard-topimage_title" >
+            <h4>Forms
+            <div class="pull-right badge" id="WrForms"></div>
+            </h4>
+          </div>
 
-    <table class="table" >
+        </a>
+      </div>
+	</div>
+	<div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+          <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
+             <center><i class="fa fa-table" style="color:#3369e8"> </i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Grid System
+            <div class="pull-right badge" id="WrGridSystem"></div></h4>
+          </div>
 
-      <thead>
-        <tr>
-          <th>Law Title</th>
-          <th>Topic</th>
-          <th>Who it affects</th>
-          <th>Summary</th>
-          <th>Text</th>
-          <th>Country</th>
-          <th>Type</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>FOIA Improvement Act of 2016</td>
-          <td>Freedom of information</td>
-          <td>Investors</td>
-          <td data-toggle="collapse" href="#summary1">Click to read<p class="collapse" id="summary1" style="padding-top: 10px;"> On June 30, 2016 President Obama signed into law the FOIA Improvement Act of 2016. The Act addresses a range of procedural issues, including requirements that agencies establish a minimum of 90 days for requesters to file an administrative appeal and that they provide dispute resolution services at various times throughout the FOIA process. The Act also codifies the Department of Justice’s “foreseeable harm” standard, amends Exemption 5, creates a new “FOIA Council,” and adds two new elements to agency Annual FOIA Reports. OIP has created a redline version of the FOIA showing the changes made by the Act.
-            <br>
-            <br>
-          Summary provided by the US Department of Justice.
-          </p></td>
-          <td><i class="fa fa-file-text" aria-hidden="true" data-toggle="modal" data-target="#myModal1"></i></td>
-          <td>USA</td>
-          <td>Federal Law</td>
-        </tr>
-        <tr>
-          <td>Defend Trade Secrets Act of 2016</td>
-          <td>Intellectual Property Law</td>
-          <td>Entrepreneurs, Businesses</td>
-          <td data-toggle="collapse" href="#summary2">Click to read<p class="collapse" id="summary2" style="padding-top: 10px;"> [Establishes] a federal remedy for individuals seeking relief from the misappropriation of trade secrets. Under the bill, an owner of a trade secret could file a civil action in a district court and the court could issue an order to seize any property necessary to preserve evidence for the civil action. The legislation would require information gathered or stored during a legal proceeding related to trade secrets to be secured to protect its confidentiality. The bill also would increase the fines that may be collected in the event of the theft of a trade secret. Finally, the legislation would require the Department of Justice (DOJ) and the Federal Judicial Center to submit periodic reports concerning the theft of trade secrets in the United States.
-            <br>
-            <br>
-          Summary provided by the US Congressional Budget Office
-          </p></td>
-          <td><i class="fa fa-file-text" aria-hidden="true" data-toggle="modal" data-target="#myModal2"></i></td>
-          <td>USA</td>
-          <td>Federal Law</td>
-        </tr>
-        <tr>
-          <td>General Data Protection Regulation</td>
-          <td>Privacy</td>
-          <td>Internet users in the EU</td>
-          <td data-toggle="collapse" href="#summary3">Click to read<p class="collapse" id="summary3" style="padding-top: 10px;"> Allows European Union (EU) citizens to better control their personal data. It also modernises and unifies rules allowing businesses to reduce red tape and to benefit from greater consumer trust.
-            <br>
-            <br>
-          Summary provided by the Eur-lex Publications Office
-          </p></td>
-          <td><i class="fa fa-file-text" aria-hidden="true" data-toggle="modal" data-target="#myModal3"></i></td>
-          <td>EU</td>
-          <td>Regulation</td>
-        </tr>
-        <tr>
-          <td>Common Sense Firearms Licensing Act</td>
-          <td>Firearms</td>
-          <td>Firearm owners</td>
-          <td data-toggle="collapse" href="#summary4">Click to read<p class="collapse" id="summary4" style="padding-top: 10px;"> This enactment amends the Firearms Act to simplify and clarify the firearms licensing regime for individuals, to limit the discretionary authority of chief firearms officers and to provide for the sharing of information on commercial importations of firearms.
-            <br>
-            <br>
-            It also amends the Criminal Code to strengthen the provisions relating to orders prohibiting the possession of weapons, including firearms, when a person is sentenced for an offence involving domestic violence. Lastly, it defines “non-restricted firearm” and gives the Governor in Council authority to prescribe a firearm to be non-restricted and expanded authority to prescribe a firearm to be restricted.
-            <br>
-            <br>
-          Summary provided by the Canadian Department of Justice
-          </p></td>
-          <td><i class="fa fa-file-text" aria-hidden="true" data-toggle="modal" data-target="#myModal4"></i></td>
-          <td>Canada</td>
-          <td>National Law</td>
-        </tr>
+        </a>
+      </div>
+	</div>
+	<div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+          <div class="wrimagecard-topimage_header" style="background-color:  rgba(250, 188, 9, 0.1)">
+             <center><i class="fa fa-info-circle" style="color:#fabc09"> </i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Information
+            <div class="pull-right badge" id="WrInformation"></div></h4>
+          </div>
 
+        </a>
+      </div>
+	</div>
+	<div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+            <div class="wrimagecard-topimage_header" style="background-color: rgba(121, 90, 71, 0.1)">
+           <center><i class="fa fa-bars" style="color:#795a47"> </i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Navigation
+            <div class="pull-right badge" id="WrNavigation"></div></h4>
+          </div>
 
-
-      </tbody>
-    </table>
-    </div>
-  </div>
+        </a>
+      </div>
+	</div>
+	<div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="#">
+         <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+            <center><i class="fa fa-magic" style="color:#825d09"></i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Themes & Icons
+            <div class="pull-right badge" id="WrThemesIcons"></div></h4>
+          </div>
+        </a>
+      </div>
+	</div>
+</div>
+</div>
   <!-- Results Table -->
 
 
 
-  <!-- PDF Modal -->
-  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myModalLabel"></h4>
-        </div>
-        <div class="modal-body">
-          <div style="text-align: center;">
-  <iframe src="./FOIA_Improvement_Act_2016.pdf"
-  style="max-width:500px; height:500px;" frameborder="0" type="application/pdf" width="98%"></iframe>
-  </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- PDF Modal -->
 
-  <!-- PDF Modal -->
-  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myModalLabel"></h4>
-        </div>
-        <div class="modal-body">
-          <div style="text-align: center;">
-  <iframe src="./Defend_Trade_Secrets_Act_2016.pdf"
-  style="max-width:500px; height:500px;" frameborder="0" type="application/pdf" width="98%"></iframe>
-  </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- PDF Modal -->
-  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myModalLabel"></h4>
-        </div>
-        <div class="modal-body">
-          <div style="text-align: center;">
-  <iframe src="./General_Data_Protection_Regulation.pdf"
-  style="max-width:500px; height:500px;" frameborder="0" type="application/pdf" width="98%"></iframe>
-  </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- PDF Modal -->
-  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myModalLabel"></h4>
-        </div>
-        <div class="modal-body">
-          <div style="text-align: center;">
-  <iframe src="./Common_Sense_Firearms_Licensing_Act.pdf"
-  style="max-width:500px; height:500px;" frameborder="0" type="application/pdf" width="98%"></iframe>
-  </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -897,6 +839,7 @@
       </div>
     </div>
   </div>
+</div>
 <!-- What We Do -->
 
   <!-- Main Container-->
