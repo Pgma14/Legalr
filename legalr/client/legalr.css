@@ -364,6 +364,12 @@ color: #00004d;} }
 
   }
 
+  input{
+    text-align-last: center;
+    text-align: center;
+
+  }
+
 @media screen and (max-width: 450px) {select {color: #8b8b8b; } }
 
 
@@ -490,13 +496,7 @@ max-width: 100px;
 }
 
 
-    .collapse-advanced-search {
 
-    }
-    @media screen and (max-width: 450px) {.collapse-advanced-search {padding-left: 0px; } }
-    @media screen and (max-width: 380px) {.collapse-advanced-search {padding-left: 0px; padding-right: 90px; } }
-    @media screen and (max-width: 370px) {.collapse-advanced-search {padding-left: 0px; } }
-    @media screen and (max-width: 350px) {.collapse-advanced-search {padding-right: 0px; width: 100%;} }
 
 
     @media screen and (max-width: 450px) {#advanced-search-item {padding-left: 14px; color: #8b8b8b;} }
