@@ -297,11 +297,11 @@
 #instructions:hover {
 opacity: 0.8;
 }
-@media screen and (max-width: 3000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 150px;
+@media screen and (max-width: 3000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
   background-color:#00004d;
   color: #fff;} }
 
-@media screen and (max-width: 1500px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 150px;
+@media screen and (max-width: 1500px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
   background-color:#00004d;
   color: #fff;} }
 
@@ -413,7 +413,13 @@ color: #00004d;} }
 }
 
 @media screen and (max-width: 420px) {.law_cards {max-width: 185px; padding-left: 13px; padding-right: 0px; } }
-@media screen and (max-width: 380px) {.law_cards {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 380px) {.law_cards {max-width: 168px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 360px) {.law_cards {max-width: 160px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 330px) {.law_cards {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
+
+@media screen and (max-width: 420px) {.law_cards h5 {font-size: 1.05em; vertical-align: middle;} }
+@media screen and (max-width: 3000px) {.wrimagecard-topimage_title {padding-left: 25px; padding-right: 25px;} }
+@media screen and (max-width: 420px) {.wrimagecard-topimage_title {padding-left: 10px; padding-right: 10px;} }
 
 .wrimagecard_search {margin-top: 0;
 margin-bottom: 1.5rem;
@@ -450,7 +456,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     display: block;
 }
 .wrimagecard-topimage_title {
-    padding: 15px 24px;
+    padding: 15px 15px;
     height: 80px;
     padding-bottom: 0.75rem;
     position: relative;
