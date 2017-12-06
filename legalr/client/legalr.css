@@ -390,6 +390,12 @@ color: #00004d;} }
       overflow-y: scroll;
     }
 
+
+    .search_selector{
+      background-color: #00004d
+      color: #fff;
+    }
+
     form {
       height: 11.5px;
       padding-bottom: 5px;
@@ -405,6 +411,29 @@ color: #00004d;} }
     border-radius: 4px;
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 420px) {.law_cards {max-width: 185px; padding-left: 13px; padding-right: 0px; } }
+@media screen and (max-width: 380px) {.law_cards {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
+
+.wrimagecard_search {margin-top: 0;
+margin-bottom: 1.5rem;
+text-align: left;
+position: relative;
+background-color: #00004d;
+box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+border-radius: 4px;
+transition: all 0.5s ease;
+max-height: 60px;
+}
+
+.wrimagecard_search:hover{
+  opacity: 0.75;
+}
+
+.wrimagecard_search h5{
+  color: #fff;
+}
+
 .wrimagecard .fa{
 	position: relative;
     font-size: 70px;
@@ -421,11 +450,13 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     display: block;
 }
 .wrimagecard-topimage_title {
-    padding: 20px 24px;
+    padding: 15px 24px;
     height: 80px;
     padding-bottom: 0.75rem;
     position: relative;
 }
+
+
 .wrimagecard-topimage a {
     border-bottom: none;
     text-decoration: none;
@@ -664,7 +695,16 @@ padding-bottom: 20px;
 	margin-bottom: 0;
 	margin-left:-4px;
 	margin-right: 0;
+  max-width: 100%;
+  background-color: #00004d;
+  color: #fff;
 }
+
+.list-group-horizontal{
+  padding-left: 5px;
+  padding-right: 0px;
+}
+
 .list-group-horizontal .list-group-item:first-child {
 	border-top-right-radius:0;
 	border-bottom-left-radius:4px;
@@ -673,7 +713,13 @@ padding-bottom: 20px;
 	border-top-right-radius:4px;
 	border-bottom-left-radius:0;
 }
+.list-group-item{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.search-items{
 
+}
 /* FADEIN */
 
 @keyframes fadein {
