@@ -296,6 +296,8 @@
 /* Instructions */
 #instructions:hover {
 opacity: 0.8;
+transition: 0.3s ease;
+}
 }
 @media screen and (max-width: 3000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
   background-color:#00004d;
@@ -337,7 +339,7 @@ color: #00004d;} }
               animation: fadein 2s;
 }
 #instructions {
-  box-shadow: 0px 6px 10px #cccccc;
+  box-shadow: 0px 8px 6px #cccccc;
 }
 
 /* Instructions */
@@ -394,8 +396,11 @@ color: #00004d;} }
     .search_selector{
       background-color: #00004d
       color: #fff;
-    }
 
+    }
+#search_selector{
+    margin-bottom: 15px;
+}
     form {
       height: 11.5px;
       padding-bottom: 5px;
@@ -412,7 +417,8 @@ color: #00004d;} }
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 420px) {.law_cards {max-width: 185px; padding-left: 13px; padding-right: 0px; } }
+/*
+@media screen and (max-width: 420px) {.law_cards {max-width: 180px; padding-left: 5px; padding-right: 0px; } }
 @media screen and (max-width: 380px) {.law_cards {max-width: 168px; padding-left: 10px; padding-right: 5px; } }
 @media screen and (max-width: 360px) {.law_cards {max-width: 160px; padding-left: 10px; padding-right: 5px; } }
 @media screen and (max-width: 330px) {.law_cards {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
@@ -420,6 +426,14 @@ color: #00004d;} }
 @media screen and (max-width: 420px) {.law_cards h5 {font-size: 1.05em; vertical-align: middle;} }
 @media screen and (max-width: 3000px) {.wrimagecard-topimage_title {padding-left: 25px; padding-right: 25px;} }
 @media screen and (max-width: 420px) {.wrimagecard-topimage_title {padding-left: 10px; padding-right: 10px;} }
+*/
+
+@media screen and (max-width: 3000px) {.wrimagecard-topimage_title {max-height: 60px;} }
+@media screen and (max-width: 1200px) {.wrimagecard-topimage_title {max-height: 75px;} }
+
+
+
+
 
 .wrimagecard_search {margin-top: 0;
 margin-bottom: 1.5rem;
@@ -456,7 +470,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     display: block;
 }
 .wrimagecard-topimage_title {
-    padding: 15px 15px;
+    padding: 15px 0px;
     height: 80px;
     padding-bottom: 0.75rem;
     position: relative;
@@ -552,6 +566,12 @@ max-width: 100px;
       width: 100%;
 
       text-align: center;
+    }
+
+    .collapse_data_wrapper{
+    transition: height 3s ease-in-out;
+    overflow: hidden;
+    clear: both;
     }
 
     #advanced_search_row{
@@ -686,6 +706,14 @@ padding-bottom: 20px;
 .fa-file-text {
   padding-left: 10px;
 }
+
+a:active, a:hover, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
+button:focus, button:active {outline:0;}
 
 .fa-chevron-down{
   color: #adadad;
