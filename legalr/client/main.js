@@ -217,6 +217,8 @@ Template.body.events({
     Session.set("filterByState", event.target.id);
 
   // Scroll to Results
+
+
   // target element id
   var id = $("#search_heading");
 

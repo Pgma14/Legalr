@@ -54,6 +54,16 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
+    <script>
+    $('.nav-link').click(function(e) {
+      e.preventDefault();
+      var linkHref = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(linkHref).offset().top
+      }, 1000);
+    });
+    </script>
+
       <ul class="navbar-nav navbar-expand-md ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
                 <a class="nav-link" href="#what_we_do-background">What We Do</a>
@@ -540,7 +550,7 @@
   <div class="container">
 	<div class="row">
             <!-- Search selectors -->
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="wrimagecard_search wrimagecard-topimage" id="search_selector">
                     <a href="#">
 
@@ -551,7 +561,7 @@
                 </div>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
               	<div class="wrimagecard_search wrimagecard-topimage" id="search_selector">
                         <a href="#">
 
@@ -562,7 +572,7 @@
                     </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                   	<div class="wrimagecard_search wrimagecard-topimage" id="search_selector">
                             <a href="#">
 
@@ -573,7 +583,7 @@
                         </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                       	<div class="wrimagecard_search wrimagecard-topimage" id="search_selector">
                                 <a href="#">
 
@@ -718,7 +728,7 @@
 
 
   <!-- What We Do -->
-  <div class="container-fluid section-what_we_do" id="what_we_do">
+  <div class="container section-what_we_do text-center" id="what_we_do">
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12 what_we_do-background text-center" id="what_we_do-background">
         <div id="what_we_do_container">
