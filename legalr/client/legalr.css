@@ -63,7 +63,7 @@
           #carouselExampleControls{
 
           }
-            @media screen and (max-width: 3000px) { #carouselExampleControls { height: 530px;} }
+            @media screen and (max-width: 9000px) { #carouselExampleControls { height: 530px;} }
             @media screen and (max-width: 1500px) { #carouselExampleControls { height: 500px;} }
             @media screen and (max-width: 1000px) { #carouselExampleControls { height: 450px;} }
             @media screen and (max-width: 800px) { #carouselExampleControls { height: 370px;} }
@@ -131,7 +131,7 @@
               #us_map_section{
                 height:800px;
             }
-            @media screen and (max-width: 3000px) {#us_map_section {max-height: 550px; } }
+            @media screen and (max-width: 9000px) {#us_map_section {max-height: 550px; } }
             @media screen and (max-width: 1500px) {#us_map_section {max-height: 520px; } }
             @media screen and (max-width: 1100px) {#us_map_section {max-height: 510px; } }
             @media screen and (max-width: 800px) {#us_map_section {max-height: 460px; } }
@@ -299,11 +299,11 @@ opacity: 0.8;
 transition: 0.3s ease;
 }
 }
-@media screen and (max-width: 3000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
+@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
   background-color:#00004d;
   color: #fff;} }
 
-@media screen and (max-width: 1500px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
+@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
   background-color:#00004d;
   color: #fff;} }
 
@@ -424,12 +424,12 @@ color: #00004d;} }
 @media screen and (max-width: 330px) {.law_cards {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
 
 @media screen and (max-width: 420px) {.law_cards h5 {font-size: 1.05em; vertical-align: middle;} }
-@media screen and (max-width: 3000px) {.wrimagecard-topimage_title {padding-left: 25px; padding-right: 25px;} }
+@media screen and (max-width: 9000px) {.wrimagecard-topimage_title {padding-left: 25px; padding-right: 25px;} }
 @media screen and (max-width: 420px) {.wrimagecard-topimage_title {padding-left: 10px; padding-right: 10px;} }
 */
 
-@media screen and (max-width: 3000px) {.wrimagecard-topimage_title {max-height: 60px;} }
-@media screen and (max-width: 1200px) {.wrimagecard-topimage_title {max-height: 75px;} }
+
+@media screen and (max-width: 9000px) {.wrimagecard-topimage_title {max-height: 75px;} }
 
 
 
@@ -522,22 +522,22 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 
 
 
-    @media screen and (max-width: 3000px) {#search-item-category {padding-left: 0.6em; } }
+    @media screen and (max-width: 9000px) {#search-item-category {padding-left: 0.6em; } }
     @media screen and (max-width: 450px) {#search-item-category {padding-left: 0em; border-color: #cccccc;} }
     @media screen and (max-width: 380px) {#search-item-category {padding-left: 0em; } }
     @media screen and (max-width: 330px) {#search-item-category {padding-left: 0.6em; margin-left: 0px; } }
 
-    @media screen and (max-width: 3000px) {#search-item-state {padding-left: 0.8em; } }
+    @media screen and (max-width: 9000px) {#search-item-state {padding-left: 0.8em; } }
     @media screen and (max-width: 450px) {#search-item-state {padding-left: 0.8em; border-color: #cccccc;} }
     @media screen and (max-width: 380px) {#search-item-state {padding-left: 0.8em; } }
     @media screen and (max-width: 330px) {#search-item-state {padding-left: 0.8em; margin-left: 0px; margin-right: 20px;} }
 
-    @media screen and (max-width: 3000px) {#search-item-country {padding-left: 0.6em; } }
+    @media screen and (max-width: 9000px) {#search-item-country {padding-left: 0.6em; } }
     @media screen and (max-width: 450px) {#search-item-country {padding-left: 0em; border-color: #cccccc;} }
     @media screen and (max-width: 380px) {#search-item-country {padding-left: 0em; } }
     @media screen and (max-width: 330px) {#search-item-country {padding-left: 1.1em; } }
 
-    @media screen and (max-width: 3000px) {#search_item_row {width: 100%} }
+    @media screen and (max-width: 9000px) {#search_item_row {width: 100%} }
     @media screen and (max-width: 2000px) {#search_item_row {width: 30%} }
     @media screen and (max-width: 1200px) {#search_item_row {width: 45%} }
     @media screen and (max-width: 1000px) {#search_item_row {width: 45%} }
@@ -803,23 +803,19 @@ button:focus, button:active {outline:0;}
 
     }
 
-    @media screen and (max-width: 3000px) {.what_we_do-background {height: 570px; } }
+    @media screen and (max-width: 9000px) {.what_we_do-background {height: 570px; padding-top: 150px;} }
     @media screen and (max-width: 1800px) {.what_we_do-background {height: 550px; padding-top: 150px; } }
     @media screen and (max-width: 480px) {.what_we_do-background {height:630px;  padding-top: 70px;} }
     @media screen and (max-width: 360px) {.what_we_do-background {height:660px; padding-top: 85px;} }
 
-    @media screen and (max-width: 3000px) {.what_we_do_h1 {
+    @media screen and (max-width: 9000px) {.what_we_do_h1 {
     margin-top: 80px;} }
-    @media screen and (max-width: 480px) {.what_we_do_h1 {margin-top: 0px; padding-top: 30px; } }
-
-    #what_we_do_container{
+    @media screen and (max-width: 480px) {.what_we_do_h1 {margin-top: 0px; padding-top: 30px;} }
 
 
-
-      }
       #what_we_do_container h1{
-        font-size: 43px;
-
+        font-size: 47px;
+        padding-bottom: 20px;
         font-weight: bold;
         font-family: 'lato', Arial, sans-serif;
       }
@@ -840,7 +836,7 @@ button:focus, button:active {outline:0;}
         color: #fff;
 
       }
-      @media screen and (max-width: 3000px) {#search_heading {background-color: #fff; color: #00004d; } }
+      @media screen and (max-width: 9000px) {#search_heading {background-color: #fff; color: #00004d; } }
       @media screen and (max-width: 420px) {#search_heading {background-color: #fff; color: #00004d; } }
 
       @media screen and (max-width: 1500px) {#search_heading h1 {font-size: 50px; padding-top: 10px; padding-bottom: 6px;} }
@@ -1036,6 +1032,7 @@ button:focus, button:active {outline:0;}
 #disclaimerright:hover{
   color: #cccccc;
 }
+
 #disclaimer_section{
     height:170px;
     background-color:#00004d;
