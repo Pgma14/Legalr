@@ -338,9 +338,9 @@ color: #00004d;} }
            -o-animation: fadein 2s; /* Opera < 12.1 */
               animation: fadein 2s;
 }
-#instructions {
-  box-shadow: 0px 8px 6px #cccccc;
-}
+@media screen and (max-width: 9000px) {#instructions {box-shadow: 0px 8px 8px #cccccc;} }
+@media screen and (max-width: 420px) {#instructions {box-shadow: 0px 25px 20px -10px #cccccc;} }
+
 
 /* Instructions */
 
@@ -417,10 +417,15 @@ color: #00004d;} }
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 420px) {.search_blocks {max-width: 190px; padding-left: 15px; padding-right: 10px; } }
-@media screen and (max-width: 400px) {.search_blocks {max-width: 170px; padding-left: 15px; padding-right: 10px; } }
-@media screen and (max-width: 370px) {.search_blocks {max-width: 160px; margin-left: 2px; padding-left: 10px; padding-right: 10px; } }
-@media screen and (max-width: 350px) {.search_blocks {max-width: 140px; margin-left: 2px; padding-left: 7px; padding-right: 7px; } }
+
+
+@media screen and (max-width: 420px) {.wrimagecard {box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);} }
+
+
+@media screen and (max-width: 420px) {.search_blocks {max-width: 180px; padding-left: 25px; padding-right: 0px;} }
+@media screen and (max-width: 380px) {.search_blocks {max-width: 168px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 360px) {.search_blocks {max-width: 160px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 330px) {.search_blocks {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
 
 
 
