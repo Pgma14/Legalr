@@ -464,8 +464,8 @@ body {
     margin-right: 0;
 }
 .form-control{
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 
 }
 
@@ -479,11 +479,11 @@ body {
         position: static !important;
     }
     .dropdown.dropdown-lg .dropdown-menu {
-      min-width:500px;
+      min-width:459px;
     }
   .dropdown-menu
   {
-    min-width:500px;
+    min-width:460px;
   }
 }
 .caret{

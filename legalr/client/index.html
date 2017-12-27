@@ -84,6 +84,7 @@
           <li class="nav-item">
               <a class="nav-link" href="#search_heading"><i class="fa fa-search" aria-hidden="true"></i></a>
           </li>
+
       </ul>
 </div>
   <!-- (Temporary cut of search bar)
@@ -613,7 +614,12 @@
                        <div class="dropdown dropdown-xl dropdown-md dropdown-lg">
                             <button type="button" class="btn btn-default dropdown-toggle caret" data-toggle="dropdown" aria-expanded="false"><span id="caret"></span></button>
 
-                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                            <script>  $(document).on('click', 'div .dropdown-menu', function (e) {
+                                e.stopPropagation();
+                              }); </script>
+
                               <div class="form-group">
                                 <label for="filter">Country</label>
                                 <select class="form-control">
@@ -628,7 +634,7 @@
                                 <div class="form-group">
                                   <label for="filter">State</label>
                                   <select class="form-control">
-                                      <option value="0" selected>All Snippets</option>
+                                      <option value="0" selected>All States</option>
                                       <option value="1">Featured</option>
                                       <option value="2">Most popular</option>
                                       <option value="3">Top rated</option>
@@ -638,7 +644,7 @@
                                 <div class="form-group">
                                   <label for="filter">Subject</label>
                                   <select class="form-control">
-                                      <option value="0" selected>All Snippets</option>
+                                      <option value="0" selected>All Subjects</option>
                                       <option value="1">Featured</option>
                                       <option value="2">Most popular</option>
                                       <option value="3">Top rated</option>
@@ -653,9 +659,9 @@
                               </div>
 
                             </div>
-
+                              <button type="button" class="btn btn-primary"><span class="fa fa-search" aria-hidden="true"></span></button>
                         </div>
-<button type="button" class="btn btn-primary"><span class="fa fa-search" aria-hidden="true"></span></button>
+
 
                     </div>
                 </div>
