@@ -445,9 +445,11 @@ body {
 .form-group select{
     width: 100% !important;
     border-radius: 6px !important;
+
 }
 .form-group label{
-    font-weight: 400;
+    font-weight: bold;
+    color: #00004d;
 }
 
 .btn-group {
@@ -473,8 +475,11 @@ body {
 .form-control{
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
+}
 
-
+input{
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
 }
 .btn-primary{
   background-color: #3369e8
@@ -508,7 +513,12 @@ body {
     min-width:460px;
   }
 }
-
+@media screen and (max-width: 767px)
+{
+  #adv-search {
+      margin-bottom: 20px;
+}
+}
   @media screen and (max-width: 420px)
   {
       #adv-search {
@@ -677,8 +687,13 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     height: 80px;
     padding-bottom: 0.75rem;
     position: relative;
+
 }
 
+.wrimagecard-topimage_title h5 {
+  padding-top: 10px;
+  vertical-align: middle;
+}
 
 .wrimagecard-topimage a {
     border-bottom: none;
