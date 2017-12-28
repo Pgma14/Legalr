@@ -217,6 +217,7 @@ Template.body.events({
     Session.set("filterByState", event.target.id);
 
   // Scroll to Results
+  
 
 
   // target element id

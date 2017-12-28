@@ -436,7 +436,7 @@ body {
 }
 
 .form-group input{
-  width: 100% !important;
+  width: 33% !important;
 }
 
 .form-group select{
@@ -468,7 +468,18 @@ body {
     border-bottom-left-radius: 4px;
 
 }
-
+.dropdown-menu{
+  -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all 1s ease;
+}
+@media screen and (min-width: 768px) {
+.dropdown-menu{
+    transform: translate3d(-431px, 38px, 0px)!important;
+}
+}
 @media screen and (min-width: 768px) {
     #adv-search {
         width: 500px;

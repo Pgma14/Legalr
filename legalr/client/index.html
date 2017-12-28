@@ -616,11 +616,14 @@
 
 
                             <div class="dropdown-menu dropdown-menu-right">
-                            <script>  $(document).on('click', 'div .dropdown-menu', function (e) {
-                                e.stopPropagation();
-                              }); </script>
 
-                              <div class="form-group">
+                                      <script>
+                                           $(document).on('click', 'div .dropdown-menu', function (e) {
+                                              e.stopPropagation();
+                                            });
+                                       </script>
+                            <div class = "row">
+                              <div class="form-group col-md-4">
                                 <label for="filter">Country</label>
                                 <select class="form-control">
                                     <option value="0" selected>All Countries</option>
@@ -631,7 +634,7 @@
                                 </select>
                               </div>
 
-                                <div class="form-group">
+                                <div class="form-group col-md-4">
                                   <label for="filter">State</label>
                                   <select class="form-control">
                                       <option value="0" selected>All States</option>
@@ -641,7 +644,7 @@
                                       <option value="4">Most commented</option>
                                   </select>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-md-4">
                                   <label for="filter">Subject</label>
                                   <select class="form-control">
                                       <option value="0" selected>All Subjects</option>
@@ -651,11 +654,14 @@
                                       <option value="4">Most commented</option>
                                   </select>
                                 </div>
-
+                            </div> <!-- row end -->
 
                                 <div class="form-group">
-                                <label for="contain">Contains the words</label>
-                                <input class="form-control" type="text" />
+                                <a data-toggle="collapse" href=".advanced_area"><label for="contain"> Advanced </label></a>
+                                    <div class="collapse advanced_area">
+                                      <label for="contain">Contains the words</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
                               </div>
 
                             </div>
