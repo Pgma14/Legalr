@@ -498,9 +498,10 @@ input{
 }
 @media screen and (min-width: 768px) {
     #adv-search {
+        padding-top: 25px;
         width: 500px;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .dropdown.dropdown-lg {
         position: static !important;
