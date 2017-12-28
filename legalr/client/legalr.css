@@ -436,11 +436,15 @@ body {
 }
 
 .form-group input{
-  width: 33% !important;
+  width: 100% !important;
 }
 
 .form-group select{
     width: 100% !important;
+    border-radius: 6px !important;
+}
+.form-group label{
+    font-weight: 400;
 }
 
 .btn-group {
@@ -464,9 +468,13 @@ body {
     margin-right: 0;
 }
 .form-control{
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 
+
+}
+.btn-primary{
+  background-color: #3369e8
 }
 .dropdown-menu{
   -webkit-transition: all 1s ease;
@@ -496,6 +504,33 @@ body {
   {
     min-width:460px;
   }
+}
+@media screen and (max-width: 420px)
+      {
+          #adv-search {
+              margin-bottom: 20px;
+          }
+          .dropdown.dropdown-lg .dropdown-menu {
+            min-width:274px;
+          }
+
+        .dropdown-menu
+        {
+          transform: translate3d(-247px, 38px, 0px)!important;
+          min-width:250px;
+      }
+  }
+
+@media screen and (max-width: 330px)
+      {
+        .dropdown.dropdown-lg .dropdown-menu {
+          min-width:260px;
+        }
+        .dropdown-menu
+        {
+          transform: translate3d(-191px, 38px, 0px)!important;
+
+      }
 }
 .caret{
   padding-left: 5px;
@@ -957,7 +992,7 @@ button:focus, button:active {outline:0;}
       @media screen and (max-width: 9000px) {#search_heading {background-color: #fff; color: #00004d; } }
       @media screen and (max-width: 420px) {#search_heading {background-color: #fff; color: #00004d; } }
 
-      @media screen and (max-width: 1500px) {#search_heading h1 {font-size: 50px; padding-top: 10px; padding-bottom: 6px;} }
+      @media screen and (max-width: 1500px) {#search_heading h1 {font-size: 50px; padding-top: 10px; padding-bottom: 0px;} }
       @media screen and (max-width: 420px) {#search_heading h1 {font-size: 45px;} }
       @media screen and (max-width: 380px) {#search_heading h1 {font-size: 40px;} }
       @media screen and (max-width: 330px) {#search_heading h1 {font-size: 35px; } }
