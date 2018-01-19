@@ -478,8 +478,8 @@ body {
 }
 
 input{
-  border-top-left-radius: 4px !important;
-  border-bottom-left-radius: 4px !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
 }
 .btn-primary{
   background-color: #3369e8
@@ -498,7 +498,7 @@ input{
 }
 @media screen and (min-width: 768px) {
     #adv-search {
-        padding-top: 25px;
+        padding-top: 15px;
         width: 500px;
         margin: 0 auto;
         margin-bottom: 30px;
