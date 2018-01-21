@@ -34,7 +34,7 @@ Template.body.events({
     var pos = $(id).offset().top;
 
     // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
+    $('body, html').animate({scrollTop: pos}, 1000);
 
     // Set state select
     document.getElementById("choose-state").value = event.target.id;
@@ -68,7 +68,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -101,7 +101,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -133,7 +133,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -166,7 +166,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -198,7 +198,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -217,7 +217,7 @@ Template.body.events({
     Session.set("filterByState", event.target.id);
 
   // Scroll to Results
-  
+
 
 
   // target element id
@@ -233,7 +233,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -265,7 +265,7 @@ Template.body.events({
   var pos = $(id).offset().top;
 
   // animated top scrolling
-  $('body, html').animate({scrollTop: pos});
+  $('body, html').animate({scrollTop: pos}, 1000);
 
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
@@ -279,4 +279,5 @@ Template.body.events({
   // Activate new state
   event.target.setAttribute("class", "land active-state");
   },
+
 });
