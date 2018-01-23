@@ -1,16 +1,18 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { Meteor } from 'meteor/meteor';
+import React from 'react';
+import { render } from 'react-dom';
 
 import './index.html';
 
-import Popper from 'popper.js';
-window.Popper = Popper;
 
 
-var mapSections = ['click #us_map path', 'click #us_map polygon',
-'click #canada_map path', 'click #canada_map polygon', 'click #eu_map path',
-'click #eu_map polygon', '#france_map path', '#france_map polygon']
+Law = new Mongo.Collection('laws');
 
+const mapSections = ['path', 'polygon']
+
+// Meteor Blaze Component //
 Template.body.events({
   // Choose State
   "click path": function (event) {
@@ -37,6 +39,5 @@ Template.body.events({
   // Set state select
   document.getElementById("choose-state").value = event.target.id;
   },
-
 
 });
