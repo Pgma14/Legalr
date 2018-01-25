@@ -20,3 +20,4 @@ jquery@1.11.10
 alexwine:bootstrap-4
 fortawesome:fontawesome
 session@1.1.7
+react-meteor-data

@@ -10,6 +10,7 @@ import './index.html';
 
 Law = new Mongo.Collection('laws');
 
+
 const mapSections = ['path', 'polygon']
 
 // Meteor Blaze Component //
