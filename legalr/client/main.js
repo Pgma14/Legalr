@@ -1,11 +1,13 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Meteor } from 'meteor/meteor';
-import React from 'react';
-import { render } from 'react-dom';
+import React, { Component } from 'react';
+import { render, ReactDOM } from 'react-dom';
 
+
+
+import '../imports/client/routes';
 import './index.html';
-
 
 
 Law = new Mongo.Collection('laws');
