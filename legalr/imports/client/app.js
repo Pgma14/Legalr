@@ -1,32 +1,20 @@
 import React from 'react';
-import { Router, Route } from 'react-router';
-import createBrowserHistory from 'history/createBrowserHistory';
 
-// route components
-import AppContainer from '../../ui/containers/AppContainer.js';
-import ListPageContainer from '../../ui/containers/ListPageContainer.js';
-import AuthPageSignIn from '../../ui/pages/AuthPageSignIn.js';
-import AuthPageJoin from '../../ui/pages/AuthPageJoin.js';
-import NotFoundPage from '../../ui/pages/NotFoundPage.js';
+Resolutions = new Mongo.Collection("resolutions");
 
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-import { renderRoutes } from '../imports/startup/client/routes.js';
+export default class App extends React.Component {
 
-Meteor.startup(() => {
-  render(renderRoutes(), document.getElementById('app'));
-});
-
-const browserHistory = createBrowserHistory();
-
-export const renderRoutes = () => (
-  <Router history={browserHistory}>
-    <div>
-      <Route exact path="/" component={AppContainer}/>
-      <Route path="lists/:id" component={ListPageContainer}/>
-      <Route path="signin" component={AuthPageSignIn}/>
-      <Route path="/join" component={AuthPageJoin}/>
-      <Route path="*" component={NotFoundPage}/>
-    </div>
-  </Router>
-);
+  render() {
+    return (
+      <div>
+        <h1>My Resolutions</h1>
+          <form className="new-resolution">
+            <input
+              type="text"
+              ref="resolution"
+              placeholder="Finish React Meteor Series" />
+          </form>
+      </div>
+    )
+  }
+}

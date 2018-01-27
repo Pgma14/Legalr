@@ -6,6 +6,8 @@ import { render } from 'react-dom';
 
 import './index.html';
 
+import '../imports/client/routes.js'
+
 
 
 Law = new Mongo.Collection('laws');
