@@ -6,7 +6,8 @@ import { render, ReactDOM } from 'react-dom';
 
 
 
-import '../imports/client/routes';
+
+import '../imports/routes';
 import './index.html';
 
 

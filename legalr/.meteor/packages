@@ -21,3 +21,8 @@ alexwine:bootstrap-4
 fortawesome:fontawesome
 session@1.1.7
 react-meteor-data
+meteortoys:allthings
+ultimatejs:tracker-react
+accounts-password
+accounts-ui
+themeteorchef:bert

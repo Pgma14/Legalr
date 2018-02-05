@@ -22,3 +22,5 @@
     </form>
 </div>
 </div>
+
+import { Resolutions } from '/imports/client/collections.js';
