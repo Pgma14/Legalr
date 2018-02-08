@@ -73,7 +73,7 @@ export default class MyNavbar extends Component {
               <NavItem>
                 <NavLink href="/about">
                   <span className="MenuOptions">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i className="fa fa-search" aria-hidden="true"></i>
                   </span>
                   </NavLink>
               </NavItem>
