@@ -1,0 +1,10 @@
+@media screen and (max-width: 9000px) { #eu_map { height: 460px; padding-top: 20px;} }
+@media screen and (max-width: 1450px) { #eu_map { height: 460px; } }
+@media screen and (max-width: 1350px) { #eu_map { height: 460px; } }
+@media screen and (max-width: 1300px) { #eu_map { height: 440px; } }
+@media screen and (max-width: 1200px) { #eu_map { height: 400px; } }
+@media screen and (max-width: 1000px) { #eu_map { height: 380px; } }
+@media screen and (max-width: 800px)  { #eu_map { height: 320px; } }
+@media screen and (max-width: 600px)  { #eu_map { height: 315px; } }
+@media screen and (max-width: 500px)  { #eu_map { height: 250px; } }
+@media screen and (max-width: 400px)  { #eu_map { height: 200px; } }
