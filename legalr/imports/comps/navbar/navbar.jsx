@@ -37,7 +37,6 @@ export default class MyNavbar extends Component {
           <div className="container">
 
           <NavbarBrand href="/" className="navbar-brand_logo">
-
             <img src="simpleLogo.png" width="55" height="55"
              className="d-inline-block align-top"
              alt="Legalr"/>
@@ -49,37 +48,36 @@ export default class MyNavbar extends Component {
         </NavbarBrand>
 
 
-
-          <NavbarToggler onClick={this.toggle} />
+          <div className="navbar-toggle"> <NavbarToggler onClick={this.toggle} />
+          </div>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto static-top" navbar>
 
               <NavItem>
-                <NavLink href="/">Resolutions</NavLink>
+                <NavLink className="MenuOptions" href="/">
+                <span className="MenuOptions">
+                  Resolutions
+                </span>
+              </NavLink>
               </NavItem>
 
 
               <NavItem>
-                <NavLink href="/about">About</NavLink>
+                <NavLink className="MenuOptions" href="/about">
+                  <span className="MenuOptions">
+                    About
+                  </span>
+                </NavLink>
               </NavItem>
 
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/about">
+                  <span className="MenuOptions">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </span>
+                  </NavLink>
+              </NavItem>
+
             </Nav>
           </Collapse>
             </div>
