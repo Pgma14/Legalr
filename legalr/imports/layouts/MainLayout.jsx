@@ -15,7 +15,7 @@ const MainLayout = () => {
     <div className="main-layout">
       <header>
         <MyNavbar />
-      <AccountsUI />
+    
       </header>
 
       <main>
