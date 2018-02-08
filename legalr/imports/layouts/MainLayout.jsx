@@ -3,8 +3,8 @@ import { render, ReactDOM } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import AccountsUI from '../accounts-ui.jsx';
-import ResolutionsWrapper from '../components/resolutions/ResolutionsWrapper.jsx';
-import MyNavbar from '../components/navbar.jsx'
+import ResolutionsWrapper from '../comps/resolutions/ResolutionsWrapper.jsx';
+import MyNavbar from '../comps/navbar/navbar.jsx'
 import About from './About.jsx';
 
 
@@ -15,7 +15,7 @@ const MainLayout = () => {
       <header>
         <MyNavbar />
 
-
+      <AccountsUI />
 
 
       </header>

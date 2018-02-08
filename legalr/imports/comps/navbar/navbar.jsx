@@ -12,7 +12,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-  import AccountsUI from '../accounts-ui.jsx';
+  import AccountsUI from '../../accounts-ui.jsx';
+  import './navbar.css';
 
 export default class MyNavbar extends Component {
   constructor(props) {
@@ -34,20 +35,34 @@ export default class MyNavbar extends Component {
 
         <Navbar color="faded" light expand="md">
           <div className="container">
-          <NavbarBrand href="/">Legalr</NavbarBrand>
+
+          <NavbarBrand href="/" className="navbar-brand_logo">
+
+            <img src="simpleLogo.png" width="55" height="55"
+             className="d-inline-block align-top"
+             alt="Legalr"/>
+         </NavbarBrand>
+
+         <NavbarBrand>
+            <span className="navbar-brand_text">Legal<span id="r">r</span>
+            <span id="alpha">(alpha)</span></span>
+        </NavbarBrand>
+
+
+
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
+            <Nav className="ml-auto static-top" navbar>
 
+              <NavItem>
                 <NavLink href="/">Resolutions</NavLink>
               </NavItem>
-              <NavItem>
 
-              </NavItem>
+
               <NavItem>
                 <NavLink href="/about">About</NavLink>
               </NavItem>
+
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options

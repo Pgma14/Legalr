@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import AccountsUI from '../accounts-ui.jsx';
+
+
 
 export default class About extends Component {
 
@@ -7,6 +10,7 @@ export default class About extends Component {
   }
 
   render() {
+      
     return (
       <div>
         <h1>About Us</h1>

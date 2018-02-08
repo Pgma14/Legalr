@@ -1,0 +1,54 @@
+.navbar{
+      padding: 0px;
+      box-shadow: 0px 1px 12px #cccccc;
+    }
+    .toggler-container{
+      padding-right: 10px;
+    }
+    .navbar-toggler{
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+
+    .navbar-brand_text{
+      font-weight: 700;
+      font-size: 30px;
+      color:  #00004d;
+      padding-left: 0px;
+      font-family: sans-serif;
+    }
+
+    .navbar-brand_logo{
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 10px;
+    }
+
+    #r {
+      color: #3971a9;
+    }
+
+    #alpha {
+      font-weight: 300;
+      font-size: 13px;
+
+    }
+
+    #navbarTogglerDemo02 a{
+      color: #00004d;
+      text-align: right;
+      padding-right: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      height: auto;
+    }
+
+    #navbarTogglerDemo02 a:hover {
+      color: #3971a9;
+    }
+
+    #navbarTogglerDemo02 a:hover {
+      color: #3971a9;
+    }

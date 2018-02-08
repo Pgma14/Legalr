@@ -1,4 +1,4 @@
-import {Resolutions} from '../imports/components/resolutions/ResolutionsWrapper.jsx';
+import {Resolutions} from '../imports/comps/resolutions/ResolutionsWrapper.jsx';
 
 Meteor.publish("allResolutions", function(){
   return Resolutions.find({complete:false});
