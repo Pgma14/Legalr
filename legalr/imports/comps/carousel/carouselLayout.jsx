@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 
 import EUmap from './EU.jsx';
+import USmap from './USA.jsx';
 
 const items = [
   {
@@ -62,6 +63,7 @@ class CarouselComp extends Component {
 
     const slides = items.map((item) => {
       return (
+        
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
