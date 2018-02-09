@@ -1,0 +1,11 @@
+
+  @media screen and (max-width: 9000px) { #us_map { height: 500px; } }
+  @media screen and (max-width: 1400px) { #us_map { height: 500px; } }
+  @media screen and (max-width: 1200px) { #us_map { height: 440px; } }
+  @media screen and (max-width: 1000px) { #us_map { height: 480px; } }
+  @media screen and (max-width: 800px)  { #us_map { height: 350px; } }
+  @media screen and (max-width: 600px)  { #us_map { height: 300px; } }
+  @media screen and (max-width: 500px)  { #us_map { height: 270px; } }
+  @media screen and (max-width: 450px)  { #us_map { height: 250px; } }
+  @media screen and (max-width: 400px)  { #us_map { height: 225px; } }
+  @media screen and (max-width: 350px)  { #us_map { height: 210px; } }

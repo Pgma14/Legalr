@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './USA.css';
 
 export default class USmap extends Component {
   render () {
