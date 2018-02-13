@@ -50,3 +50,7 @@
     .MenuOptions:hover {
       color: #3971a9;
     }
+
+    .fa-search {
+      float: right;
+    }
