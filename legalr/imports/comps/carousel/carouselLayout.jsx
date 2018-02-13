@@ -18,7 +18,7 @@ export default class DemoCarousel extends Component {
         naturalSlideHeight={75}
         totalSlides={3}
       >
-        <Slider>
+        <Slider onFocus="null">
           <Slide index={0}><USmap /></Slide>
           <Slide index={1}><EUmap /></Slide>
           <Slide index={2}>I am the third Slide.</Slide>
