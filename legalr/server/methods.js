@@ -1,4 +1,4 @@
-import {Resolutions} from '../imports/comps/resolutions/ResolutionsWrapper.jsx';
+/*import {Resolutions} from '../imports/comps/resolutions/ResolutionsWrapper.jsx';
 import {text} from '../imports/comps/resolutions/ResolutionsWrapper.jsx';
 
 Meteor.methods({
@@ -22,7 +22,7 @@ Meteor.methods({
       throw new Meteor.Error('not-authorized');
     } */
 
-    Resolutions.update(resolution._id, {
+  /*  Resolutions.update(resolution._id, {
       $set: {complete: !resolution.complete} // if status already = true, this sets it to false, and vice versa
     });
   },
@@ -33,6 +33,6 @@ Meteor.methods({
       throw new Meteor.Error('not-authorized');
     } */
 
-    Resolutions.remove(resolution._id);
+/*    Resolutions.remove(resolution._id);
   }
-});
+});  */

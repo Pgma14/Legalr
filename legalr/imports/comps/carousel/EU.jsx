@@ -10,8 +10,7 @@ export default class EUmap extends Component {
         xmlSpace="preserve">
                           <switch>
                                   <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1">
-                                    <ipgfref xlinkHref="#adobe_illustrator_pgf">
-                                    </ipgfref>
+                                  
                                   </foreignObject>
                                   <g iextraneous="self">
                                     <g>
