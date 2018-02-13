@@ -5,6 +5,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import USmap from './USA.jsx';
 import EUmap from './EU.jsx';
+import CanadaMap from './Canada.jsx';
 
 import './carouselLayoutStyle.css';
 
@@ -20,8 +21,8 @@ export default class DemoCarousel extends Component {
       >
         <Slider onFocus="null">
           <Slide index={0}><USmap /></Slide>
-          <Slide index={1}><EUmap /></Slide>
-          <Slide index={2}>I am the third Slide.</Slide>
+          <Slide index={1}><CanadaMap /></Slide>
+          <Slide index={2}><EUmap /></Slide>
         </Slider>
         <ButtonBack><i className="fa fa-chevron-left" id="left-chevron"></i></ButtonBack>
         <ButtonNext><i className="fa fa-chevron-right" id="right-chevron" ></i></ButtonNext>

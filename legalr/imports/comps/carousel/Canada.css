@@ -1,0 +1,9 @@
+@media screen and (max-width: 1600px) { #canada_map { height: 1000px; } }
+@media screen and (max-width: 1350px) { #canada_map { height: 1000px; padding-top: 10px; } }
+@media screen and (max-width: 1300px) { #canada_map { height: 850px; } }
+@media screen and (max-width: 1200px) { #canada_map { height: 700px; } }
+@media screen and (max-width: 1000px) { #canada_map { height: 700px; } }
+@media screen and (max-width: 800px)  { #canada_map { height: 580px; } }
+@media screen and (max-width: 600px)  { #canada_map { height: 550px; } }
+@media screen and (max-width: 500px)  { #canada_map { height: 425px; } }
+@media screen and (max-width: 400px)  { #canada_map { height: 350px; } }
