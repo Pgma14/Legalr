@@ -13,7 +13,6 @@ import Divider from '../comps/Divider/Divider.jsx';
 import Home from './Home.jsx';
 
 const MainLayout = () => {
-
   return (
     <div className="main-layout">
       <header>
