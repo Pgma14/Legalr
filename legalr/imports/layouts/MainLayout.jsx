@@ -2,12 +2,15 @@ import React, {Component} from 'react';
 import { render, ReactDOM } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+
 import AccountsUI from '../accounts-ui.jsx';
 import ResolutionsWrapper from '../comps/resolutions/ResolutionsWrapper.jsx';
 import MyNavbar from '../comps/navbar/navbar.jsx'
 import About from './About.jsx';
 import DemoCarousel from '../comps/carousel/carouselLayout.jsx';
 import Footer from '../comps/Footer/Footer.jsx';
+import Divider from '../comps/Divider/Divider.jsx';
+import Home from './Home.jsx';
 
 const MainLayout = () => {
 
@@ -20,7 +23,7 @@ const MainLayout = () => {
       <main>
         <Router>
           <Switch>
-          <Route exact path="/" component={DemoCarousel} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/resolutions" component={ResolutionsWrapper} />
           <Route path="/about" component={About} />
           </Switch>

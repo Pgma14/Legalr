@@ -1,4 +1,24 @@
-
 #disclaimerright a{
   color: white;
 }
+
+#disclaimerright{
+  float: right;
+}
+
+#copyrightleft
+{
+  float: left;
+}
+
+.footer{
+      background-color:#00004d;
+      height:50px;
+    }
+
+  .footer h1 {
+    color:#fff;
+    padding-top: 17px;
+    font-weight:500;
+    font-size: 14px;
+  }

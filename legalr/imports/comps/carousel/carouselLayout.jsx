@@ -25,6 +25,8 @@ export default class DemoCarousel extends Component {
           <Slide index={1}><CanadaMap /></Slide>
           <Slide index={2}><EUmap /></Slide>
           <Slide index={3}><FranceMap /></Slide>
+
+
         </Slider>
         <ButtonBack><i className="fa fa-chevron-left" id="left-chevron"></i></ButtonBack>
         <ButtonNext><i className="fa fa-chevron-right" id="right-chevron" ></i></ButtonNext>

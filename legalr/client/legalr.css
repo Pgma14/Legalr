@@ -1238,17 +1238,7 @@ button:focus, button:active {outline:0;}
 /* Meet the Team */
 
 /* footer */
-.footer{
-      background-color:#00004d;
-      height:50px;
-    }
 
-  .footer h1 {
-    color:#fff;
-    padding-top: 17px;
-    font-weight:500;
-    font-size: 14px;
-  }
 
 /* footer */
 
@@ -1282,14 +1272,7 @@ button:focus, button:active {outline:0;}
     width: auto;
   }
 
-  #copyrightleft
-  {
-    float: left;
-  }
 
-  #disclaimerright{
-    float: right;
-  }
 /* Disclaimer Section */
 
 
