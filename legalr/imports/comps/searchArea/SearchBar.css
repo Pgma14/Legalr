@@ -55,6 +55,18 @@
   border-color: #cccccc;
 }
 
+.btn-outline-secondary:not([disabled]):not(.disabled):active, .btn-outline-secondary:not([disabled]):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+  color: black;
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
+
+.btn-outline-secondary:active {
+  color: black;
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
+
 #searchButton {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px ;
@@ -68,6 +80,48 @@
   box-shadow: none;
 }
 
+#advanced-toggle{
+  color: #00004d;
+  background-color: none;
+}
+
+.btn-secondary{
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.btn-secondary:focus {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+#advanced-toggle:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#advanced-toggle:focus {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.dropdown-item:hover {
+  background-color: #fff;
+}
+#advanced-toggle:active {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.btn-secondary:active {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+}
 /* prevents box shadow from appearing on click */
 .btn-outline-secondary:not([disabled]):not(.disabled):active, .btn-outline-secondary:not([disabled]):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
   box-shadow: none;
