@@ -296,52 +296,6 @@
 /* Maps */
 
 /* Instructions */
-#instructions:hover {
-opacity: 0.8;
-transition: 0.3s ease;
-}
-}
-@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
-  background-color:#00004d;
-  color: #fff;} }
-
-@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
-  background-color:#00004d;
-  color: #fff;} }
-
-@media screen and (max-width: 420px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 10px; margin-bottom: 60px;
-background-color:#fff;
-color: #00004d;} }
-
-@media screen and (max-width: 380px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 120px; margin-bottom: 60px;
-background-color:#fff;
-color: #00004d;} }
-
-@media screen and (max-width: 360px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 120px; margin-bottom: 60px;
-background-color:#fff;
-color: #00004d;} }
-
-@media screen and (max-width: 330px) {#instructions {padding-top: 10px; padding-bottom: 10px; margin-top: 120px; margin-bottom: 40px;
-background-color:#fff;
-color: #00004d;} }
-
-@media screen and (max-width: 1500px) {#instructions h1 {font-size: 50px;} }
-@media screen and (max-width: 420px) {#instructions h1 {font-size: 45px;} }
-@media screen and (max-width: 380px) {#instructions h1 {font-size: 40px;} }
-@media screen and (max-width: 330px) {#instructions h1 {font-size: 35px;} }
-
-#instructions h1{
-
-    font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 600;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-         -moz-animation: fadein 2s; /* Firefox < 16 */
-          -ms-animation: fadein 2s; /* Internet Explorer */
-           -o-animation: fadein 2s; /* Opera < 12.1 */
-              animation: fadein 2s;
-}
-@media screen and (max-width: 9000px) {#instructions {box-shadow: 0px 8px 8px #cccccc;} }
-@media screen and (max-width: 420px) {#instructions {box-shadow: 0px 7px 8px rgba(204,204,204, 0.5);} }
 
 
 /* Instructions */

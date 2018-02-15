@@ -1,27 +1,59 @@
 import React, {Component} from 'react';
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { InputGroup, InputGroupAddon, InputGroupText, Input, InputGroupDropDown, InputGroupButtonDropdown } from 'reactstrap';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
+import './SearchBar.css';
 
 export default class SearchBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggleDropDown = this.toggleDropDown.bind(this);
+    this.toggleSplit = this.toggleSplit.bind(this);
+    this.state = {
+      dropdownOpen: false,
+      splitButtonOpen: false
+    };
+  }
+
+  toggleDropDown() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
+
+  toggleSplit() {
+    this.setState({
+      splitButtonOpen: !this.state.splitButtonOpen
+    });
+  }
+
+
   render () {
     return (
     <div>
-      <div className="col-md-12 col-sm-12 col-xs-12 instructions text-center" id="search_heading">
-        <h1>Search laws</h1>
-      </div>
 
-    <div className="input-group" id="adv-search">
-        <input type="text" className="form-control" placeholder="Search key words, topics, etc..." />
 
-      <div className="input-group-btn">
-        <div className="btn-group" role="group">
-          <div className="dropdown dropdown-xl dropdown-md dropdown-lg">
-            <button type="button" className="btn btn-default dropdown-toggle caret" data-toggle="dropdown" aria-expanded="false"><span id="caret"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <InputGroup id="adv-search">
+      <Input type="text" placeholder="Search key words, topics, etc..." />
+      <InputGroupButtonDropdown className="input-group-btn" addonType="append" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
+        <DropdownToggle split outline className="button" />
+        <DropdownMenu>
+          <DropdownItem header>Header</DropdownItem>
+          <DropdownItem disabled>Action</DropdownItem>
+          <DropdownItem>Another Action</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Another Action</DropdownItem>
+        </DropdownMenu>
+      </InputGroupButtonDropdown>
+      <InputGroupAddon addonType="append" >
+        <Button color="primary" className="btn-group text-center" id="searchButton">
+          <span className="fa fa-search" id="searchBarIcon" aria-hidden="true">
+          </span>
+        </Button>
+      </InputGroupAddon>
+    </InputGroup>
 
    </div>
     )
