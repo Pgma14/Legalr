@@ -7,11 +7,11 @@ opacity: 0.8;
 transition: 0.3s ease;
 }
 
-@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
+@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 60px;
   background-color:#00004d;
   color: #fff;} }
 
-@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 100px;
+@media screen and (max-width: 9000px) {#instructions {padding-top: 15px; padding-bottom: 15px; margin-top: 10px; margin-bottom: 60px;
   background-color:#00004d;
   color: #fff;} }
 

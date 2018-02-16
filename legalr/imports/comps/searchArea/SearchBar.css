@@ -97,6 +97,10 @@
   box-shadow: none;
 }
 
+#adv-search-input{
+  width: 100%;
+}
+
 #advanced-toggle:hover {
   background-color: #fff;
   border-color: #fff;
@@ -145,6 +149,11 @@ background-color: #1353eb;
     border-bottom-left-radius: 7px;
 }
 
+.searchOptions{
+  padding: 0px;
+}
+
+
 input{
   border-top-left-radius: 8px !important;
   border-bottom-left-radius: 8px !important;
@@ -181,7 +190,8 @@ input{
     }
   .dropdown-menu
   {
-    min-width:460px;
+      transform: translate3d(-432px, 38px, 0px)!important;
+    min-width:459px;
   }
 }
 @media screen and (max-width: 767px)
@@ -197,13 +207,13 @@ input{
       }
 
             .dropdown.dropdown-lg .dropdown-menu {
-              min-width:314px;
+              min-width:315px;
             }
 
           .dropdown-menu
           {
-            transform: translate3d(-285px, 38px, 0px)!important;
-            min-width:250px;
+            transform: translate3d(-287px, 38px, 0px)!important;
+            min-width:314px;
         }
     }
 #advanced_icon {
@@ -215,14 +225,12 @@ input{
             margin-bottom: 20px;
         }
 
-              .dropdown.dropdown-lg .dropdown-menu {
-                min-width:312px;
-              }
+
 
             .dropdown-menu
             {
-              transform: translate3d(-283px, 38px, 0px)!important;
-              min-width:250px;
+              transform: translate3d(-285px, 38px, 0px)!important;
+              min-width:313px;
           }
       }
     @media screen and (max-width: 400px)
@@ -230,36 +238,39 @@ input{
               #adv-search {
                   margin-bottom: 20px;
               }
-              .dropdown.dropdown-lg .dropdown-menu {
-                min-width:274px;
-              }
+
 
             .dropdown-menu
             {
               transform: translate3d(-247px, 38px, 0px)!important;
-              min-width:250px;
+              min-width:247px;
           }
+      }
+      @media screen and (max-width: 376px)
+            {
+
+              .dropdown-menu
+              {
+                min-width:277px;
+                transform: translate3d(-249px, 38px, 0px)!important;
+            }
       }
       @media screen and (max-width: 370px)
             {
-              .dropdown.dropdown-lg .dropdown-menu {
-                min-width:260px;
-              }
+
               .dropdown-menu
               {
-                transform: translate3d(-231px, 38px, 0px)!important;
-
+                min-width:262px;
+                transform: translate3d(-234px, 38px, 0px)!important;
             }
       }
 @media screen and (max-width: 330px)
       {
-        .dropdown.dropdown-lg .dropdown-menu {
-          min-width:220px;
-        }
+
         .dropdown-menu
         {
-          transform: translate3d(-191px, 38px, 0px)!important;
-
+          min-width:193px;
+          transform: translate3d(-194px, 38px, 0px)!important;
       }
 }
 .caret{
