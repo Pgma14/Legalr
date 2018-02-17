@@ -21,16 +21,19 @@ export class FreedomOfInformation extends Component {
   }
 }
 
-export class IntellectualPropertyLaw extends Component {
+export class CryptoCurrency extends Component {
   render () {
     return (
       <div className="wrimagecard wrimagecard-topimage">
 
-        <div className="wrimagecard-topimage_header" id="IntellectualPropertyLawBackground">
-          <center><i className="fa fa-gavel" id="IntellectualPropertyLawIcon"></i></center>
+        <div className="wrimagecard-topimage_header" id="CryptoCurrencyBackground">
+          <center>
+            <i className="fa fa-btc" id="CryptoCurrencyIcon">
+            </i>
+          </center>
         </div>
-        <div className="wrimagecard-topimage_title text-center" id="IntellectualPropertyLawBottom">
-          <h5>Intellectual Property Law</h5>
+        <div className="wrimagecard-topimage_title text-center" id="CryptoCurrencyBottom">
+          <h5>Crypto</h5>
         </div>
 
       </div>

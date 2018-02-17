@@ -1,0 +1,6 @@
+@media screen and (max-width: 420px) {.law_cards {max-width: 180px; padding-left: 25px; padding-right: 0px; } }
+@media screen and (max-width: 380px) {.law_cards {max-width: 168px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 360px) {.law_cards {max-width: 160px; padding-left: 10px; padding-right: 5px; } }
+@media screen and (max-width: 330px) {.law_cards {max-width: 140px; padding-left: 10px; padding-right: 5px; } }
+
+@media screen and (max-width: 420px) {.law_cards h5 {font-size: 1.05em; vertical-align: middle;} }

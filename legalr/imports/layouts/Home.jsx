@@ -4,6 +4,7 @@ import './Home.css';
 import DemoCarousel from '../comps/carousel/carouselLayout.jsx';
 import Divider from '../comps/Divider/Divider.jsx';
 import SearchLayout from '../comps/searchArea/SearchLayout.jsx';
+import WhatWeDo from '../comps/WhatWeDo/WhatWeDo.jsx';
 
 
 export default class Home extends Component {
@@ -20,6 +21,10 @@ export default class Home extends Component {
 
       <div className="container">
         <SearchLayout />
+      </div>
+
+      <div className="container">
+        <WhatWeDo />
       </div>
     </div>
     )
