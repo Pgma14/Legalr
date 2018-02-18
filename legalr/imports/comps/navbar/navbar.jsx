@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import {
   Collapse,
   Navbar,
@@ -32,14 +33,16 @@ export default class MyNavbar extends Component {
   render() {
     return (
       <div>
-
+    <Container fluid>
+      <Row>
         <Navbar color="faded" light expand="md">
-          <div className="container">
 
+        <Container>
           <NavbarBrand href="/" className="navbar-brand_logo">
             <img src="simpleLogo.png" width="55" height="55"
              className="d-inline-block align-top"
-             alt="Legalr"/>
+             alt="Legalr"
+             id="Legalr_logo"/>
          </NavbarBrand>
 
          <NavbarBrand>
@@ -80,8 +83,11 @@ export default class MyNavbar extends Component {
 
             </Nav>
           </Collapse>
-            </div>
+          </Container>
         </Navbar>
+        </Row>
+      </Container>
+
       </div>
     );
   }
