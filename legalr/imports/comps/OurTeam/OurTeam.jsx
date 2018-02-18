@@ -9,7 +9,7 @@ export default class OurTeam extends Component {
       <div>
 
 
-      <Container fluid className="section-ourTeam" id="Our_Team">
+      <Container fluid>
         <Row>
           <Col md="12" sm="12" xs="12" className="ourTeam-hedding text-center">
             <h1>Our Team</h1>
