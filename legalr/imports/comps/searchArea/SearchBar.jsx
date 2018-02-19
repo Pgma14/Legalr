@@ -4,6 +4,7 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 're
 import { Form, FormGroup, Label, FormText } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 
+
 import './SearchBar.css';
 
 export default class SearchBar extends Component {

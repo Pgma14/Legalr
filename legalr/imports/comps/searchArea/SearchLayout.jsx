@@ -13,7 +13,7 @@ export default class SearchLayout extends Component {
 
       <Row>
       <Col className="instructions text-center" md="12" sm="12" xs="12" id="search_heading">
-        <h1>Search laws</h1>
+        <h1 id="Search_laws">Search laws</h1>
       </Col>
      </Row>
 

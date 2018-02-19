@@ -886,26 +886,6 @@ button:focus, button:active {outline:0;}
           z-index: 1;
       }
 
-      #search_heading h1 {
-        font-family: 'MuseoSlab','Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-        font-weight: 600;
-
-      }
-
-      #search_heading{
-        background-color: #00004d;
-        color: #fff;
-
-      }
-      @media screen and (max-width: 9000px) {#search_heading {background-color: #fff; color: #00004d; } }
-      @media screen and (max-width: 420px) {#search_heading {background-color: #fff; color: #00004d; } }
-
-      @media screen and (max-width: 1500px) {#search_heading h1 {font-size: 50px; padding-top: 10px; padding-bottom: 0px;} }
-      @media screen and (max-width: 420px) {#search_heading h1 {font-size: 45px;} }
-      @media screen and (max-width: 380px) {#search_heading h1 {font-size: 40px;} }
-      @media screen and (max-width: 330px) {#search_heading h1 {font-size: 35px; } }
-
-
       .heading-subtext-bolder {
         font-family: 'lato', Arial, sans-serif;
         font-size: 1.8em;

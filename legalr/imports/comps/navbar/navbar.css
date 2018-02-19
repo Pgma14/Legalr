@@ -42,6 +42,31 @@ margin-left: 10px;
       padding-left: 5px;
 
     }
+.scroll:hover {
+  text-decoration: none;
+}
+
+#searchicon{
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 9000px) {
+
+    .MenuOptions {
+      color: #00004d;
+      text-align: right;
+      padding-right: 2px;
+      padding-left: 0px;
+      font-size: 20px;
+      font-weight: 600;
+      height: auto;
+    }
+
+  }
+
+
+@media screen and (max-width: 500px) {
 
     .MenuOptions {
       color: #00004d;
@@ -51,6 +76,8 @@ margin-left: 10px;
       font-weight: 600;
       height: auto;
     }
+
+  }
 
     .MenuOptions:hover {
       color: #3971a9;

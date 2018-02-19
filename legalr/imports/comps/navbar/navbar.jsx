@@ -12,6 +12,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+import Scrollchor from 'react-scrollchor';
+
 
   import AccountsUI from '../../accounts-ui.jsx';
   import './navbar.css';
@@ -66,18 +68,23 @@ export default class MyNavbar extends Component {
 
 
               <NavItem>
-                <NavLink className="MenuOptions" href="/about">
-                  <span className="MenuOptions">
-                    About
-                  </span>
+
+                <NavLink className="MenuOptions">
+                    <Scrollchor to="#Our_Team" className="scroll" animate={{offset: 0, duration: 1000}}>
+                      <span className="MenuOptions">
+                        Our Team
+                      </span>
+                  </Scrollchor>
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="/about">
+                <NavLink className="MenuOptions">
+                  <Scrollchor to="#Search_laws" className="scroll" animate={{offset: 0, duration: 800}}>
                   <span className="MenuOptions">
-                    <i className="fa fa-search" aria-hidden="true"></i>
+                    <i className="fa fa-search" aria-hidden="true" id="searchicon"></i>
                   </span>
+                </Scrollchor>
                   </NavLink>
               </NavItem>
 

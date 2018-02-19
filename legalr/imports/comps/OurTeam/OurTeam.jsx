@@ -11,7 +11,7 @@ export default class OurTeam extends Component {
 
       <Container fluid>
         <Row>
-          <Col md="12" sm="12" xs="12" className="ourTeam-hedding text-center">
+          <Col md="12" sm="12" xs="12" className="ourTeam-hedding text-center" id="Our_Team">
             <h1>Our Team</h1>
           </Col>
         </Row>
