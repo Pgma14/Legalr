@@ -124,33 +124,7 @@ export default class OurTeam extends Component {
             </Row>
           </Col>
 
-          <Col lg="6" md="4" sm="4" xs="12">
-            <Row className="section-danger ourTeam-box text-center">
-              <Col md="12" sm="12" xs="12" className="section1">
-                <img src="Matthew.jpg" />
-              </Col>
-
-              <Col md="12" sm="12" xs="12" className="section2">
-                <p>Matthew Huggins</p>
-                <Col md="12" sm="12" xs="12">
-                  <h1>Advisor, CSO at EasyEMail</h1><br></br><br></br>
-                </Col>
-              </Col>
-
-
-          <Container className="MIT">
-                    <Row>
-                      <Col md="6" sm="6" xs="6">
-                      <img src="MIT.svg" id="MIT_logo" />
-                      </Col>
-                      <Col md="6" sm="6" xs="6">
-                      <img src="y_combinator.svg" id="YC_logo" />
-                      </Col>
-                    </Row>
-          </Container>
-
-            </Row>
-          </Col>
+        
 
 
         </Row>

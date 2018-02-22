@@ -14,6 +14,9 @@
   }
 }
 
+#exampleSelect{
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 500px) {
   #Search_laws{
     margin-bottom: 30px;

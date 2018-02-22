@@ -4,11 +4,13 @@
 
 #disclaimerright{
   float: right;
+  padding-right: 10px;
 }
 
 #copyrightleft
 {
   float: left;
+  padding-left: 10px;
 }
 
 .footer{

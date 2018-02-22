@@ -11,6 +11,7 @@ import OurTeam from '../comps/OurTeam/OurTeam.jsx';
 import Accolades from '../comps/Accolades/Accolades.jsx';
 
 
+
 export default class Home extends Component {
   constructor() {
   super();

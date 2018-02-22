@@ -10,7 +10,7 @@ export default class Accoladese extends Component {
         <Container fluid>
 
         <Row id="AccoladesRow">
-          <Container>
+          <Container id="innerAccoladesContainer">
             <Row>
             <Col lg="6" md="6" sm="6" xs="12" id="TigerLaunch" className="AccoladesCol">
               <img src="TigerLaunch.png"></img>

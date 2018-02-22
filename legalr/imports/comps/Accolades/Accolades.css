@@ -1,16 +1,35 @@
 #Almaworks img {
  display: block;
- max-width:230px;
- max-height:230px;
+ max-width:270px;
+ max-height:270px;
  width: auto;
  height: auto;
  margin: auto;
 }
 
+@media screen and (max-width: 9000px) {
 .AccoladesCol{
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+#innerAccoladesContainer{
+  width: 50%;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+.AccoladesCol{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+#innerAccoladesContainer{
+  width: 100%;
+}
+}
+
 
 #TigerLaunch img {
  display: block;
@@ -20,6 +39,7 @@
  height: auto;
  margin: auto;
 }
+
 
 #AccoladesRow{
   background-color: rgba(204, 204, 204, 0.2);
