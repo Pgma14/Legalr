@@ -2,6 +2,11 @@
   color: white;
 }
 
+#disclaimerright a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
 #disclaimerright{
   float: right;
   padding-right: 10px;
