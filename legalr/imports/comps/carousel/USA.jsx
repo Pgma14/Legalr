@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scrollchor from 'react-scrollchor';
 import './USA.css';
 
 export default class USmap extends Component {
@@ -12,11 +13,12 @@ export default class USmap extends Component {
 
                                       <switch>
                                             <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1">
-                                            
+
                                             </foreignObject>
                                             <g iextraneous="self">
                                                 <sodipodinamedview id="namedview69" inkscapewindow-height="1137" inkscapewindow-width="1920" inkscapepageshadow="2" inkscapepageopacity="0" inkscapewindow-y="118" inkscapewindow-x="1192" inkscapecurrent-layer="svg2" objecttolerance="10" inkscapecy="409.3738" inkscapezoom="0.80893016" inkscapecx="817.66365" borderopacity="1" gridtolerance="10" pagecolor="#ffffff" showgrid="false" bordercolor="#666666" guidetolerance="10" inkscapewindow-maximized="1">
                                                 </sodipodinamedview>
+                                                <Scrollchor to="#Search_laws" className="scroll" animate={{offset: 0, duration: 800}}>
                                                           <path  href="#data_table_header" fill="#C3C5C7" stroke="#FFFFFF" strokeWidth="0.75" strokeLinejoin="round" d="M962.815,134.997l0.679,3.3l-3.203,2.426    l-3.591,0.292l-7.183-7.668l-3.203-4.853l0.568-0.603c-0.771-0.75-0.922-2.02-0.451-2.977l-0.214-0.013l-1.359-3.203l-0.097-0.194    l-5.533,6.018l-12.229,4.077l-3.979,1.262l-0.68,0.291l-5.533,1.65l-1.94,0.68l-2.232,0.68l-0.776,0.291v0.291l0.291,5.047    l0.291,4.659l0.291,4.271l0.485,0.292l1.747-0.485l7.862-2.33l0.194,0.485l13.977-5.338l0.098,0.194l1.262-0.485l4.465-1.747    l4.271,5.145l0.582-0.485l0.292-1.456l-0.098,2.33h0.971l0.291,1.165l0.149,0.282c0.253,0.254,0.418,0.579,0.493,0.93l0.231,0.438    l4.562-5.533l3.786,1.262l0.873-1.941l6.212-3.3L962.815,134.997z"/>
                                                           <path  href="#data_table_header" id="MN" inkscapeconnector-curvature="0" fill="#C3C5C7" stroke="#FFFFFF" strokeWidth="0.75" strokeLinejoin="round" d="    M558.547,73.847l1.941,6.892l4.077,24.848l1.94,9.9l0.583,8.736l2.232,5.241l0.485,4.465l0.388,1.456l-0.097,0.292l-3.883,6.406    l2.523,4.271l4.854,34.166l0.194,4.465l4.854-0.291l19.121-1.067l47.755-3.98l4.756-0.485v-0.485l-1.358-7.474l-5.921-3.009    l-4.659-4.853l-7.377-4.465l-2.329-0.194l-3.592-2.718l0.971-13.395l-3.396-3.106l1.164-5.436l6.212-5.629l-1.067-11.648    l2.232-2.523l0,0l7.571-7.959l8.639-11.065l3.3-2.33l5.824-2.815l6.114-4.562l-4.076,0.776l-2.427-1.844l-9.318,1.262    l-1.456-1.747l-8.347,3.397l-6.697-2.814l-1.845-2.232l-5.339,0.388l-3.591-1.844l1.165-1.359l-4.563-1.456h-4.076l-6.504,2.815    l-1.262-1.941l-10.288-1.456l-3.495-8.735l-0.388-2.621l-4.465-1.262l0.388,7.474l-11.841,0.874l-14.657,0.583L558.547,73.847    L558.547,73.847z"/>
                                                           <path  href="#data_table_header" id="MT" inkscapeconnector-curvature="0" fill="#C3C5C7" stroke="#FFFFFF" strokeWidth="0.75" strokeLinejoin="round" d="    M465.658,72.974l-32.128-2.135l-23.393-2.232l-23.295-2.718l-14.463-1.941l-23.101-3.591l-11.551-1.941l-25.818-4.95l-2.718-0.582    l-4.174,19.801l1.844,3.591l1.456,5.533l-0.873,0.776l1.844,5.047l2.523,2.135l7.183,12.036l0.68,2.038l2.912-0.194l-3.397,15.918    l-1.358,0.388l-1.845,5.339l9.609,0.679l0.776,4.465l5.436,13.298l0.971,0.776l3.785,7.765l0.971-0.776l8.057-0.097l10.191,1.067    l2.523-3.3l3.01,5.436l0.582,0.291l0.097-0.583l1.359-9.512l33.195,4.077l26.498,2.524l13.978,1.165l24.945,1.456l1.262,0.097    h0.291l0.097-1.359l0.292-6.697l0.388-8.833l0.098-2.232l0.193-3.882l1.554-30.478l1.262-23.684l0.097-3.882L465.658,72.974    L465.658,72.974z"/>
@@ -104,7 +106,9 @@ export default class USmap extends Component {
                                                           <polygon href="#data_table_header" fill="#C3C5C7" stroke="#FFFFFF" strokeWidth="0.75" strokeLinejoin="round" points="122.809,479.842 122.809,479.842     122.667,479.842   "/>
                                                           <polygon href="#data_table_header" fill="#C3C5C7" stroke="#FFFFFF" strokeWidth="0.75" strokeLinejoin="round" points="123.661,480.126 123.094,479.842     123.094,479.983 123.661,480.126   "/>
                                                           <polygon href="#data_table_header" fill="#C3C5C7" stroke="#FFFFFF" strokeWidth="0.75" strokeLinejoin="round" points="122.809,479.559 122.809,479.275     122.525,479.559   "/>
+                                                        </Scrollchor>
                                                         </g>
+
                                       </switch>
                             </svg>
     )

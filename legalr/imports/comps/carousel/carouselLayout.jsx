@@ -21,14 +21,16 @@ export default class DemoCarousel extends Component {
         naturalSlideHeight={75}
         totalSlides={4}
       >
-        <Scrollchor to="#Search_laws" className="scroll" animate={{offset: 0, duration: 800}}>
+
         <Slider onFocus="null">
-          <Slide index={0}><USmap /></Slide>
+          <Slide index={0}>
+            <USmap />
+          </Slide>
           <Slide index={1}><CanadaMap /></Slide>
           <Slide index={2}><EUmap /></Slide>
           <Slide index={3}><FranceMap /></Slide>
         </Slider>
-        </Scrollchor>
+
 
         <ButtonBack><i className="fa fa-chevron-left" id="left-chevron"></i></ButtonBack>
         <ButtonNext><i className="fa fa-chevron-right" id="right-chevron" ></i></ButtonNext>
