@@ -8,6 +8,7 @@ import Divider from '../comps/Divider/Divider.jsx';
 import SearchLayout from '../comps/searchArea/SearchLayout.jsx';
 import WhatWeDo from '../comps/WhatWeDo/WhatWeDo.jsx';
 import OurTeam from '../comps/OurTeam/OurTeam.jsx';
+import Accolades from '../comps/Accolades/Accolades.jsx';
 
 
 export default class Home extends Component {
@@ -51,6 +52,10 @@ render() {
         <Container fluid>
           <OurTeam />
         </Container>
+
+        <Container fluid>
+          <Accolades />
+        </Container>
       </Container>
     </div>
     );
@@ -77,6 +82,10 @@ render() {
 
         <Container fluid>
           <OurTeam />
+        </Container>
+
+        <Container fluid>
+          <Accolades />
         </Container>
 
     </Container>

@@ -1,0 +1,26 @@
+#Almaworks img {
+ display: block;
+ max-width:230px;
+ max-height:230px;
+ width: auto;
+ height: auto;
+ margin: auto;
+}
+
+.AccoladesCol{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#TigerLaunch img {
+ display: block;
+ max-width:120px;
+ max-height:70px;
+ width: auto;
+ height: auto;
+ margin: auto;
+}
+
+#AccoladesRow{
+  background-color: rgba(204, 204, 204, 0.2);
+}

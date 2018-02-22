@@ -60,21 +60,21 @@ export default class MyNavbar extends Component {
 
               <NavItem>
                 <NavLink className="MenuOptions" href="/">
+                  <Scrollchor to="#what_we_do" className="scroll" animate={{offset: 0, duration: 1000}}>
                 <span className="MenuOptions">
-                  Resolutions
+                  What We Do
                 </span>
+                  </Scrollchor>
               </NavLink>
               </NavItem>
 
 
               <NavItem>
 
-                <NavLink className="MenuOptions">
-                    <Scrollchor to="#Our_Team" className="scroll" animate={{offset: 0, duration: 1000}}>
+                <NavLink className="MenuOptions" href="/">
                       <span className="MenuOptions">
                         Our Team
                       </span>
-                  </Scrollchor>
                 </NavLink>
               </NavItem>
 
