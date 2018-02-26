@@ -15,10 +15,17 @@ export default class SearchBar extends Component {
     this.toggleSplit = this.toggleSplit.bind(this);
     this.state = {
       dropdownOpen: false,
-      splitButtonOpen: false
+      splitButtonOpen: false,
+      term: '',
     };
+
    this.toggle = this.toggle.bind(this);
   }
+
+  onInputChange(term) {
+        this.setState({term});
+        this.props.onTermChange(term);
+    }
 
   toggleDropDown() {
     this.setState({
@@ -48,7 +55,8 @@ export default class SearchBar extends Component {
 
 
     <InputGroup id="adv-search">
-      <Input type="text" placeholder="Search key words, topics, etc..." />
+      <Input type="text" placeholder="Search key words, topics, etc..."
+        onChange={event => this.onInputChange(event.target.value)}/>
       <InputGroupButtonDropdown className="input-group-btn" addonType="append" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
         <DropdownToggle split outline className="button" />
         <DropdownMenu>

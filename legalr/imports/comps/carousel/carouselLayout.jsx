@@ -32,8 +32,8 @@ export default class DemoCarousel extends Component {
         </Slider>
 
 
-        <ButtonBack><i className="fa fa-chevron-left" id="left-chevron"></i></ButtonBack>
-        <ButtonNext><i className="fa fa-chevron-right" id="right-chevron" ></i></ButtonNext>
+        <ButtonBack id="ButtonBack"><i className="fa fa-chevron-left" id="left-chevron"></i></ButtonBack>
+        <ButtonNext id="ButtonNext"><i className="fa fa-chevron-right" id="right-chevron" ></i></ButtonNext>
       </CarouselProvider>
   </div>
     );

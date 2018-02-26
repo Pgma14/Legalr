@@ -1,12 +1,31 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
+import GifList from './GifList.jsx';
 import SearchBar from './SearchBar.jsx';
 import LawLayout from './LawLayout.jsx';
+import request from 'superagent';
 
 import './SearchBar.css';
 
 export default class SearchLayout extends Component {
+  constructor() {
+        super();
+
+        this.state = {
+            gifs: []
+        }
+    }
+
+  handleTermChange = (term) => {
+    const url = `http://api.giphy.com/v1/gifs/search?q=${term.replace(/\s/g, '+')}&api_key=dc6zaTOxFJmzC`;
+
+          request.get(url, (err, res) => {
+              this.setState({ gifs: res.body.data })
+         });
+ }
+
+
   render () {
     return (
     <div>
@@ -18,7 +37,8 @@ export default class SearchLayout extends Component {
      </Row>
 
       <div className="container">
-        <SearchBar />
+        <SearchBar onTermChange={this.handleTermChange} />
+        <GifList gifs={this.state.gifs} />
       </div>
       <div className="container">
         <LawLayout />
