@@ -11,6 +11,7 @@ import DemoCarousel from '../comps/carousel/carouselLayout.jsx';
 import Footer from '../comps/Footer/Footer.jsx';
 import Divider from '../comps/Divider/Divider.jsx';
 import Home from './Home.jsx';
+import Demo from './Demo.jsx';
 
 const MainLayout = () => {
   return (
@@ -23,6 +24,7 @@ const MainLayout = () => {
         <Router>
           <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/demo" component={Demo} />
           <Route exact path="/resolutions" component={ResolutionsWrapper} />
           <Route path="/about" component={About} />
           </Switch>
