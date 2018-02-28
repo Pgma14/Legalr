@@ -1,17 +1,29 @@
-.Header_Background{
-  position: relative;
-}
-
 #Header_Col{
 background-color: rgb(0,0,77);
 height: 600px;
 }
 
-#Logo{
+#Header_Row1{
   top: 30%;
-  position: absolute;
+}
+
+#Logo{
+  margin-top: 150px;
   display: block;
   color: white;
+}
+
+#alert-signup{
+  padding-top: 60px;
+  display: block;
+  padding-top: 15px;
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#alert-signup input{
+width: 100%;
 }
 
 #Logo h1{
