@@ -10,9 +10,16 @@ export default class LandingHeader extends Component{
       <Container fluid className="Header_Background">
         <Row>
           <Col md="12" sm="12" xs="12" className="text-center" id="Header_Col">
-          <h1 id="Logo">
-            Hi
-          </h1>
+            <Row>
+              <Col md="12" sm="12" xs="12" className="text-center" id="Logo">
+                <h1>
+                  Action made easy.
+                </h1>
+                <br></br>
+              <h4>Passionate about _____?</h4>
+
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

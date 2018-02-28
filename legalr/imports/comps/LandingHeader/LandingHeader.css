@@ -9,7 +9,16 @@ height: 600px;
 
 #Logo{
   top: 30%;
-  right: 50%;
   position: absolute;
+  display: block;
+  color: white;
+}
+
+#Logo h1{
+  color: white;
+}
+
+
+#Logo h4{
   color: white;
 }

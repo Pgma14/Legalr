@@ -21,11 +21,11 @@ render() {
         </Container>
 
         <Container fluid>
-          <Divider />
+
         </Container>
 
         <Container>
-          <SearchLayout />
+
         </Container>
 
         <Container>
