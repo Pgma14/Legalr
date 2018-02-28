@@ -37,7 +37,7 @@ export default class MyNavbar extends Component {
       <div>
     <Container fluid>
       <Row>
-        <Navbar color="faded" light expand="md">
+        <Navbar expand="md">
 
         <Container>
           <NavbarBrand href="/" className="navbar-brand_logo">
@@ -49,11 +49,12 @@ export default class MyNavbar extends Component {
 
          <NavbarBrand>
             <span className="navbar-brand_text">Legal<span id="r">r</span>
-            <span id="alpha">(alpha)</span></span>
+            <span id="alpha"></span></span>
         </NavbarBrand>
 
 
-          <div className="navbar-toggle"> <NavbarToggler onClick={this.toggle} />
+          <div className="navbar-toggle">
+            <span><i className="fa fa-bars" onClick={this.toggle}></i></span>
           </div>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto static-top" navbar>

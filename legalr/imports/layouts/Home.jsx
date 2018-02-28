@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 import './Home.css';
 
-import DemoCarousel from '../comps/carousel/carouselLayout.jsx';
+import LandingHeader from '../comps/LandingHeader/LandingHeader.jsx';
 import Divider from '../comps/Divider/Divider.jsx';
 import SearchLayout from '../comps/searchArea/SearchLayout.jsx';
 import WhatWeDo from '../comps/WhatWeDo/WhatWeDo.jsx';
@@ -16,8 +16,8 @@ render() {
   <div>
     <Container fluid>
 
-        <Container>
-          <DemoCarousel />
+        <Container fluid>
+          <LandingHeader />
         </Container>
 
         <Container fluid>

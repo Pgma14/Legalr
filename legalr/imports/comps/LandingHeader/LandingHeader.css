@@ -1,0 +1,15 @@
+.Header_Background{
+  position: relative;
+}
+
+#Header_Col{
+background-color: rgb(0,0,77);
+height: 600px;
+}
+
+#Logo{
+  top: 30%;
+  right: 50%;
+  position: absolute;
+  color: white;
+}
