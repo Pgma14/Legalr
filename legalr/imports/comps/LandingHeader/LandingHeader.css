@@ -15,8 +15,8 @@ height: 600px;
 
 #AlertButton{
   border: none;
-  background-color: grey;
-  height: 25px;
+  background-color: rgb(11, 112, 213);
+  height: 30px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 10px;
@@ -27,10 +27,14 @@ height: 600px;
 #AlertButton p{
   font-size: 14px;
   color: white;
+  margin-bottom: 0px;
 }
 
+.notification{
+  display:block;
+}
 #AlertButton:hover{
-   background-color: #cccccc;
+   background-color: rgb(6, 86, 167);
 }
 
 #alert-form{
@@ -49,7 +53,9 @@ height: 600px;
 
 #alert-signup input{
 flex: 1;
-height: 25px;
+height: 30px;
+background-color: white;
+border: none;
 }
 
 #Logo h1{
@@ -60,7 +66,9 @@ height: 25px;
 *{
   box-shadow: none !important;
 }
-
+*{
+  outline: none !important;
+}
 #Logo h4{
   color: white;
   font-size: 30px;

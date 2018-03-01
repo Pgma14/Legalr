@@ -74,11 +74,11 @@ class SubscribeForm extends React.Component {
             >
               <p>Sign Up</p>
             </button>
+              </form>
+          {status === "sending" && <p className="notification" style={styles.sending} dangerouslySetInnerHTML={{ __html: messages.sending }} />}
+          {status === "success" && <p className="notification" style={styles.success} dangerouslySetInnerHTML={{ __html: messages.success || msg }} />}
+          {status === "error" && <p className="notification" style={styles.error} dangerouslySetInnerHTML={{ __html: messages.error || msg }} />}
 
-          {status === "sending" && <p style={styles.sending} dangerouslySetInnerHTML={{ __html: messages.sending }} />}
-          {status === "success" && <p style={styles.success} dangerouslySetInnerHTML={{ __html: messages.success || msg }} />}
-          {status === "error" && <p style={styles.error} dangerouslySetInnerHTML={{ __html: messages.error || msg }} />}
-        </form>
       </div>
     )
   }
