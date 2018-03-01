@@ -13,24 +13,55 @@ height: 600px;
   color: white;
 }
 
+#AlertButton{
+  border: none;
+  background-color: grey;
+  height: 25px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 500;
+}
+
+#AlertButton p{
+  font-size: 14px;
+  color: white;
+}
+
+#AlertButton:hover{
+   background-color: #cccccc;
+}
+
+#alert-form{
+  padding-top: 60px;
+  display: flex;
+  width: 250px;
+  margin-bottom: 30px;
+}
+
 #alert-signup{
   padding-top: 60px;
-  display: block;
-  padding-top: 15px;
-  width: 210px;
-  margin: 0 auto;
+  width: 270px;
+  margin: auto;
   margin-bottom: 30px;
 }
 
 #alert-signup input{
-width: 100%;
+flex: 1;
+height: 25px;
 }
 
 #Logo h1{
   color: white;
+  font-size: 50px;
 }
 
+*{
+  box-shadow: none !important;
+}
 
 #Logo h4{
   color: white;
+  font-size: 30px;
 }

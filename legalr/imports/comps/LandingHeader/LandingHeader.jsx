@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { InputGroup, InputGroupAddon, InputGroupText, Button, Input, InputGroupDropDown, InputGroupButtonDropdown } from 'reactstrap';
 
-
+import Form from './EmailInput.jsx';
 import './LandingHeader.css';
 
 export default class LandingHeader extends Component{
@@ -19,10 +19,9 @@ export default class LandingHeader extends Component{
                 <br></br>
               <h4>Passionate about _____?</h4>
               </Col>
-              <Col md="12" sm="12" xs="12" className="text-center" id="alert-signup">
+              <Col md="12" sm="12" xs="12" className="text-center" id="alert-signup" >
                 <InputGroup>
-                  <Input type="text" placeholder="E-mail" />
-                  <InputGroupAddon addonType="append"><Button>A</Button></InputGroupAddon>
+                  <Form />
                 </InputGroup>
               </Col>
           </Col>
