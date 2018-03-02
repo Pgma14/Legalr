@@ -19,12 +19,12 @@ export default class HowItWorks extends Component {
                     <h3 className="text-center">Let us know a little about you</h3>
                   </Col>
                   <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIcons text-center">
-                    <i className="HowItWorksUser fa fa-user" />
+                    <i className="HowItWorksUser fa fa-mobile" />
                     <h3>Get alerts and summaries on the issues you care about</h3>
                   </Col>
                   <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIcons text-center">
-                    <i className="HowItWorksUser fa fa-user" />
-                    <h3>Get connected with next steps on how to make a difference</h3>
+                    <i className="HowItWorksUser fa fa-rocket" />
+                    <h3>Get connected with next steps. Make a difference.</h3>
                   </Col>
               </Row>
              </Container>
