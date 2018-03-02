@@ -1,0 +1,141 @@
+@media screen and (max-width: 800px) {
+  #How_It_Works_container {
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #How_It_Works_container {
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #How_It_Works_h1 {
+    max-width: 407px;
+    padding-left: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #How_It_Works_h1 {
+    max-width: 407px;
+    padding-left: 14px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #How_It_Works_h1 {
+    max-width: 407px;
+    padding-left: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading-subtext-bolder {
+    max-width: 407px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heading-subtext-bolder {
+    max-width: 407px;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heading-subtext-bolder {
+    max-width: 407px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .heading-subtext-bolder {
+    max-width: 407px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .heading-subtext {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heading-subtext {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heading-subtext {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heading-subtext {
+    max-width: 660px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heading-subtext {
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heading-subtext {
+    max-width: 407px;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heading-subtext {
+    max-width: 407px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .heading-subtext {
+    max-width: 407px;
+    padding-left: 12px;
+  }
+}
+
+#HowItWorksRow{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.HowItWorksUser{
+  font-size: 100px;
+  padding-top: 10px;
+}
+
+#HowItWorks-background{
+  background-color: rgba(204, 204, 204, 0.1);
+  height: auto;
+  padding-top: 50px;
+}
+
+#How_It_Works_h1{
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.HowItWorksIcons h3{
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 20px;
+  font-size: 23px;
+  font-weight: 600;
+}

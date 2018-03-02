@@ -9,6 +9,7 @@ import SearchLayout from '../comps/searchArea/SearchLayout.jsx';
 import WhatWeDo from '../comps/WhatWeDo/WhatWeDo.jsx';
 import OurTeam from '../comps/OurTeam/OurTeam.jsx';
 import Accolades from '../comps/Accolades/Accolades.jsx';
+import HowItWorks from '../comps/HowItWorks/HowItWorks.jsx';
 
 export default class Home extends Component {
 render() {
@@ -21,7 +22,7 @@ render() {
         </Container>
 
         <Container fluid>
-
+          <HowItWorks />
         </Container>
 
         <Container>
