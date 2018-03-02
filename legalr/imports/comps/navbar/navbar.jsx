@@ -61,9 +61,9 @@ export default class MyNavbar extends Component {
 
               <NavItem>
                 <NavLink className="MenuOptions" href="/">
-                  <Scrollchor to="#what_we_do" className="scroll" animate={{offset: 0, duration: 1000}}>
+                  <Scrollchor to="#How_It_Works" className="scroll" animate={{offset: 0, duration: 1000}}>
                 <span className="MenuOptions">
-                  What We Do
+                  How It Works
                 </span>
                   </Scrollchor>
               </NavLink>
@@ -81,7 +81,7 @@ export default class MyNavbar extends Component {
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+            {/*}  <NavItem>
                 <NavLink className="MenuOptions">
                   <Scrollchor to="#Search_laws" className="scroll" animate={{offset: 0, duration: 800}}>
                   <span className="MenuOptions">
@@ -89,7 +89,7 @@ export default class MyNavbar extends Component {
                   </span>
                 </Scrollchor>
                   </NavLink>
-              </NavItem>
+              </NavItem> {*/}
 
             </Nav>
           </Collapse>

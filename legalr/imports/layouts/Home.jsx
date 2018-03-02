@@ -26,11 +26,9 @@ render() {
         </Container>
 
         <Container>
-
         </Container>
 
         <Container>
-          <WhatWeDo />
         </Container>
 
         <Container fluid>
