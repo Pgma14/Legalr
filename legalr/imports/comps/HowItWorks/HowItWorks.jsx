@@ -14,16 +14,16 @@ export default class HowItWorks extends Component {
             </div>
               <Container>
               <Row id="HowItWorksRow">
-                  <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIcons text-center">
-                    <i className="HowItWorksUser fa fa-user" />
+                  <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIconSection text-center">
+                    <i className="HowItWorksIcons fa fa-user" />
                     <h3 className="text-center">Let us know a little about you</h3>
                   </Col>
-                  <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIcons text-center">
-                    <i className="HowItWorksUser fa fa-mobile" />
+                  <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIconSection text-center">
+                    <i className="HowItWorksIcons fa fa-mobile" />
                     <h3>Get alerts and summaries on the issues you care about</h3>
                   </Col>
-                  <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIcons text-center">
-                    <i className="HowItWorksUser fa fa-rocket" />
+                  <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIconSection text-center">
+                    <i className="HowItWorksIcons fa fa-rocket" />
                     <h3>Get connected with next steps. Make a difference.</h3>
                   </Col>
               </Row>

@@ -116,9 +116,10 @@
   padding-bottom: 80px;
 }
 
-.HowItWorksUser{
+.HowItWorksIcons{
   font-size: 100px;
   padding-top: 10px;
+  color: rgba(74, 73, 73, 1);
 }
 
 #HowItWorks-background{
@@ -130,12 +131,14 @@
 #How_It_Works_h1{
   font-weight: 700;
   font-size: 50px;
+  color: rgb(74, 73, 73);
 }
 
-.HowItWorksIcons h3{
+.HowItWorksIconSection h3{
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 20px;
   font-size: 23px;
   font-weight: 600;
+  color: rgb(74, 73, 73);
 }

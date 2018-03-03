@@ -17,7 +17,7 @@ export default class LandingHeader extends Component{
                   Action made easy.
                 </h1>
                 <br></br>
-              <h4>Passionate about _____?</h4>
+              <h4>Learn about the issues that affect you. Make a difference.</h4>
               </Col>
               <Col md="12" sm="12" xs="12" className="text-center" id="alert-signup" >
                 <InputGroup>

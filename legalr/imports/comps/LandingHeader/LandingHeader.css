@@ -16,7 +16,7 @@ height: 600px;
 #AlertButton{
   border: none;
   background-color: rgb(11, 112, 213);
-  height: 30px;
+  height: 35px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 10px;
@@ -25,7 +25,7 @@ height: 600px;
 }
 
 #AlertButton p{
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   margin-bottom: 0px;
 }
@@ -45,22 +45,39 @@ height: 600px;
 }
 
 #alert-signup{
-  padding-top: 40px;
   width: 270px;
   margin: auto;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 9000px) {
+  #alert-signup {
+    padding-top: 55px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #alert-signup {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #alert-signup {
+    padding-top: 10px;
+  }
+}
+
 #alert-signup input{
 flex: 1;
-height: 30px;
+height: 35px;
 background-color: white;
 border: none;
 }
 
 #Logo h1{
   color: white;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 *{
@@ -71,5 +88,5 @@ border: none;
 }
 #Logo h4{
   color: white;
-  font-size: 30px;
+  font-size: 27px;
 }
