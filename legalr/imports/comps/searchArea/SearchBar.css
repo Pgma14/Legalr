@@ -192,8 +192,8 @@ background-color: #1353eb;
 
 
 input{
-  border-top-left-radius: 8px !important;
-  border-bottom-left-radius: 8px !important;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .btn-primary{
   background-color: #3369e8
