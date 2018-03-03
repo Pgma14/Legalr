@@ -8,9 +8,9 @@ const formProps = {
     messages: {
     inputPlaceholder: "E-mail",
     btnLabel: "Sign Up",
-    sending: "Sending",
-    success: "Thank you for signing up!",
-    error: "Please enter a valid e-mail address."
+    sending: "",
+    success: "",
+    error: "error"
   },
   styles: {
     sending: {

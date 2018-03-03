@@ -122,8 +122,8 @@
 
     }
 
-    @media screen and (max-width: 9000px) {.what_we_do-background {height: 570px; padding-top: 100px;} }
-    @media screen and (max-width: 1800px) {.what_we_do-background {height: auto; padding-top: 100px; padding-bottom: 150px; } }
+    @media screen and (max-width: 9000px) {.what_we_do-background {height: 570px; padding-top: 100px; padding-bottom: 120px;} }
+    @media screen and (max-width: 1800px) {.what_we_do-background {height: auto; padding-top: 100px; padding-bottom: 120px; } }
     @media screen and (max-width: 800px) {.what_we_do-background {height: 580px; padding-top: 40px; } }
     @media screen and (max-width: 480px) {.what_we_do-background {height:630px;  padding-top: 70px;} }
     @media screen and (max-width: 430px) {.what_we_do-background {height:570px;  padding-top: 70px;} }

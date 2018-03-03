@@ -69,7 +69,8 @@ height: 600px;
 }
 
 #alert-signup input{
-flex: 1;
+flex: 0.8;
+margin-left: 10px;
 height: 35px;
 background-color: white;
 border: none;

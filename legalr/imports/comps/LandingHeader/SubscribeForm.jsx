@@ -40,21 +40,24 @@ class SubscribeForm extends React.Component {
         param: "c"
       }, (err, data) => {
         if (err) {
+          Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right');
           this.setState({
             status: 'error',
-            msg: err
+            msg: '',
           })
         } else if (data.result !== 'success') {
+          Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right');
           this.setState({
             status: 'error',
-            msg: data.msg,
+            msg: '',
           })
 
         } else {
+          Bert.alert('Thank you for signing up!', 'info', 'growl-bottom-right');
           this.input.value = "";
           this.setState({
             status: 'success',
-            msg: data.msg,
+            msg: '',
             inputPlaceholder: "E-mail",
             value: '',
           })
@@ -87,9 +90,8 @@ class SubscribeForm extends React.Component {
               <p>Sign Up</p>
             </button>
               </form>
-          {status === "sending" && <p className="notification" style={styles.sending} dangerouslySetInnerHTML={{ __html: messages.sending }} />}
-          {status === "success" && <p className="notification" style={styles.success} dangerouslySetInnerHTML={{ __html: messages.success || msg }} />}
-          {status === "error" && <p className="notification" style={styles.error} dangerouslySetInnerHTML={{ __html: messages.error || msg }} />}
+              
+          {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right')}
 
       </div>
     )
