@@ -26,7 +26,7 @@ render() {
           <HowItWorks />
         </Container>
 
-        <Container>
+        <Container fluid>
           <WhatWeDoV2 />
         </Container>
 

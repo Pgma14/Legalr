@@ -1,5 +1,5 @@
 #Header_Col{
-background: linear-gradient(rgba(0,0,77,0.96), rgba(0,0,77,0.8) );
+background: linear-gradient(rgba(0,0,77,0.93), rgba(100, 56, 255, 1) );
 height: 600px;
 }
 
@@ -69,8 +69,7 @@ height: 600px;
 }
 
 #alert-signup input{
-flex: 0.8;
-margin-left: 10px;
+flex: 1;
 height: 35px;
 background-color: white;
 border: none;

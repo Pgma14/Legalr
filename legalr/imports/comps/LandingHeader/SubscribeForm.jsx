@@ -70,6 +70,7 @@ class SubscribeForm extends React.Component {
     const { status, msg } = this.state
     return (
       <div className={className} style={style}>
+        <center>
         <form onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
 
             <input
@@ -86,11 +87,12 @@ class SubscribeForm extends React.Component {
               type="submit"
               className="btn-group"
               id="AlertButton"
+              className="text-center"
             >
               <p>Sign Up</p>
             </button>
               </form>
-              
+              </center>
           {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right')}
 
       </div>

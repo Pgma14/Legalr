@@ -112,7 +112,7 @@
 }
 
 .what_we_do-background{
-        background-color:#FFF;
+        background-color: rgba(192, 192, 192, 0.1);
         width:95%;
         background-size:100% 100%;
         background-repeat:no-repeat;
