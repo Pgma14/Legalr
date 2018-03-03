@@ -12,9 +12,16 @@ class SubscribeForm extends React.Component {
     super(props, ...args)
     this.state = {
       status: null,
-      msg: null
-    }
+      msg: null,
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  handleSubmit(event) {
+  event.preventDefault();
+  this.setState({ value: '' });
+}
+
   onSubmit = e => {
     e.preventDefault()
     if (!this.input.value || this.input.value.length < 5 || this.input.value.indexOf("@") === -1) {
@@ -39,12 +46,15 @@ class SubscribeForm extends React.Component {
         } else if (data.result !== 'success') {
           this.setState({
             status: 'error',
-            msg: data.msg
+            msg: data.msg,
           })
+
         } else {
+          this.input.defaultValue = "";
           this.setState({
             status: 'success',
-            msg: data.msg
+            msg: data.msg,
+            inputPlaceholder: "E-mail"
           })
         }
       })
@@ -55,7 +65,7 @@ class SubscribeForm extends React.Component {
     const { status, msg } = this.state
     return (
       <div className={className} style={style}>
-        <form action={action} method="post" id="alert-form" noValidate>
+        <form onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
 
             <input
               ref={node => (this.input = node)}
