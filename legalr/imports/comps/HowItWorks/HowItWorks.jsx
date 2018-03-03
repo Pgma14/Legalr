@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import './HowItWorks.css';
 
@@ -9,6 +10,7 @@ export default class HowItWorks extends Component {
       <Container fluid className="text-center" id="How_It_Works">
         <Row>
           <Col md="12" sm="12" xs="12" className="text-center" id="HowItWorks-background">
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
             <div id="How_It_Works_container">
                 <h1 id="How_It_Works_h1">How It Works</h1>
             </div>
@@ -28,6 +30,7 @@ export default class HowItWorks extends Component {
                   </Col>
               </Row>
              </Container>
+                 </ScrollAnimation>
           </Col>
         </Row>
       </Container>

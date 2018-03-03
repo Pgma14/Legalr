@@ -9,6 +9,8 @@ import { render, ReactDOM } from 'react-dom';
 
 import '../imports/routes';
 import './index.html';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 Law = new Mongo.Collection('laws');

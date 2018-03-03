@@ -13,7 +13,7 @@ export default class LandingHeader extends Component{
         <Row id="Header_Row1">
           <Col md="12" sm="12" xs="12" className="text-center" id="Header_Col">
               <Col md="12" sm="12" xs="12" className="text-center" id="Logo">
-                <h1>
+                <h1 className="animated fadeIn">
                   Action made easy.
                 </h1>
                 <br></br>

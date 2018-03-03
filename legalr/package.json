@@ -7,6 +7,8 @@
   "dependencies": {
     "@appbaseio/reactivesearch": "^2.2.3",
     "@babel/runtime": "^7.0.0-beta.39",
+    "animate.css": "^3.6.1",
+    "aos": "^2.2.0",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^1.0.3",
     "create-react-class": "^15.6.3",
@@ -20,6 +22,7 @@
     "prop-types": "^15.6.1",
     "pure-react-carousel": "^1.11.1",
     "react": "^16.2.0",
+    "react-animate-on-scroll": "^2.0.2",
     "react-create-class": "^1.0.0",
     "react-dom": "^16.2.0",
     "react-mailchimp-subscribe": "^1.0.3",

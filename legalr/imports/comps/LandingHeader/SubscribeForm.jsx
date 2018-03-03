@@ -18,8 +18,9 @@ class SubscribeForm extends React.Component {
   }
 
   handleSubmit(event) {
-  event.preventDefault();
-  this.setState({ value: '' });
+    event.preventDefault();
+    this.input.value = '';
+    this.setState({ value: '' });
 }
 
   onSubmit = e => {
@@ -50,11 +51,12 @@ class SubscribeForm extends React.Component {
           })
 
         } else {
-          this.input.defaultValue = "";
+          this.input.value = "";
           this.setState({
             status: 'success',
             msg: data.msg,
-            inputPlaceholder: "E-mail"
+            inputPlaceholder: "E-mail",
+            value: '',
           })
         }
       })
