@@ -22,7 +22,7 @@ export default class HowItWorks extends Component {
                   </Col>
                   <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIconSection text-center">
                     <i className="HowItWorksIcons fa fa-mobile" />
-                    <h3>Get alerts and summaries on the issues you care about</h3>
+                    <h3>Get alerts and custom summaries on the issues you care about</h3>
                   </Col>
                   <Col lg="4" md="4" sm="4" xs="12" className="HowItWorksIconSection text-center">
                     <i className="HowItWorksIcons fa fa-rocket" />

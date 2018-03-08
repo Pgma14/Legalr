@@ -5,6 +5,18 @@
   }
 }
 
+.fa-user{
+    color: rgb(26,35,126);
+}
+
+.fa-rocket{
+  color: rgb(26,35,126);
+}
+
+.fa-mobile{
+    color: rgb(26,35,126);
+}
+
 @media screen and (max-width: 600px) {
   #How_It_Works_container {
     padding-bottom: 10px;
@@ -119,7 +131,7 @@
 .HowItWorksIcons{
   font-size: 100px;
   padding-top: 10px;
-  color: rgba(74, 73, 73, 1);
+  /*color: rgba(74, 73, 73, 1);*/
 }
 
 #HowItWorks-background{
@@ -131,7 +143,7 @@
 #How_It_Works_h1{
   font-weight: 700;
   font-size: 50px;
-  color: rgb(74, 73, 73);
+  color:  rgb(26,35,126);
 }
 
 .HowItWorksIconSection h3{
@@ -140,5 +152,5 @@
   padding-top: 20px;
   font-size: 23px;
   font-weight: 600;
-  color: rgb(74, 73, 73);
+  color: black;
 }

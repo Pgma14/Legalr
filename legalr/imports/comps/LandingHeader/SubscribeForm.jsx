@@ -53,7 +53,7 @@ class SubscribeForm extends React.Component {
           })
 
         } else {
-          Bert.alert('Thank you for signing up!', 'info', 'growl-bottom-right');
+          Bert.alert('Thank you for signing up! You will receive an e-mail shortly.', 'info', 'growl-bottom-right');
           this.input.value = "";
           this.setState({
             status: 'success',
