@@ -8,9 +8,30 @@ height: 600px;
 }
 
 #Logo{
-  margin-top: 150px;
   display: block;
   color: white;
+}
+
+@media screen and (max-width: 9000px) {
+  #Logo {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #Logo {
+    margin-top: 70px;
+  }
+  #Header_Col{
+    height: 530px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #Header_Col{
+    height: 570px;
+  }
 }
 
 #AlertButton{
@@ -44,6 +65,8 @@ height: 600px;
   display: flex;
   width: 300px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 #alert-signup{
@@ -66,24 +89,53 @@ height: 600px;
 
 @media screen and (max-width: 800px) {
   #alert-signup {
-    padding-top: 10px;
+    padding-top: 0px;
     right: 2%;
   }
 }
 
+@media screen and (max-width: 320px) {
+  #alert-signup {
+    padding-top: 0px;
+    right: 4%;
+  }
+}
+
 #alert-signup input{
-border-top-left-radius: 1px;
-border-bottom-left-radius: 1px;
-flex: 1;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
 height: 35px;
 background-color: white;
 border: none;
 }
 
-#Logo h1{
-  color: white;
-  font-size: 60px;
+@media screen and (max-width: 9000px) {
+  #alert-signup input{
+    flex: 1;
+  }
 }
+
+@media screen and (max-width: 400px) {
+  #alert-signup input{
+    flex: .7;
+  }
+}
+
+@media screen and (max-width: 9000px) {
+  #Logo h1{
+    color: white;
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #Logo h1{
+    color: white;
+    font-size: 50px;
+  }
+}
+
 
 *{
   box-shadow: none !important;
