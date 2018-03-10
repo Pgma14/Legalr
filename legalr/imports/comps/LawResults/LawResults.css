@@ -6,7 +6,7 @@
 #ResultsContainer{
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
   height: auto;
   background-color: white;
   border-radius: 5px;
@@ -14,9 +14,18 @@
 
 #SearchContainer{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 0px;
-  height: 500px;
+  height: 290px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#RecommendationContainer{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  height: 250px;
   background-color: white;
   border-radius: 5px;
 }
