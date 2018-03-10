@@ -8,7 +8,7 @@ export default class WhatWeDo extends Component {
     return (
       <Container className="section-what_we_do text-center" id="what_we_do">
         <Row>
-          <Col md="12" sm="12" xs="12" className="what_we_do-background text-center" id="what_we_do-background">
+          <Col md="12" sm="12" xs="12" className="what_we_do-background1 text-center" id="what_we_do-background">
             <div id="what_we_do_container">
                 <h1 id="what_we_do_h1">What We Do</h1>
                   <center>

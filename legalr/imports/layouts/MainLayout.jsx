@@ -12,6 +12,7 @@ import Footer from '../comps/Footer/Footer.jsx';
 import Divider from '../comps/Divider/Divider.jsx';
 import Home from './Home.jsx';
 import Demo from './Demo.jsx';
+import ResultsPage from './ResultsPage.jsx';
 
 const MainLayout = () => {
   return (
@@ -25,6 +26,7 @@ const MainLayout = () => {
           <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/demo" component={Demo} />
+          <Route exact path="/results" component={ResultsPage} />
           <Route exact path="/resolutions" component={ResolutionsWrapper} />
           <Route path="/about" component={About} />
           </Switch>

@@ -14,6 +14,10 @@
   }
 }
 
+#lawLayoutContainer{
+  padding-bottom: 20px;
+}
+
 #exampleSelect{
   margin-bottom: 10px;
 }

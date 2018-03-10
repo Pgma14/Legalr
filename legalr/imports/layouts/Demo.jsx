@@ -47,15 +47,15 @@ render() {
         </Container>
 
         <Container>
-          <WhatWeDo />
+
         </Container>
 
         <Container fluid>
-          <OurTeam />
+
         </Container>
 
         <Container fluid>
-          <Accolades />
+
         </Container>
       </Container>
     </div>
@@ -78,15 +78,15 @@ render() {
         </Container>
 
         <Container>
-          <WhatWeDo />
+
         </Container>
 
         <Container fluid>
-          <OurTeam />
+
         </Container>
 
         <Container fluid>
-          <Accolades />
+        
         </Container>
 
     </Container>

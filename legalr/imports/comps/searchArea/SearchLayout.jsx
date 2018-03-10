@@ -40,7 +40,7 @@ export default class SearchLayout extends Component {
         <SearchBar onTermChange={this.handleTermChange} />
         <GifList gifs={this.state.gifs} />
       </div>
-      <div className="container">
+      <div className="container" id="lawLayoutContainer">
         <LawLayout />
       </div>
     </div>
