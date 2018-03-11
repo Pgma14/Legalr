@@ -1,0 +1,112 @@
+#ResultBackground{
+  background-color: rgba(192, 192, 192, 0.2);
+  height: auto;
+}
+
+#ResultsContainer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  #ResultsContainer {
+  margin-left: 0px;
+  margin-right: 20px;
+  }
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#SearchContainer{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  height: 290px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .Supplements {
+  display: none;
+  }
+}
+
+#RecommendationContainer{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  height: 220px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#LawTitle{
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+#SummaryRow{
+  padding-top: 20px;
+}
+
+#TakeAction{
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.ActionIcon{
+  margin-top: 30px;
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+
+.ActionButton{
+  border: none;
+  background-color:  rgba(0,0,77,0.8) ;
+  height: 35px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.ActionButton p{
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.ActionButton:hover{
+  background-color:  rgba(0,0,77,1) ;
+}
+
+
+.ActionCard{
+  /* box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2); */
+  border-radius: 3px;
+  position: relative;
+  max-width: 330px;
+  margin: auto;
+}
+
+#govcard{
+  padding-right: 10px;
+}
+
+#megaphonecard{
+  padding-left: 10px;
+}
+
+/* .ActionCard:hover {box-shadow: 12px 15px 10px 1px rgba(46,61,73,0.15);}
