@@ -12,6 +12,13 @@
   border-radius: 5px;
 }
 
+#RelatedLawsH4{
+  padding-top: 10px;
+}
+#MoreInfoRow{
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 500px) {
   #ResultsContainer {
   margin-left: 0px;
@@ -50,6 +57,7 @@
 }
 
 #LawTitle{
+  font-weight: 700;
   padding-top: 25px;
   padding-bottom: 15px;
 }
@@ -94,19 +102,26 @@
 
 
 .ActionCard{
-  /* box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2); */
+  box-shadow: 2px 4px 8px 2px rgba(46,61,73,0.2);
   border-radius: 3px;
   position: relative;
   max-width: 330px;
   margin: auto;
 }
 
+.ActionCard:hover{
+  box-shadow: 2px 2px 4px 1px rgba(46,61,73,0.2);
+  background-color: rgba(192, 192, 192, 0.15);
+}
+
 #govcard{
   padding-right: 10px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 #megaphonecard{
   padding-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
-
-/* .ActionCard:hover {box-shadow: 12px 15px 10px 1px rgba(46,61,73,0.15);}
