@@ -22,10 +22,11 @@ export default class IndividualLawPage extends Component {
                   </Col>
                 </Col>
 
-                <Col md="8" sm="11" xs="12" className="text-center" id="ResultsContainer">
+                <Col md="9" sm="12" xs="12" className="text-center">
+                  <Col md="12" sm="12" xs="12" className="text-center" id="ResultsContainer">
                     <h3 id="LawTitle">An Act to Help Working Families</h3>
                     <Row id="SummaryRow">
-                      <Col md="6" sm="12" xs="12" className="text-center">
+                      <Col md="6" sm="12" xs="12" className="text-center SummaryCol">
                         <h5>Summary</h5>
                           <p>
                             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -40,7 +41,7 @@ export default class IndividualLawPage extends Component {
                             Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
                           </p>
                       </Col>
-                      <Col md="12" sm="12" xs="12" className="text-center">
+                    { /*}  <Col md="12" sm="12" xs="12" className="text-center MoreInfo">
                         <h4>More Info</h4>
                         <Row id="MoreInfoRow">
                           <Col md="4" sm="4" xs="4" className="MoreInfoCard text-center">
@@ -53,26 +54,37 @@ export default class IndividualLawPage extends Component {
                             <h6>Full Text</h6><i className="text-center fa fa-file-text"></i>
                           </Col>
                         </Row>
-                      </Col>
+                      </Col> {*/ }
                     </Row>
                     <h3 id="TakeAction">Take Action</h3>
                     <Container>
                       <Row>
-                        <Col md="6" sm="6" xs="12" className="text-center ActionCard" id="govcard">
+                        <Col md="6" sm="6" xs="12" className="text-center">
+                          <Col md="12" sm="12" xs="12" className="text-center  ActionCard" id="govcard">
                           <img src="government.png" className="ActionIcon"></img>
                           <h5>Contact Your Representative</h5>
                             <button className="ActionButton"><p>Select</p></button>
                         </Col>
-                        <Col md="6" sm="6" xs="12" className="text-center ActionCard" id="megaphonecard">
+                      </Col>
+                        <Col md="6" sm="6" xs="12" className="text-center">
+                          <Col md="12" sm="12" xs="12" className="text-center  ActionCard" id="megaphonecard">
                           <img src="megaphone.png" className="ActionIcon"></img>
                           <h5>Find an event near you</h5>
                           <button className="ActionButton"><p>Select</p></button>
                         </Col>
+                      </Col>
                       </Row>
                     </Container>
                 </Col>
+
+                    <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
+                      <h4 id="EventsH4">Events Near You</h4>
+                    </Col>
+
+              </Col>
             </Row>
           </Container>
+
         </Row>
       </Container>
     )

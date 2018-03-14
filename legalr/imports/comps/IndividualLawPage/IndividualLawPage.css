@@ -6,7 +6,6 @@
 #ResultsContainer{
   margin-top: 15px;
   margin-bottom: 20px;
-  margin-left: 5px;
   height: auto;
   background-color: white;
   border-radius: 5px;
@@ -23,6 +22,14 @@
   #ResultsContainer {
   margin-left: 0px;
   margin-right: 20px;
+  }
+
+  #EventsContainer{
+    margin-left: 0px !important;
+    margin-right: 20px;
+  }
+  .SummaryCol{
+    padding-bottom: 20px;
   }
 }
 
@@ -54,6 +61,12 @@
   height: 220px;
   background-color: white;
   border-radius: 5px;
+}
+
+.MoreInfo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #cccccc;
 }
 
 #LawTitle{
@@ -96,8 +109,29 @@
   margin-bottom: 0px;
 }
 
+.Supplements{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .ActionButton:hover{
   background-color:  rgba(0,0,77,1) ;
+}
+
+#EventsContainer{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: auto;
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#EventsH4{
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 
