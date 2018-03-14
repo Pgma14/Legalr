@@ -4,7 +4,6 @@ import SearchToggle from '../LawResults/SearchToggle.jsx';
 
 import './IndividualLawPage.css';
 
-
 export default class IndividualLawPage extends Component {
   render () {
     return (
@@ -79,6 +78,10 @@ export default class IndividualLawPage extends Component {
 
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">Events Near You</h4>
+                    </Col>
+
+                    <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
+                      <h4 id="EventsH4">Your Representatives</h4>
                     </Col>
 
               </Col>
