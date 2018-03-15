@@ -43,23 +43,22 @@ export default class LandingHeader extends Component{
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                    <ModalHeader className="text-center">Sign Up</ModalHeader>
                    <ModalBody toggle={this.toggle} id="ModalBody">
-                     <Row>
+                     <Row id="LoginRow">
                        <Col md="12" sm="12" xs="12" className="text-center">
                      <div class="fb-login-button" data-width="200" data-max-rows="1" data-size="large"
                       data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false"
                       data-use-continue-as="false"></div>
                         </Col>
-                        <Col md="12" sm="12" xs="12" className="text-center">
+                        <Col md="12" sm="12" xs="12" className="text-center" id="or">
                       <p>Or</p>
                          </Col>
                          <Col md="12" sm="12" xs="12" className="text-center">
-                           <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Sign Up</Button>
+                           <Button id="SignUpButton" color="primary" onClick={this.toggle}>Sign Up</Button>
                           </Col>
                           <Col md="12" sm="12" xs="12" className="text-center">
-                            <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Sign In</Button>
+                            <Button id="SignInButton" color="primary" onClick={this.toggle}>Sign In</Button>
                            </Col>
                       </Row>
-                     <Form />
                    </ModalBody>
                  </Modal>
                 </InputGroup>
