@@ -85,7 +85,8 @@ export default class IndividualLawPage extends Component {
 
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">Events Near You</h4>
-                      <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                      <div class="fb-login-button" data-max-rows="1" data-size="medium"
+                       data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
                       <div
                           className="fb-like"
                           data-share="true"
