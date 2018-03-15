@@ -39,16 +39,28 @@ export default class LandingHeader extends Component{
               </Col>
               <Col md="12" sm="12" xs="12" className="text-center" id="alert-signup" >
                 <InputGroup>
-                  <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+                  <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Get Started</Button>
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                   <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-                   <ModalBody>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   <ModalHeader className="text-center">Sign Up</ModalHeader>
+                   <ModalBody toggle={this.toggle} id="ModalBody">
+                     <Row>
+                       <Col md="12" sm="12" xs="12" className="text-center">
+                     <div class="fb-login-button" data-width="200" data-max-rows="1" data-size="large"
+                      data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false"
+                      data-use-continue-as="false"></div>
+                        </Col>
+                        <Col md="12" sm="12" xs="12" className="text-center">
+                      <p>Or</p>
+                         </Col>
+                         <Col md="12" sm="12" xs="12" className="text-center">
+                           <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Sign Up</Button>
+                          </Col>
+                          <Col md="12" sm="12" xs="12" className="text-center">
+                            <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Sign In</Button>
+                           </Col>
+                      </Row>
+                     <Form />
                    </ModalBody>
-                   <ModalFooter>
-                     <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                     <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-                   </ModalFooter>
                  </Modal>
                 </InputGroup>
               </Col>

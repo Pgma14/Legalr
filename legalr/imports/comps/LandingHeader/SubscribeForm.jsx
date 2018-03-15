@@ -74,6 +74,7 @@ class SubscribeForm extends React.Component {
         <form onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
 
             <input
+              id="alert-signup-input"
               ref={node => (this.input = node)}
               type="email"
               defaultValue=""

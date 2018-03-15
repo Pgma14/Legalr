@@ -12,6 +12,11 @@ height: 600px;
   color: white;
 }
 
+#GetStartedButton{
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
 @media screen and (max-width: 9000px) {
   #Logo {
     margin-top: 150px;
@@ -34,6 +39,11 @@ height: 600px;
   }
 }
 
+.fb-login-button{
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 #AlertButton{
   border: none;
   background-color: rgb(11, 112, 213);
@@ -100,24 +110,28 @@ height: 600px;
   }
 }
 
-#alert-signup input{
+#alert-signup-input{
 border-top-left-radius: 2px;
 border-bottom-left-radius: 2px;
 border-top-right-radius: 2px;
 border-bottom-right-radius: 2px;
 height: 35px;
 background-color: white;
-border: none;
+border: 1px solid rgba(192, 192, 192, 0.7);
+}
+
+#ModalBody{
+  background-color: rgba(192, 192, 192, 0.2);
 }
 
 @media screen and (max-width: 9000px) {
-  #alert-signup input{
+  #alert-signup-input{
     flex: 1;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #alert-signup input{
+  #alert-signup-input{
     flex: .7;
   }
 }
