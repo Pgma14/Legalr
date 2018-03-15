@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { InputGroup, InputGroupAddon, InputGroupText, Button, Input, InputGroupDropDown, InputGroupButtonDropdown } from 'reactstrap';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
 import Form from './EmailInput.jsx';
