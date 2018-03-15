@@ -5,6 +5,13 @@ import SearchToggle from '../LawResults/SearchToggle.jsx';
 import './IndividualLawPage.css';
 
 export default class IndividualLawPage extends Component {
+
+  injectApi() {
+  Meteor.call("checkTwitter", function(error, results) {
+       console.log(results.content); //results.data should be a JSON object
+   });
+ }
+
   render () {
     return (
       <Container fluid>
@@ -78,6 +85,12 @@ export default class IndividualLawPage extends Component {
 
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">Events Near You</h4>
+                      <div
+                          className="fb-like"
+                          data-share="true"
+                          data-width="450"
+                          data-show-faces="true">
+                          </div>
                     </Col>
 
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
