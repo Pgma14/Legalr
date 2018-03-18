@@ -37,7 +37,7 @@ handleWindowSizeChange = () => {
 render() {
   const { width } = this.state;
   const isMobile = width <= 500;
-  // the rest is the same...
+  
     if (isMobile) {
     return (
       <div>
@@ -86,7 +86,7 @@ render() {
         </Container>
 
         <Container fluid>
-        
+
         </Container>
 
     </Container>

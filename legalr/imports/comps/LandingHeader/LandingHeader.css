@@ -18,6 +18,7 @@ height: 600px;
   margin-top: 25px;
 }
 
+
 #LoginRow{
   padding-bottom: 20px;
 }
@@ -26,6 +27,10 @@ height: 600px;
   border-radius: 8px;
   margin-top: 15px;
   width: 240px;
+}
+
+#SignUpSignInDiv{
+  margin: auto;
 }
 
 #SignInButton{
@@ -38,6 +43,10 @@ height: 600px;
   #Logo {
     margin-top: 150px;
   }
+  .modal-dialog{
+    margin-top: 190px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -46,6 +55,9 @@ height: 600px;
   }
   #Header_Col{
     height: 530px;
+  }
+  .modal-dialog{
+    margin-top: 180px;
   }
 }
 
