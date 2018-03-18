@@ -12,33 +12,46 @@ export default class SignUpSignIn extends Component {
      super();
 
      this.state = {
-       clicked: false
+       SignUpClicked: false,
+       SignInClicked: false,
      };
 
-     this.handleClick = this.handleClick.bind(this);
+     this.SignUpClick = this.SignUpClick.bind(this);
+     this.SignInClick = this.SignInClick.bind(this);
    }
 
-  handleClick() {
+  SignUpClick() {
     this.setState({
-      clicked: true
+      SignUpClicked: true,
+    });
+  }
+
+  SignInClick() {
+    this.setState({
+      SignInClicked: true,
     });
   }
 
   render () {
 
+  if (this.state.SignUpClicked) {
+    return(
+      <SignUp />
+    ) } else if (this.state.SignInClicked) {
     return (
-    <div id="SignUpSignInDiv">
-      <Col md="12" sm="12" xs="12" className="text-center">
-        <div onClick={this.handleClick}>
-          {this.state.clicked ? <SignUp /> : null}
-        <Button id="SignUpButton" color="primary"> Sign Up </Button>
-        </div>
-       </Col>
-       <Col md="12" sm="12" xs="12" className="text-center">
-         <Button id="SignInButton" color="primary" onClick={this.switch}>Sign In</Button>
-        </Col>
-    </div>
-  )
-
+      <SignIn />
+    )
+  } else {
+      return (
+      <div id="SignUpSignInDiv">
+        <Col md="12" sm="12" xs="12" className="text-center">
+            <Button id="SignUpButton" color="primary" onClick={this.SignUpClick}> Sign Up </Button>
+         </Col>
+         <Col md="12" sm="12" xs="12" className="text-center">
+           <Button id="SignInButton" color="primary" onClick={this.SignInClick}>Sign In</Button>
+         </Col>
+      </div>
+          )
+        }
   }
 }
