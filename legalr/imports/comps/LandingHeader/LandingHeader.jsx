@@ -72,7 +72,7 @@ export default class LandingHeader extends Component{
               </Col>
               <Col md="12" sm="12" xs="12" className="text-center" id="alert-signup" >
                 <InputGroup>
-                  <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Get Started</Button>
+                  <Button id="GetStartedButton" color="primary" onClick={this.toggle}><h5>Get Started</h5></Button>
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                    {this.state.SignUpClicked || this.state.SignInClicked ? (
                      <ModalHeader className="text-center"><i onClick={this.onBackChevronClick} id="LeftChevron" className="fa fa-chevron-left"></i>Get Started</ModalHeader>

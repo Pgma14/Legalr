@@ -31,6 +31,20 @@ height: 600px;
   margin: auto;
   border-radius: 8px;
   margin-top: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(51, 105, 232);
+  border: none;
+}
+
+#GetStartedButton:hover {
+  background-color: rgb(23, 73, 190);
+}
+
+#GetStartedButton h5{
+  margin: auto;
 }
 
 #SignUpRow{
