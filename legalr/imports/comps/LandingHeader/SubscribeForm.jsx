@@ -71,8 +71,8 @@ class SubscribeForm extends React.Component {
     return (
     <div>
       <div className={className} style={style}>
-        <form onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
-          <Container fluid>
+        <form className="text-center" onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
+          <Container fluid className="text-center">
             <Row id="SignUpRow">
               <Col md="12" sm="12" xs="12" className="text-center">
             <input
@@ -105,7 +105,7 @@ class SubscribeForm extends React.Component {
           </Row>
         </Container>
               </form>
-          {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right')}
+          {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-top-right')}
       </div>
 </div>
     )
