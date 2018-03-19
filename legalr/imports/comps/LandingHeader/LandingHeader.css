@@ -7,6 +7,9 @@ height: 600px;
   top: 30%;
 }
 
+#FormContainer{
+  margin: auto;
+}
 #Logo{
   display: block;
   color: white;
@@ -16,6 +19,10 @@ height: 600px;
   margin: auto;
   border-radius: 8px;
   margin-top: 25px;
+}
+
+#SignUpRow{
+  padding-bottom: 30px;
 }
 
 
@@ -29,7 +36,7 @@ height: 600px;
   width: 240px;
 }
 
-#SignUpSignInDiv{
+.SignUpSignInDiv{
   margin: auto;
 }
 
@@ -76,7 +83,13 @@ height: 600px;
   margin: auto;
   padding-top: 20px;
 }
+
+#PasswordInput{
+  border-top: 0px;
+}
 #AlertButton{
+  width: 240px;
+  margin-top: 15px;
   border: none;
   background-color: rgb(11, 112, 213);
   height: 35px;
@@ -85,7 +98,6 @@ height: 600px;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   font-weight: 500;
-  margin-left: 10px;
 }
 
 #AlertButton p{
@@ -121,6 +133,9 @@ height: 600px;
   padding-top: 15px;
 }
 
+#FormContainer{
+  margin: auto;
+}
 @media screen and (max-width: 9000px) {
   #alert-signup {
     padding-top: 55px;
@@ -145,7 +160,8 @@ height: 600px;
   }
 }
 
-#alert-signup-input{
+.alert-signup-input{
+width: 240px;
 border-top-left-radius: 2px;
 border-bottom-left-radius: 2px;
 border-top-right-radius: 2px;
@@ -160,13 +176,21 @@ border: 1px solid rgba(192, 192, 192, 0.7);
 }
 
 @media screen and (max-width: 9000px) {
-  #alert-signup-input{
-    flex: 1;
+  .alert-signup-input{
+    flex: .7;
   }
+  #AlertButton{
+    flex: .7;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
-  #alert-signup-input{
+  .alert-signup-input{
+    flex: .7;
+  }
+
+  #AlertButton{
     flex: .7;
   }
 }

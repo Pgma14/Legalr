@@ -13,14 +13,18 @@ export default class SignUpSignIn extends Component {
 
   if (this.props.signUpClicked) {
     return(
+      <div className="SignUpSignInDiv">
       <SignUp />
+      </div>
     ) } else if (this.props.signInClicked) {
     return (
+      <div className="SignUpSignInDiv">
       <SignIn />
+      </div>
     )
   } else {
       return (
-      <div id="SignUpSignInDiv">
+      <div className="SignUpSignInDiv">
 
         <Col md="12" sm="12" xs="12" className="text-center">
             <Button id="SignUpButton" color="primary" onClick={this.props.SignUpClick}> Sign Up </Button>

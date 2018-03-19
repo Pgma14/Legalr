@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import jsonp from "jsonp";
-import {Button, Input} from 'reactstrap';
+import {Button, Input, Container, Row, Col } from 'reactstrap';
 
 import './LandingHeader.css';
 
@@ -69,12 +69,17 @@ class SubscribeForm extends React.Component {
     const { action, messages, className, style, styles } = this.props
     const { status, msg } = this.state
     return (
+    <div>
+      <Container id="FormContainer" fluid className="text-center">
+        <Row>
       <div className={className} style={style}>
         <center>
         <form onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
-
+          <Container fluid>
+            <Row id="SignUpRow">
+              <Col md="12" sm="12" xs="12" className="text-center">
             <input
-              id="alert-signup-input"
+              className="alert-signup-input"
               ref={node => (this.input = node)}
               type="email"
               defaultValue=""
@@ -82,6 +87,12 @@ class SubscribeForm extends React.Component {
               required={true}
               placeholder={messages.inputPlaceholder}
             />
+              </Col>
+              <Col md="12" sm="12" xs="12" className="text-center">
+            <input id="PasswordInput" className="alert-signup-input" placeholder="Password" />
+              </Col>
+
+            <Col md="12" sm="12" xs="12" className="text-center">
             <button
               disabled={this.state.status === "sending" || this.state.status === "success"}
               onClick={this.onSubmit}
@@ -92,11 +103,16 @@ class SubscribeForm extends React.Component {
             >
               <p>Sign Up</p>
             </button>
+            </Col>
+          </Row>
+        </Container>
               </form>
               </center>
           {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right')}
-
       </div>
+    </Row>
+  </Container>
+</div>
     )
   }
 }

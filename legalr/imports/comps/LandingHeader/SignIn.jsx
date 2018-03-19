@@ -7,9 +7,31 @@ export default class SignIn extends Component {
   render () {
     return (
     <div>
-      <Col md="12" sm="12" xs="12" className="text-center">
-        <Button id="SignUpButton" color="primary" onClick={this.toggle}>Sign Up</Button>
-       </Col>
+      <Container fluid>
+        <Row>
+          <Col md="12" sm="12" xs="12" className="text-center">
+        <input
+          className="alert-signup-input"
+          placeholder="E-mail"
+        />
+          </Col>
+
+          <Col md="12" sm="12" xs="12" className="text-center">
+        <input id="PasswordInput" className="alert-signup-input" placeholder="Password" />
+          </Col>
+
+        <Col md="12" sm="12" xs="12" className="text-center">
+          <button
+            type="submit"
+            className="btn-group"
+            id="AlertButton"
+            className="text-center"
+          >
+            <p>Sign In</p>
+          </button>
+        </Col>
+      </Row>
+    </Container>
     </div>
     )
   }
