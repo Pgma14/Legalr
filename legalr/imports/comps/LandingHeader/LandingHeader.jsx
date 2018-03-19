@@ -75,13 +75,13 @@ export default class LandingHeader extends Component{
                   <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Get Started</Button>
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                    {this.state.SignUpClicked || this.state.SignInClicked ? (
-                     <ModalHeader className="text-center"><i onClick={this.onBackChevronClick} className="fa fa-chevron-left"></i>Get Started</ModalHeader>
+                     <ModalHeader className="text-center"><i onClick={this.onBackChevronClick} id="LeftChevron" className="fa fa-chevron-left"></i>Get Started</ModalHeader>
                    ) : (
                      <ModalHeader className="text-center">Get Started</ModalHeader>
                  )}
                    <ModalBody id="ModalBody">
                      <Row id="LoginRow">
-                       <Col md="12" sm="12" xs="12" className="text-center">
+                       <Col md="12" sm="12" xs="12" className="text-center" id="FB_Col">
                      <div className="fb-login-button" data-width="200" data-max-rows="1" data-size="large"
                       data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false"
                       data-use-continue-as="false"></div>

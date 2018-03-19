@@ -70,16 +70,14 @@ class SubscribeForm extends React.Component {
     const { status, msg } = this.state
     return (
     <div>
-      <Container id="FormContainer" fluid className="text-center">
-        <Row>
       <div className={className} style={style}>
-        <center>
         <form onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
           <Container fluid>
             <Row id="SignUpRow">
               <Col md="12" sm="12" xs="12" className="text-center">
             <input
               className="alert-signup-input"
+              id="SignUpInput"
               ref={node => (this.input = node)}
               type="email"
               defaultValue=""
@@ -107,11 +105,8 @@ class SubscribeForm extends React.Component {
           </Row>
         </Container>
               </form>
-              </center>
           {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right')}
       </div>
-    </Row>
-  </Container>
 </div>
     )
   }
