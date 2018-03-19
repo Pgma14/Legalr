@@ -34,6 +34,7 @@
     "react-scrollchor": "^4.2.1",
     "react-select": "^1.2.1",
     "react-table": "^6.8.0",
+    "react-transition-group": "^2.2.1",
     "react-typist": "^2.0.4",
     "reactstrap": "^5.0.0-beta",
     "smoothscroll": "^0.4.0",

@@ -19,8 +19,28 @@ export default class LandingHeader extends Component{
       modal: false
     };
 
+    this.state = {
+      SignUpClicked: false,
+      SignInClicked: false,
+    };
+
+    this.SignUpClick = this.SignUpClick.bind(this);
+    this.SignInClick = this.SignInClick.bind(this);
+
     this.toggle = this.toggle.bind(this);
   }
+
+    SignUpClick() {
+      this.setState({
+        SignUpClicked: true,
+      });
+    }
+
+    SignInClick() {
+      this.setState({
+        SignInClicked: true,
+      });
+    }
 
   toggle() {
     this.setState({
@@ -29,6 +49,7 @@ export default class LandingHeader extends Component{
   }
 
   render () {
+
     return (
       <div>
       <Container fluid className="Header_Background">
@@ -45,7 +66,11 @@ export default class LandingHeader extends Component{
                 <InputGroup>
                   <Button id="GetStartedButton" color="primary" onClick={this.toggle}>Get Started</Button>
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                   <ModalHeader className="text-center">Get Started</ModalHeader>
+                   {this.state.SignUpClicked ? (
+                     <ModalHeader className="text-center"><i className="fa fa-chevron-left"></i>Get Started</ModalHeader>
+                   ) : (
+                     <ModalHeader className="text-center">Get Started</ModalHeader>
+                 )}
                    <ModalBody id="ModalBody">
                      <Row id="LoginRow">
                        <Col md="12" sm="12" xs="12" className="text-center">
@@ -56,7 +81,7 @@ export default class LandingHeader extends Component{
                         <Col md="12" sm="12" xs="12" className="text-center" id="or">
                       <p>Or</p>
                          </Col>
-                         <SignUpSignIn />
+                         <SignUpSignIn signUpClicked={this.state.SignUpClicked} signInClicked={this.state.SignInClicked} SignInClick={this.SignInClick} SignUpClick={this.SignUpClick}/>
                       </Row>
                    </ModalBody>
                  </Modal>

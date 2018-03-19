@@ -10,6 +10,7 @@ export default class SignUp extends Component {
     <div>
       <Col md="12" sm="12" xs="12" className="text-center">
         <Form />
+        <input value="password"></input>
        </Col>
     </div>
     )
