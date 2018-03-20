@@ -22,6 +22,10 @@ height: 600px;
   color: rgba(133, 131, 131, 1);
 }
 
+#RightX:hover {
+  color: rgba(133, 131, 131, 1);
+}
+
 #GetStartedButton{
   margin: auto;
   border-radius: 8px;
@@ -90,6 +94,10 @@ height: 600px;
     transform: translate(-170px);
     color: rgba(192, 192, 192, 1);
   }
+  #RightX{
+    transform: translate(170px);
+    color: rgba(192, 192, 192, 1);
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -106,6 +114,10 @@ height: 600px;
     transform: translate(-100px);
     color: rgba(192, 192, 192, 1);
   }
+  #RightX{
+    transform: translate(100px);
+    color: rgba(192, 192, 192, 1);
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -120,6 +132,10 @@ height: 600px;
 
   #LeftChevron{
     transform: translate(-70px);
+    color: rgba(192, 192, 192, 1);
+  }
+  #RightX{
+    transform: translate(70px);
     color: rgba(192, 192, 192, 1);
   }
 }
@@ -179,6 +195,12 @@ height: 600px;
 
 .modal-title {
   margin: auto;
+  text-align: center;
+}
+
+#GetStartedText{
+  margin: auto;
+  text-align: center;
 }
 
 #alert-signup{

@@ -75,9 +75,10 @@ export default class LandingHeader extends Component{
                   <Button id="GetStartedButton" color="primary" onClick={this.toggle}><h5>Get Started</h5></Button>
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                    {this.state.SignUpClicked || this.state.SignInClicked ? (
-                     <ModalHeader className="text-center"><i onClick={this.onBackChevronClick} id="LeftChevron" className="fa fa-chevron-left"></i>Get Started</ModalHeader>
+                     <ModalHeader><i onClick={this.onBackChevronClick} id="LeftChevron" className="fa fa-chevron-left"></i><span>Get Started</span>
+                     <i onClick={this.toggle} id="RightX" className="fa fa-times"></i></ModalHeader>
                    ) : (
-                     <ModalHeader className="text-center">Get Started</ModalHeader>
+                     <ModalHeader><span id="GetStartedText">Get Started</span><i onClick={this.toggle} id="RightX" className="fa fa-times"></i></ModalHeader>
                  )}
                    <ModalBody id="ModalBody">
                      <Row id="LoginRow">
