@@ -37,7 +37,7 @@ handleWindowSizeChange = () => {
 render() {
   const { width } = this.state;
   const isMobile = width <= 500;
-  
+
     if (isMobile) {
     return (
       <div>
@@ -47,15 +47,15 @@ render() {
         </Container>
 
         <Container>
-
+          <WhatWeDo />
         </Container>
 
         <Container fluid>
-
+          <OurTeam />
         </Container>
 
         <Container fluid>
-
+          <Accolades />
         </Container>
       </Container>
     </div>
@@ -78,15 +78,15 @@ render() {
         </Container>
 
         <Container>
-
+          <WhatWeDo />
         </Container>
 
         <Container fluid>
-
+          <OurTeam />
         </Container>
 
         <Container fluid>
-
+            <Accolades />
         </Container>
 
     </Container>

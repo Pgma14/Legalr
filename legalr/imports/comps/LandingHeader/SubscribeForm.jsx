@@ -87,7 +87,7 @@ class SubscribeForm extends React.Component {
             />
               </Col>
               <Col md="12" sm="12" xs="12" className="text-center">
-            <input id="PasswordInput" className="alert-signup-input" placeholder="Password" />
+            <input type="password" name="password" id="PasswordInput" className="alert-signup-input" placeholder="Password" />
               </Col>
 
             <Col md="12" sm="12" xs="12" className="text-center">

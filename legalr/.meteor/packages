@@ -23,7 +23,8 @@ session@1.1.7
 react-meteor-data
 meteortoys:allthings
 ultimatejs:tracker-react
-accounts-password@1.5.0
+accounts-password
 accounts-ui@1.3.0
 themeteorchef:bert
 http
+accounts-base
