@@ -21,8 +21,10 @@
   .section1 img{
       padding:5px;
       border-radius:50%;
-      height:190px;
       width: 190px;
+      max-height: 190px;
+      height: auto;
+      overflow: hidden;
   }
   .section2 h1{
       font-size:15px;

@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import SearchToggle from '../LawResults/SearchToggle.jsx';
 
 import './IndividualLawPage.css';
+import '../OurTeam/OurTeam.css';
 
 export default class IndividualLawPage extends Component {
 
@@ -94,7 +95,47 @@ export default class IndividualLawPage extends Component {
                     </Col>
 
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
-                      <h4 id="EventsH4">Your Representatives</h4>
+                      <h4 id="EventsH4">Who to Contact</h4>
+
+                    <Row>
+                      <Col lg="6" md="6" sm="6" xs="12">
+                        <Row className="section-danger ourTeam-box text-center">
+                          <Col md="12" sm="12" xs="12" className="section1">
+                            <img src="jim_himes.jpg" />
+                          </Col>
+
+                          <Col md="12" sm="12" xs="12" className="section2">
+                            <p>Jim Himes</p>
+                              <Col md="12" sm="12" xs="12">
+                              <h1>Congressman for the State of Connecticut</h1><br></br>
+                            </Col>
+                          </Col>
+
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <button className="ActionButton"><p>Contact</p></button>
+                          </Col>
+                        </Row>
+                      </Col>
+
+                      <Col lg="6" md="6" sm="6" xs="12">
+                        <Row className="section-danger ourTeam-box text-center">
+                          <Col md="12" sm="12" xs="12" className="section1">
+                            <img src="jim_himes.jpg" />
+                          </Col>
+
+                          <Col md="12" sm="12" xs="12" className="section2">
+                            <p>Jim Himes</p>
+                              <Col md="12" sm="12" xs="12">
+                              <h1>Congressman for the State of Connecticut</h1><br></br>
+                            </Col>
+                          </Col>
+
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <button className="ActionButton"><p>Contact</p></button>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
                     </Col>
 
               </Col>
