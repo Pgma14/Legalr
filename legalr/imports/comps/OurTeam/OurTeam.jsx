@@ -112,11 +112,8 @@ export default class OurTeam extends Component {
 
           <Container  className="MIT">
                     <Row>
-                      <Col md="6" sm="6" xs="6">
+                      <Col md="12" sm="12" xs="12">
                       <img src="MIT.svg" id="MIT_logo" />
-                      </Col>
-                      <Col md="6" sm="6" xs="6">
-                      <img src="y_combinator.svg" id="YC_logo" />
                       </Col>
                     </Row>
           </Container>
@@ -124,7 +121,7 @@ export default class OurTeam extends Component {
             </Row>
           </Col>
 
-        
+
 
 
         </Row>
