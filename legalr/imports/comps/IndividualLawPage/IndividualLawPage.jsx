@@ -43,7 +43,7 @@ export default class IndividualLawPage extends Component {
                           </p>
                       </Col>
                       <Col md="6" sm="12" xs="12" className="text-center">
-                        <h5 id="WhoItAffectsH5">Who it affects</h5>
+                        <h5 id="WhoItAffectsH5">Why You Should Care</h5>
                           <p>
                             Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
                           </p>
@@ -62,6 +62,26 @@ export default class IndividualLawPage extends Component {
                           </Col>
                         </Row>
                       </Col> {*/ }
+                    </Row>
+                    <Row id="HowToContactRow">
+                        <Col lg="4" md="4" sm="4" xs="12">
+                          <i className="MoreInfoIcon fa fa-file-text"></i>
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <p className="MoreInfoP">Full Text</p>
+                          </Col>
+                        </Col>
+                        <Col lg="4" md="4" sm="4" xs="12">
+                          <i className="MoreInfoIcon fa fa-list"></i>
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <p className="MoreInfoP">Track Bill</p>
+                          </Col>
+                        </Col>
+                        <Col lg="4" md="4" sm="4" xs="12">
+                          <i id="InboxIcon" className="MoreInfoIcon fa fa-inbox"></i>
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <p className="MoreInfoP">Get Alerts</p>
+                          </Col>
+                        </Col>
                     </Row>
                     <button className="TakeActionButton"><p id="TakeAction">Take Action</p></button>
                   {/*}
