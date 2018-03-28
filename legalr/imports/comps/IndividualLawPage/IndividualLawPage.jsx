@@ -34,7 +34,7 @@ export default class IndividualLawPage extends Component {
                     <h3 id="LawTitle">An Act to Help Working Families</h3>
                     <Row id="SummaryRow">
                       <Col md="6" sm="12" xs="12" className="text-center SummaryCol">
-                        <h5>Summary</h5>
+                        <h5 id="SummaryH5">Summary</h5>
                           <p>
                             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -43,7 +43,7 @@ export default class IndividualLawPage extends Component {
                           </p>
                       </Col>
                       <Col md="6" sm="12" xs="12" className="text-center">
-                        <h5>Who it affects</h5>
+                        <h5 id="WhoItAffectsH5">Who it affects</h5>
                           <p>
                             Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
                           </p>
@@ -63,7 +63,8 @@ export default class IndividualLawPage extends Component {
                         </Row>
                       </Col> {*/ }
                     </Row>
-                    <h3 id="TakeAction">Take Action</h3>
+                    <button className="TakeActionButton"><p id="TakeAction">Take Action</p></button>
+                  {/*}
                     <Container>
                       <Row>
                         <Col md="6" sm="6" xs="12" className="text-center">
@@ -82,8 +83,10 @@ export default class IndividualLawPage extends Component {
                       </Col>
                       </Row>
                     </Container>
+                    {*/}
                 </Col>
 
+                {/*}
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">Events Near You</h4>
                       <div
@@ -92,7 +95,7 @@ export default class IndividualLawPage extends Component {
                           data-width="450"
                           data-show-faces="true">
                           </div>
-                    </Col>
+                    </Col> {*/}
 
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">Who to Contact</h4>
@@ -120,13 +123,13 @@ export default class IndividualLawPage extends Component {
                       <Col lg="6" md="6" sm="6" xs="12">
                         <Row className="section-danger ourTeam-box text-center">
                           <Col md="12" sm="12" xs="12" className="section1">
-                            <img src="jim_himes.jpg" />
+                            <img src="elizabeth_warren.jpg" />
                           </Col>
 
                           <Col md="12" sm="12" xs="12" className="section2">
-                            <p>Jim Himes</p>
+                            <p>Elizabeth Warren</p>
                               <Col md="12" sm="12" xs="12">
-                              <h1>Congressman for the State of Connecticut</h1><br></br>
+                              <h1>Senator for the State of Massachuessets</h1><br></br>
                             </Col>
                           </Col>
 
@@ -138,6 +141,29 @@ export default class IndividualLawPage extends Component {
                     </Row>
                     </Col>
 
+                    <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
+                      <h4 id="EventsH4">How to Contact Them</h4>
+                    <Row id="HowToContactRow">
+                        <Col lg="4" md="4" sm="4" xs="12">
+                          <i className="HowToContactIcon fa fa-list"></i>
+                            <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <button className="ActionButton"><p>Start a Petition</p></button>
+                            </Col>
+                        </Col>
+                        <Col lg="4" md="4" sm="4" xs="12">
+                          <i className="HowToContactIcon fa fa-phone"></i>
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                          <button className="ActionButton"><p>Contact</p></button>
+                          </Col>
+                        </Col>
+                        <Col lg="4" md="4" sm="4" xs="12">
+                          <i className="HowToContactIcon fa fa-envelope"></i>
+                          <Col md="12" sm="12" xs="12" className="sciencespo">
+                            <button className="ActionButton"><p>E-mail</p></button>
+                          </Col>
+                        </Col>
+                    </Row>
+                    </Col>
               </Col>
             </Row>
           </Container>
