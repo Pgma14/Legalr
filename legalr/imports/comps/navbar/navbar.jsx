@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { withHistory } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -26,7 +27,26 @@ export default class MyNavbar extends Component {
     this.state = {
       isOpen: false
     };
+
+    this.state = this.getMeteorData();
+    this.logout = this.logout.bind(this)
   }
+
+  getMeteorData(){
+   return { isAuthenticated: Meteor.userId() !== null };
+ }
+
+ logout(e){
+    e.preventDefault();
+    Meteor.logout( (err) => {
+        if (err) {
+            console.log( err.reason );
+        } else {
+            this.props.history.push('/login');
+        }
+    });
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -80,6 +100,16 @@ export default class MyNavbar extends Component {
                   </Scrollchor>
                 </NavLink>
               </NavItem>
+
+              {this.state.isAuthenticated ? (
+                <NavItem>
+                  <NavLink className="MenuOptions">
+                        <span onClick={this.logout} className="MenuOptions">
+                          Log Out
+                        </span>
+                  </NavLink>
+                </NavItem>
+              ) : (<div></div>) }
 
             {/*}  <NavItem>
                 <NavLink className="MenuOptions">

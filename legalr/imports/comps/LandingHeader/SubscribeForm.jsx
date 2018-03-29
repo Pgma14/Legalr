@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import jsonp from "jsonp";
+import { withHistory, Link } from 'react-router-dom';
 import {Button, Input, Container, Row, Col } from 'reactstrap';
 
 import './LandingHeader.css';
@@ -13,6 +14,7 @@ class SubscribeForm extends React.Component {
     this.state = {
       status: null,
       msg: null,
+      error: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -21,6 +23,20 @@ class SubscribeForm extends React.Component {
     event.preventDefault();
     this.input.value = '';
     this.setState({ value: '' });
+
+    let email = document.getElementById('signup-email').value;
+    let password = document.getElementById('signup-password').value;
+    this.setState({error: "test"});
+
+    Accounts.createUser({email: email, password: password}, (err) => {
+      if(err){
+        this.setState({
+          error: err.reason
+        });
+      } else {
+        this.props.history.push('/login');
+      }
+    });
 }
 
   onSubmit = e => {
@@ -68,9 +84,14 @@ class SubscribeForm extends React.Component {
   render() {
     const { action, messages, className, style, styles } = this.props
     const { status, msg } = this.state
+    const error = this.state.error;
+
     return (
     <div>
       <div className={className} style={style}>
+        { error.length > 0 ?
+              <div className="alert alert-danger fade in">{error}</div>
+              :''}
         <form className="text-center" onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
           <Container fluid className="text-center">
             <Row id="SignUpRow">
