@@ -45,7 +45,9 @@ export default class IndividualLawPage extends Component {
                       <Col md="6" sm="12" xs="12" className="text-center">
                         <h5 id="WhoItAffectsH5">Why You Should Care</h5>
                           <p>
-                            Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                           </p>
                       </Col>
                     { /*}  <Col md="12" sm="12" xs="12" className="text-center MoreInfo">
@@ -63,24 +65,30 @@ export default class IndividualLawPage extends Component {
                         </Row>
                       </Col> {*/ }
                     </Row>
-                    <Row id="HowToContactRow">
+                    <Row id="MoreInfoRow">
                         <Col lg="4" md="4" sm="4" xs="12">
-                          <i className="MoreInfoIcon fa fa-file-text"></i>
-                          <Col md="12" sm="12" xs="12" className="sciencespo">
-                            <p className="MoreInfoP">Full Text</p>
-                          </Col>
+                        <div id="MoreInfoWrapper1">
+                            <i className="MoreInfoIcon fa fa-file-text"></i>
+                            <Col md="12" sm="12" xs="12" className="sciencespo">
+                              <p className="MoreInfoP">Full Text</p>
+                            </Col>
+                          </div>
                         </Col>
                         <Col lg="4" md="4" sm="4" xs="12">
-                          <i className="MoreInfoIcon fa fa-list"></i>
-                          <Col md="12" sm="12" xs="12" className="sciencespo">
-                            <p className="MoreInfoP">Track Bill</p>
-                          </Col>
+                          <div id="MoreInfoWrapper2">
+                            <i className="MoreInfoIcon fa fa-list"></i>
+                            <Col md="12" sm="12" xs="12" className="sciencespo">
+                              <p className="MoreInfoP">Track Bill</p>
+                            </Col>
+                        </div>
                         </Col>
                         <Col lg="4" md="4" sm="4" xs="12">
-                          <i id="InboxIcon" className="MoreInfoIcon fa fa-inbox"></i>
-                          <Col md="12" sm="12" xs="12" className="sciencespo">
-                            <p className="MoreInfoP">Get Alerts</p>
-                          </Col>
+                          <div id="MoreInfoWrapper3">
+                            <i id="InboxIcon" className="MoreInfoIcon fa fa-inbox"></i>
+                            <Col md="12" sm="12" xs="12" className="sciencespo">
+                              <p className="MoreInfoP">Get Alerts</p>
+                            </Col>
+                        </div>
                         </Col>
                     </Row>
                     <button className="TakeActionButton"><p id="TakeAction">Take Action</p></button>
@@ -167,13 +175,13 @@ export default class IndividualLawPage extends Component {
                         <Col lg="4" md="4" sm="4" xs="12">
                           <i className="HowToContactIcon fa fa-list"></i>
                             <Col md="12" sm="12" xs="12" className="sciencespo">
-                            <button className="ActionButton"><p>Start a Petition</p></button>
+                            <button className="ActionButton"><p>Petition</p></button>
                             </Col>
                         </Col>
                         <Col lg="4" md="4" sm="4" xs="12">
                           <i className="HowToContactIcon fa fa-phone"></i>
                           <Col md="12" sm="12" xs="12" className="sciencespo">
-                          <button className="ActionButton"><p>Contact</p></button>
+                          <button className="ActionButton"><p>Call</p></button>
                           </Col>
                         </Col>
                         <Col lg="4" md="4" sm="4" xs="12">

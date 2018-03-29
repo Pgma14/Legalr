@@ -10,6 +10,7 @@ import About from './About.jsx';
 import DemoCarousel from '../comps/carousel/carouselLayout.jsx';
 import Footer from '../comps/Footer/Footer.jsx';
 import Divider from '../comps/Divider/Divider.jsx';
+import TrackImpact from '../comps/TrackImpact/TrackImpact.jsx';
 import LawResults from '../comps/LawResults/LawResults.jsx';
 import IndividualLawPage from '../comps/IndividualLawPage/IndividualLawPage.jsx';
 import Home from './Home.jsx';
@@ -30,6 +31,7 @@ const MainLayout = () => {
           <Route exact path="/results" component={LawResults} />
           <Route exact path="/lawresult" component={IndividualLawPage} />
           <Route exact path="/resolutions" component={ResolutionsWrapper} />
+          <Route exact path="/trackimpact" component={TrackImpact} />
           <Route path="/about" component={About} />
           </Switch>
         </Router>
