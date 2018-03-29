@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import { withHistory, Link } from 'react-router-dom';
+import { withHistory, withRouter, Link } from 'react-router-dom';
 
 import './LandingHeader.css';
 
-export default class SignIn extends Component {
+class SignIn extends Component {
 
   constructor(props){
     super(props);
@@ -24,7 +24,7 @@ export default class SignIn extends Component {
           error: err.reason
         });
       } else {
-        this.props.history.push('/');
+        this.props.history.push('/lawresult');
       }
     });
   }
@@ -78,3 +78,5 @@ export default class SignIn extends Component {
     )
   }
 }
+
+export default withRouter(SignIn);
