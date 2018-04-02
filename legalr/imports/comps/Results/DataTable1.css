@@ -1,0 +1,20 @@
+#TableContainer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rt-tr-group {
+  height: 75px;
+}
+
+.rt-thead.-headerGroups {
+  display: none;
+}
+
+.rt-thead.-header{
+  height: 40px;
+}
+
+.rt-td{
+  vertical-align: middle;
+}

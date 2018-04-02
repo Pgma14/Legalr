@@ -1,0 +1,74 @@
+
+
+#col1{
+  vertical-align: middle;
+}
+
+#col4{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#col3{
+  padding-left: 0px;
+}
+
+.LawItem{
+ margin-bottom: 10px;
+ background-color: white;
+ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+.LawItem:hover {
+  background-color: rgba(249, 249, 249, 0.5);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+}
+
+.LawheadItem{
+ margin-bottom: 10px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+#fileIcon{
+  margin: auto;
+  padding-left: 0px;
+}
+
+
+.HeaderH5{
+  position: relative;
+  top: 50%;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+.headerCol{
+padding: 0px;
+background-color: #00004d;
+border-radius: 5px;
+}
+
+.centeredText{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(80, 80, 80);
+}
+
+#lawtitlecol{
+  font-weight: 500;
+  color: rgb(80, 80, 80, 1);
+}
+
+#summarycol{
+
+}

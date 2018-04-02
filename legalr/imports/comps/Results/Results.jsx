@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import DataTable from './DataTable.jsx';
+import DataTable1 from './DataTable1.jsx';
+import DataTable2 from './DataTable2.jsx';
+import DataTable3 from './DataTable3.jsx';
 import SearchToggle from './SearchToggle.jsx';
 
 
-import './LawResults.css';
+import './Results.css';
 
 
 export default class LawResults extends Component {
@@ -13,7 +15,7 @@ export default class LawResults extends Component {
     return (
       <Container fluid>
         <Row id="ResultBackground">
-          <Container>
+          <Container id="resultsparentcontainer">
             <Row>
               <Col md="3" sm="3" xs="3" className="text-center">
 
@@ -22,12 +24,13 @@ export default class LawResults extends Component {
                   </Col>
 
                   <Col md="12" sm="12" xs="12" className="text-center" id="RecommendationContainer">
+
                   </Col>
 
               </Col>
 
-              <Col md="8" sm="8" xs="8" className="text-center" id="ResultsContainer">
-                  <DataTable />
+              <Col md="9" sm="9" xs="9" className="text-center" id="ResultsContainer1">
+                  <DataTable3 />
               </Col>
 
             </Row>

@@ -3,9 +3,9 @@ import ReactTable from 'react-table';
 import { makeData } from "./Utils.jsx";
 
 import "react-table/react-table.css";
-import "./DataTable.css";
+import "./DataTable1.css";
 
-export default class DataTable extends Component {
+export default class DataTable1 extends Component {
   constructor() {
       super();
       this.state = {
@@ -20,44 +20,36 @@ export default class DataTable extends Component {
             data={data}
             columns={[
               {
-                Header: "Name",
                 columns: [
                   {
-                    Header: "First Name",
                     accessor: "firstName"
                   },
                   {
-                    Header: "Last Name",
                     id: "lastName",
                     accessor: d => d.lastName
                   }
                 ]
               },
               {
-                Header: "Info",
                 columns: [
                   {
-                    Header: "Age",
                     accessor: "age"
                   },
                   {
-                    Header: "Status",
                     accessor: "status"
                   }
                 ]
               },
               {
-                Header: 'Stats',
                 columns: [
                   {
-                    Header: "Visits",
                     accessor: "visits"
                   }
                 ]
               }
             ]}
             defaultPageSize={10}
-            className="-striped -highlight"
+            className="-highlight"
           />
         </div>
       );

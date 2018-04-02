@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import jsonp from "jsonp";
-import { withHistory, Link } from 'react-router-dom';
+import { withHistory, withRouter, Link } from 'react-router-dom';
 import {Button, Input, Container, Row, Col } from 'reactstrap';
 
 import './LandingHeader.css';
@@ -16,25 +16,33 @@ class SubscribeForm extends React.Component {
       msg: null,
       error: ''
     };
+    this.onSubmit = this.onSubmit.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.Submit = this.Submit.bind(this);
   }
 
+Submit() {
+  this.handleSubmit();
+  this.onSubmit();
+}
   handleSubmit(event) {
     event.preventDefault();
     this.input.value = '';
     this.setState({ value: '' });
 
-    let email = document.getElementById('signup-email').value;
-    let password = document.getElementById('signup-password').value;
-    this.setState({error: "test"});
+    let email = document.getElementById('SignUpInput').value;
+    let password = document.getElementById('PasswordInput').value;
 
     Accounts.createUser({email: email, password: password}, (err) => {
       if(err){
+        console.log('error');
+        Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right');
         this.setState({
           error: err.reason
         });
       } else {
-        this.props.history.push('/login');
+        console.log('sucess');
+        window.location.reload(this.props.history.push('/lawresult'));
       }
     });
 }
@@ -89,10 +97,7 @@ class SubscribeForm extends React.Component {
     return (
     <div>
       <div className={className} style={style}>
-        { error.length > 0 ?
-              <div className="alert alert-danger fade in">{error}</div>
-              :''}
-        <form className="text-center" onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
+        <form className="text-center" onSubmit={this.onSubmit} action={action} method="post" id="alert-form" noValidate>
           <Container fluid className="text-center">
             <Row id="SignUpRow">
               <Col md="12" sm="12" xs="12" className="text-center">
@@ -114,7 +119,7 @@ class SubscribeForm extends React.Component {
             <Col md="12" sm="12" xs="12" className="text-center">
             <button
               disabled={this.state.status === "sending" || this.state.status === "success"}
-              onClick={this.onSubmit}
+              onClick={this.handleSubmit}
               type="submit"
               className="btn-group"
               id="AlertButton"
@@ -162,4 +167,4 @@ SubscribeForm.defaultProps = {
   }
 }
 
-export default SubscribeForm;
+export default withRouter(SubscribeForm);

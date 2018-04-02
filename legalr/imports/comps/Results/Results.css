@@ -3,15 +3,20 @@
   height: auto;
 }
 
-#ResultsContainer{
+#ResultsContainer1{
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 5px;
+  margin-left: 0px;
   height: auto;
-  background-color: white;
   border-radius: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
+#resultsparentcontainer{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 #SearchContainer{
   margin-top: 20px;
   margin-bottom: 10px;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import SearchToggle from '../LawResults/SearchToggle.jsx';
+import SearchToggle from '../Results/SearchToggle.jsx';
 import {Doughnut} from 'react-chartjs-2';
 
 import './TrackImpact.css';

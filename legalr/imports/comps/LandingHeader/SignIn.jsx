@@ -20,11 +20,12 @@ class SignIn extends Component {
     let password = document.getElementById('PasswordInput').value;
     Meteor.loginWithPassword(email, password, (err) => {
       if(err){
+        Bert.alert('Incorrect e-mail or password', 'danger', 'growl-bottom-right');
         this.setState({
           error: err.reason
         });
       } else {
-        this.props.history.push('/lawresult');
+        window.location.reload(this.props.history.push('/lawresult'))
       }
     });
   }
@@ -34,10 +35,6 @@ class SignIn extends Component {
     return (
     <div>
       <Container fluid>
-        { error.length > 0 ?
-               <div className="alert alert-danger fade in">{error}</div>
-               :''}
-
         <Row>
           <form onSubmit={this.handleSubmit}>
           <Col md="12" sm="12" xs="12" className="text-center">

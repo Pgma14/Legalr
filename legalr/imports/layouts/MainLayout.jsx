@@ -11,7 +11,7 @@ import DemoCarousel from '../comps/carousel/carouselLayout.jsx';
 import Footer from '../comps/Footer/Footer.jsx';
 import Divider from '../comps/Divider/Divider.jsx';
 import TrackImpact from '../comps/TrackImpact/TrackImpact.jsx';
-import LawResults from '../comps/LawResults/LawResults.jsx';
+import Results from '../comps/Results/Results.jsx';
 import IndividualLawPage from '../comps/IndividualLawPage/IndividualLawPage.jsx';
 import Home from './Home.jsx';
 import Demo from './Demo.jsx';
@@ -28,7 +28,7 @@ const MainLayout = () => {
           <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/demo" component={Demo} />
-          <Route exact path="/results" component={LawResults} />
+          <Route exact path="/results" component={Results} />
           <Route exact path="/lawresult" component={IndividualLawPage} />
           <Route exact path="/resolutions" component={ResolutionsWrapper} />
           <Route exact path="/trackimpact" component={TrackImpact} />

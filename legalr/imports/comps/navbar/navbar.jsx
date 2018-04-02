@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { withHistory } from 'react-router-dom';
+import { withHistory, withRouter } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -19,7 +19,7 @@ import Scrollchor from 'react-scrollchor';
   import AccountsUI from '../../accounts-ui.jsx';
   import './navbar.css';
 
-export default class MyNavbar extends Component {
+class MyNavbar extends Component {
   constructor(props) {
     super(props);
 
@@ -36,16 +36,19 @@ export default class MyNavbar extends Component {
    return { isAuthenticated: Meteor.userId() !== null };
  }
 
- logout(e){
-    e.preventDefault();
+ logout(){
     Meteor.logout( (err) => {
         if (err) {
             console.log( err.reason );
         } else {
-            this.props.history.push('/login');
+          window.location.reload(this.props.history.push('/results'))
+            this.setState({
+              isAuthenticated: false
+            });
         }
     });
   }
+
 
   toggle() {
     this.setState({
@@ -104,7 +107,7 @@ export default class MyNavbar extends Component {
               {this.state.isAuthenticated ? (
                 <NavItem>
                   <NavLink className="MenuOptions">
-                        <span onClick={this.logout} className="MenuOptions">
+                        <span onClick={this.logout} href="/" className="MenuOptions">
                           Log Out
                         </span>
                   </NavLink>
@@ -132,3 +135,5 @@ export default class MyNavbar extends Component {
     );
   }
 }
+
+export default withRouter(MyNavbar);
