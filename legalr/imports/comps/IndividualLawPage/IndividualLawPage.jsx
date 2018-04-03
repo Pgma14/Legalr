@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import SearchToggle from '../Results/SearchToggle.jsx';
 import Minisearchbar from './Minisearchbar.jsx';
-import CheckBox from './CheckBox.jsx';
+import YearSelect from './YearSelect.jsx';
 
 import './IndividualLawPage.css';
 import '../OurTeam/OurTeam.css';
@@ -21,11 +21,11 @@ export default class IndividualLawPage extends Component {
         <Row id="ResultBackground">
           <Container>
             <Row>
-                <Col md="3" sm="3" xs="none" className="text-center Supplements">
-                  <Col md="12" sm="12" xs="none" className="text-center" id="SearchContainer">
+                <Col md="3" sm="3" xs="none" className="Supplements">
+                  <Col md="12" sm="12" xs="none" id="SearchContainer">
 
                     <Minisearchbar />
-                    <CheckBox />
+                    <YearSelect />
 
                   </Col>
                   <Col md="12" sm="12" xs="12" className="text-center" id="RecommendationContainer">

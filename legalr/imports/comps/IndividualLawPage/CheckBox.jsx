@@ -10,7 +10,7 @@ export default class CheckBox extends Component {
       <div>
             <label className="material-checkbox">
                 <input id="checkboxinput" type="checkbox" />
-                <span id="checkboxspan">Checkbox</span>
+                <span id="checkboxspan"></span>
             </label>
       </div>
     )
