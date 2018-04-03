@@ -322,11 +322,6 @@
 
   }
 
-  input{
-    text-align-last: center;
-    text-align: center;
-
-  }
 
 @media screen and (max-width: 450px) {select {color: #8b8b8b; } }
 
@@ -358,7 +353,7 @@
     margin-bottom: 15px;
     max-height: 50px;
 }
-  
+
 
     .wrimagecard{
 	  margin-top: 0;
@@ -430,10 +425,7 @@ body {
     border-bottom-left-radius: 7px;
 }
 
-input{
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
+
 .btn-primary{
   background-color: #3369e8
 }

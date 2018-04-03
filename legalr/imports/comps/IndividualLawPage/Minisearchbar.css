@@ -1,0 +1,95 @@
+#minisearchform{
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+
+.group 			  {
+  position:relative;
+  margin-left: 10px;
+}
+
+#minisearchinput	{
+  font-size:18px;
+  padding:10px 10px 10px 10px;
+  display:block;
+  width: 90%;
+  height: 30px;
+  border:none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0px;
+}
+#minisearchinput:focus{
+  outline:none;
+}
+
+#minisearchicon{
+  position: absolute;
+  padding: 10px;
+  right: 15px;
+  bottom: 1px;
+  color: #cccccc;
+}
+
+
+/* active state */
+#minisearchinput:focus , #minisearchinput:valid 		{
+  top:-20px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:90%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+#minisearchinput:focus ~ .bar:before, #minisearchinput:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:relative;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+#minisearchinput:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
