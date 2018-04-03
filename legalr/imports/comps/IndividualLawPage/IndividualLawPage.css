@@ -97,7 +97,7 @@
 
 .TakeActionButton{
   border: none;
-  background-color: rgba(0,0,77,0.8) ;
+  background-color: rgb(51, 105, 232);
   height: 50px;
   border-radius: 2px;
   font-weight: 700;
@@ -135,7 +135,7 @@
 }
 
 .TakeActionButton:hover{
-  background-color:  rgba(0,0,77,1) ;
+  background-color: rgb(23, 73, 190) ;
 }
 
 .ActionButton:hover{

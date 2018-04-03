@@ -5,12 +5,16 @@
 
 .group 			  {
   position:relative;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
+#minisearchinput::placeholder{
+  color: #cccccc;
+}
 #minisearchinput	{
   font-size:18px;
-  padding:10px 10px 10px 10px;
+  padding:0px 0px 0px 0px;
   display:block;
   width: 90%;
   height: 30px;
@@ -28,6 +32,12 @@
   right: 15px;
   bottom: 1px;
   color: #cccccc;
+}
+
+@media screen and (max-width: 1000px) {
+  #minisearchicon{
+    padding-right: 0px;
+  }
 }
 
 
