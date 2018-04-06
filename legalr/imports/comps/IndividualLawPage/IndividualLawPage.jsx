@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import SearchToggle from '../Results/SearchToggle.jsx';
 import Minisearchbar from './Minisearchbar.jsx';
 import YearSelect from './YearSelect.jsx';
+import CountrySelect from './CountrySelect.jsx';
+import TopicSelect from './TopicSelect.jsx';
 
 import './IndividualLawPage.css';
 import '../OurTeam/OurTeam.css';
@@ -24,8 +26,12 @@ export default class IndividualLawPage extends Component {
                 <Col md="3" sm="3" xs="none" className="Supplements">
                   <Col md="12" sm="12" xs="none" id="SearchContainer">
 
+                    <div id="innerSearchContainerwrapper">
                     <Minisearchbar />
                     <YearSelect />
+                    <CountrySelect />
+                    <TopicSelect />
+                    </div>
 
                   </Col>
                   <Col md="12" sm="12" xs="12" className="text-center" id="RecommendationContainer">
@@ -35,23 +41,19 @@ export default class IndividualLawPage extends Component {
 
                 <Col md="9" sm="12" xs="12" className="text-center">
                   <Col md="12" sm="12" xs="12" className="text-center" id="ResultsContainer">
-                    <h3 id="LawTitle">An Act to Help Working Families</h3>
+                    <h3 id="LawTitle">The Tentant Act</h3>
                     <Row id="SummaryRow">
                       <Col md="6" sm="12" xs="12" className="text-center SummaryCol">
                         <h5 id="SummaryH5">Summary</h5>
                           <p>
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            A law which increases minimum rental deposits for tenants and reduces the ability
+                             for tenants to file complaints against breaches of contract.
                           </p>
                       </Col>
                       <Col md="6" sm="12" xs="12" className="text-center">
                         <h5 id="WhoItAffectsH5">Why You Should Care</h5>
                           <p>
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            You currently live in an area which will be affected by this bill, and the terms of your rental agreement may change.
                           </p>
                       </Col>
                     { /*}  <Col md="12" sm="12" xs="12" className="text-center MoreInfo">

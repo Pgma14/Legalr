@@ -1,0 +1,42 @@
+.TopicSelect-root-49 *:focus{
+  background: none !important;
+  background-color: none !important;
+  color: none !important;
+}
+
+.MuiFormControl-root-5.TopicSelect-formControl-50{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.MuiInput-root-25{
+  color: #00004d;
+}
+
+.MuiInput-root-25.MuiInput-focused-27.MuiInput-formControl-26.MuiInput-underline-29{
+  color: none;
+  background-color: none;
+  background: none;
+}
+
+.TopicSelect-root-49:focus{
+  color: none !important;
+  background: none !important;
+  background-color: none !important;
+}
+
+.MuiSelect-select-21:focus{
+  background: none;
+}
+
+.TopicSelect-root-1:focus{
+  background: none;
+}
+.MuiFormLabel-focused-15 {
+  color: black;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.MuiFormLabel-root-14.MuiInputLabel-root-9.MuiInputLabel-formControl-10.MuiInputLabel-animated-13.MuiInputLabel-shrink-12{
+  margin-top: 5px;
+}
