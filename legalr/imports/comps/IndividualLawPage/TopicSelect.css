@@ -4,6 +4,16 @@
   color: none !important;
 }
 
+.TopicSelect-root-53 *:focus{
+  background: none !important;
+  background-color: none !important;
+  color: none !important;
+}
+
+.TopicSelect-formControl-54{
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+}
 .MuiFormControl-root-5.TopicSelect-formControl-50{
   margin-left: 0px;
   margin-top: 0px;

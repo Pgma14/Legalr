@@ -5,6 +5,7 @@ import Minisearchbar from './Minisearchbar.jsx';
 import YearSelect from './YearSelect.jsx';
 import CountrySelect from './CountrySelect.jsx';
 import TopicSelect from './TopicSelect.jsx';
+import StateSelect from './StateSelect.jsx';
 
 import './IndividualLawPage.css';
 import '../OurTeam/OurTeam.css';
@@ -30,6 +31,7 @@ export default class IndividualLawPage extends Component {
                     <Minisearchbar />
                     <YearSelect />
                     <CountrySelect />
+                    <StateSelect />
                     <TopicSelect />
                     </div>
 

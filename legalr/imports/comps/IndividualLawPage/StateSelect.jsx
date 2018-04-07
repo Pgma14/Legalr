@@ -9,7 +9,7 @@ import Select from 'material-ui/Select';
 import Checkbox from 'material-ui/Checkbox';
 import Chip from 'material-ui/Chip';
 
-import './CountrySelect.css';
+import './StateSelect.css';
 
 const styles = theme => ({
   root: {
@@ -42,12 +42,15 @@ const MenuProps = {
 };
 
 const names = [
-  'USA',
-  'France',
-  'Canada',
+  'Taxes',
+  'Immigration',
+  'Gun Laws',
+  'Food & Drink',
+  'Cannabis',
+  'Rent',
 ];
 
-class CountrySelect extends Component {
+class StateSelect extends Component {
   state = {
     name: [],
   };
@@ -63,7 +66,7 @@ class CountrySelect extends Component {
 
   <div className={classes.root}>
     <FormControl className={classes.formControl}>
-            <InputLabel htmlFor="select-multiple-checkbox">Country</InputLabel>
+            <InputLabel htmlFor="select-multiple-checkbox">State</InputLabel>
             <Select
               multiple
               value={this.state.name}
@@ -87,7 +90,7 @@ class CountrySelect extends Component {
                         : theme.typography.fontWeightMedium,
                   }}
                 >
-                  <Checkbox color='primary' checked={this.state.name.indexOf(name) > -1} />
+                  <Checkbox checked={this.state.name.indexOf(name) > -1} />
                   {name}
                 </MenuItem>
               ))}
@@ -97,9 +100,9 @@ class CountrySelect extends Component {
 );
 }
 }
-CountrySelect.propTypes = {
+StateSelect.propTypes = {
   classes: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(CountrySelect);
+export default withStyles(styles, { withTheme: true })(StateSelect);

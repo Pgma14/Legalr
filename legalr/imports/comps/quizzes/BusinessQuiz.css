@@ -1,0 +1,311 @@
+#Header_Col{
+background: linear-gradient(rgba(0,0,77,0.93), rgba(0,0,77,0.87) );
+height: 600px;
+}
+
+#Quiz_Header_Row1{
+  top: 30%;
+}
+
+#FormContainer{
+  margin: auto;
+}
+
+#BusinessQuiz_Logo{
+  display: block;
+  color: white;
+}
+
+#SignUpInput{
+}
+
+#LeftChevron:hover {
+  color: rgba(133, 131, 131, 1);
+}
+
+#RightX:hover {
+  color: rgba(133, 131, 131, 1);
+}
+
+#GetStartedButton{
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(51, 105, 232);
+  border: none;
+}
+
+#GetStartedButton:hover {
+  background-color: rgb(23, 73, 190);
+}
+
+#GetStartedButton h5{
+  margin: auto;
+}
+
+
+#LoginRow{
+  padding-bottom: 25px;
+}
+
+#SignUpButton{
+  margin: auto;
+  border-radius: 8px;
+  width: 240px;
+  background-color: rgb(51, 105, 232);
+  font-weight: 600;
+}
+
+#SignUpButton:hover {
+  background-color: rgb(23, 73, 190);
+}
+
+.SignUpSignInDiv{
+  margin: auto;
+  height: auto;
+}
+
+#SignInButton{
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  width: 240px;
+  background-color: rgb(51, 105, 232);
+  font-weight: 600;
+}
+
+#SignInButton:hover {
+  background-color: rgb(23, 73, 190);
+}
+
+#Quiz-Container{
+  height: auto;
+  background-color: rgba(247,247,247);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 55%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.textinput{
+  float: left;
+}
+@media screen and (max-width: 9000px) {
+  #BusinessQuiz_Logo {
+    margin-top: 50px;
+  }
+  .modal-dialog{
+    margin-top: 190px;
+  }
+  #LeftChevron{
+    transform: translate(-155px);
+    color: rgba(192, 192, 192, 1);
+  }
+  #RightX{
+    transform: translate(155px);
+    color: rgba(192, 192, 192, 1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #BusinessQuiz_Logo {
+    margin-top: 70px;
+  }
+  #Header_Col{
+    height: 530px;
+  }
+  .modal-dialog{
+    margin-top: 180px;
+  }
+  #LeftChevron{
+    transform: translate(-100px);
+    color: rgba(192, 192, 192, 1);
+  }
+  #RightX{
+    transform: translate(100px);
+    color: rgba(192, 192, 192, 1);
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #SignUpRow{
+    margin-right: 30px;
+  }
+
+  #Header_Col{
+    height: 570px;
+  }
+
+  #LeftChevron{
+    transform: translate(-70px);
+    color: rgba(192, 192, 192, 1);
+  }
+  #RightX{
+    transform: translate(70px);
+    color: rgba(192, 192, 192, 1);
+  }
+}
+
+
+#or{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#or p{
+  margin-bottom: 0px;
+}
+
+#FB_Col{
+  padding-top: 15px;
+}
+
+.fb-login-button{
+  margin: auto;
+  padding-top: 20px;
+}
+
+#PasswordInput{
+  border-top: 0px;
+}
+#AlertButton{
+  width: 240px;
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(11, 112, 213);
+  height: 35px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+#AlertButton p{
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.notification{
+  display:block;
+}
+#AlertButton:hover{
+   background-color: rgb(6, 86, 167);
+}
+
+#alert-form{
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.modal-title {
+  margin: auto;
+  text-align: center;
+}
+
+#GetStartedText{
+  margin: auto;
+  text-align: center;
+}
+
+#alert-signup{
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 15px;
+}
+
+#FormContainer{
+  margin: auto;
+}
+@media screen and (max-width: 9000px) {
+  #alert-signup {
+    padding-top: 55px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #alert-signup {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #alert-signup {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #alert-signup {
+    padding-top: 0px;
+  }
+}
+
+.alert-signup-input{
+width: 240px;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+height: 35px;
+background-color: white;
+border: 1px solid rgba(192, 192, 192, 0.7);
+}
+
+#ModalBody{
+  background-color: rgba(192, 192, 192, 0.2);
+  height: auto;
+}
+
+@media screen and (max-width: 9000px) {
+  .alert-signup-input{
+    flex: .7;
+  }
+  #AlertButton{
+    flex: .7;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .alert-signup-input{
+    flex: .7;
+  }
+
+  #AlertButton{
+    flex: .7;
+  }
+}
+
+@media screen and (max-width: 9000px) {
+  #BusinessQuiz_Logo h1{
+    color: white;
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #BusinessQuiz_Logo h1{
+    color: white;
+    font-size: 50px;
+  }
+}
+
+
+*{
+  box-shadow: none;
+}
+*{
+  outline: none !important;
+}
+#BusinessQuiz_Logo h4{
+  color: white;
+  font-size: 27px;
+}

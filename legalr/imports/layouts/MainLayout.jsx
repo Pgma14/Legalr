@@ -13,6 +13,7 @@ import Divider from '../comps/Divider/Divider.jsx';
 import TrackImpact from '../comps/TrackImpact/TrackImpact.jsx';
 import Results from '../comps/Results/Results.jsx';
 import IndividualLawPage from '../comps/IndividualLawPage/IndividualLawPage.jsx';
+import BusinessQuiz from '../comps/quizzes/BusinessQuiz.jsx';
 import Home from './Home.jsx';
 import Demo from './Demo.jsx';
 
@@ -27,6 +28,7 @@ const MainLayout = () => {
         <Router>
           <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/quiz1" component={BusinessQuiz} />
           <Route exact path="/demo" component={Demo} />
           <Route exact path="/results" component={Results} />
           <Route exact path="/lawresult" component={IndividualLawPage} />

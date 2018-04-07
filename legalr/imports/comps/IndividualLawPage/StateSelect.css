@@ -1,11 +1,10 @@
-.CountrySelect-root-1 *:focus{
+.StateSelect-root-49 *:focus{
   background: none !important;
   background-color: none !important;
   color: none !important;
 }
 
-
-.MuiFormControl-root-5.CountrySelect-formControl-2{
+.MuiFormControl-root-5.StateSelect-formControl-50{
   margin-left: 0px;
   margin-top: 0px;
 }
@@ -19,7 +18,7 @@
   background: none;
 }
 
-.CountrySelect-root-1:focus{
+.StateSelect-root-49:focus{
   color: none !important;
   background: none !important;
   background-color: none !important;
@@ -29,7 +28,7 @@
   background: none;
 }
 
-.CountrySelect-root-1:focus{
+.StateSelect-root-1:focus{
   background: none;
 }
 .MuiFormLabel-focused-15 {
