@@ -1,112 +1,125 @@
+#what_we_do_container {
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.what_we_do-background1{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 @media screen and (max-width: 800px) {
   #what_we_do_container {
-    padding-bottom: 0px;
+    padding-bottom: 90px;
     padding-top: 90px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #what_we_do_container {
-    padding-bottom: 10px;
-    padding-top: 0px;
+    padding-bottom: 90px;
+    padding-top: 90px;
   }
 }
 
+#what_we_do{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (max-width: 420px) {
-  #what_we_do_h1 {
+  #what_we_do_h1_1 {
     max-width: 407px;
-    padding-left: 18px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 380px) {
-  #what_we_do_h1 {
+  #what_we_do_h1_1 {
     max-width: 407px;
-    padding-left: 14px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 330px) {
-  #what_we_do_h1 {
+  #what_we_do_h1_1 {
     max-width: 407px;
-    padding-left: 14px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .heading-subtext-bolder {
+  .heading-subtext1-bolder {
     max-width: 407px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .heading-subtext-bolder {
+  .heading-subtext1-bolder {
     max-width: 407px;
-    padding-left: 16px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .heading-subtext-bolder {
+  .heading-subtext1-bolder {
     max-width: 407px;
-    padding-left: 12px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 330px) {
-  .heading-subtext-bolder {
+  .heading-subtext1-bolder {
     max-width: 407px;
-    padding-left: 12px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 1400px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 800px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 750px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 720px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 660px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 650px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 407px;
-    padding-left: 16px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 407px;
-    padding-left: 12px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 330px) {
-  .heading-subtext {
+  .heading-subtext1 {
     max-width: 407px;
-    padding-left: 12px;
+    padding-left: 0px;
   }
 }

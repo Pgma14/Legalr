@@ -27,14 +27,16 @@ class BusinessForm extends Component {
       <Container>
         <Row>
           <Col md="12" sm="12" xs="12">
-            <TextField
-             id="password-input"
-             label="Company Name"
-             className="textinput"
-             type="text"
-             autoComplete="current-password"
-             margin="normal"
-           />
+            <div className="inputwrapper">
+              <TextField
+               id="password-input"
+               label="Company Name"
+               className="textinput"
+               type="text"
+               autoComplete="current-password"
+               margin="normal"
+             />
+            </div>
           </Col>
           <Col md="12" sm="12" xs="12">
             <TextField

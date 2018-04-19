@@ -104,6 +104,14 @@ class MyNavbar extends Component {
                 </NavLink>
               </NavItem>
 
+              <NavItem>
+                <NavLink className="MenuOptions" href="/demo">
+                <span className="MenuOptions">
+                  Demo
+                </span>
+              </NavLink>
+              </NavItem>
+
               {this.state.isAuthenticated ? (
                 <NavItem>
                   <NavLink className="MenuOptions">

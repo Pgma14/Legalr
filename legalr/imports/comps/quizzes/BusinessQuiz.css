@@ -92,15 +92,16 @@ height: 600px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.textinput{
-  float: left;
-}
+
 @media screen and (max-width: 9000px) {
   #BusinessQuiz_Logo {
     margin-top: 50px;
   }
   .modal-dialog{
     margin-top: 190px;
+  }
+  .textinput{
+    width: 500px;
   }
   #LeftChevron{
     transform: translate(-155px);
@@ -115,6 +116,9 @@ height: 600px;
 @media screen and (max-width: 500px) {
   #BusinessQuiz_Logo {
     margin-top: 70px;
+  }
+  .textinput{
+    width: 250px;
   }
   #Header_Col{
     height: 530px;
@@ -137,7 +141,9 @@ height: 600px;
   #SignUpRow{
     margin-right: 30px;
   }
-
+  .textinput{
+    width: 200px;
+  }
   #Header_Col{
     height: 570px;
   }
