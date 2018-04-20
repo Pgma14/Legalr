@@ -30,6 +30,7 @@ Submit() {
     this.input.value = '';
     this.setState({ value: '' });
 
+{/*}
     let email = document.getElementById('SignUpInput').value;
     let password = document.getElementById('PasswordInput').value;
 
@@ -45,6 +46,8 @@ Submit() {
         window.location.reload(this.props.history.push('/lawresult'));
       }
     });
+
+    {*/}
 }
 
   onSubmit = e => {
@@ -97,12 +100,12 @@ Submit() {
     return (
     <div>
       <div className={className} style={style}>
-        <form className="text-center" onSubmit={this.onSubmit} action={action} method="post" id="alert-form" noValidate>
+        <form className="text-center" onSubmit={this.handleSubmit} action={action} method="post" id="alert-form" noValidate>
           <Container fluid className="text-center">
             <Row id="SignUpRow">
-              <Col md="12" sm="12" xs="12" className="text-center">
+              <Col md="12" sm="12" xs="12" className="wrapbutton text-center">
             <input
-              className="alert-signup-input"
+              className="alert-signup-input text-center"
               id="SignUpInput"
               ref={node => (this.input = node)}
               type="email"
@@ -112,26 +115,23 @@ Submit() {
               placeholder={messages.inputPlaceholder}
             />
               </Col>
-              <Col md="12" sm="12" xs="12" className="text-center">
-            <input type="password" name="password" id="PasswordInput" className="alert-signup-input" placeholder="Password" />
-              </Col>
 
-            <Col md="12" sm="12" xs="12" className="text-center">
+            <Col md="12" sm="12" xs="12" className="wrapbutton text-center">
             <button
               disabled={this.state.status === "sending" || this.state.status === "success"}
-              onClick={this.handleSubmit}
+              onClick={this.onSubmit}
               type="submit"
               className="btn-group"
               id="AlertButton"
               className="text-center"
             >
-              <p>Sign Up</p>
+              <p>Get Started</p>
             </button>
             </Col>
           </Row>
         </Container>
               </form>
-          {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-top-right')}
+          {status === "error" &&  Bert.alert('Please enter a valid e-mail', 'danger', 'growl-bottom-right')}
       </div>
 </div>
     )

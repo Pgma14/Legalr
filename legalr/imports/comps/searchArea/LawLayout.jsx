@@ -18,11 +18,11 @@ export default class LawLayout extends Component {
       <div>
         <Row>
               <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
-                  <Privacy />
+                <Privacy />
               </Col>
 
               <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
-                <CryptoCurrency />
+              <Firearms />
               </Col>
 
               <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
@@ -30,23 +30,23 @@ export default class LawLayout extends Component {
               </Col>
 
               <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
-                <Cannabis />
-              </Col>
-
-              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
-                <Firearms />
-              </Col>
-
-              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
-                 <FreedomOfInformation />
-              </Col>
-
-              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
-                <Taxes />
-              </Col>
-
-              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
                 <SmallBusiness />
+              </Col>
+
+              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
+                <FreedomOfInformation />
+              </Col>
+
+              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
+                 <Taxes />
+              </Col>
+
+              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
+                <CryptoCurrency />
+              </Col>
+
+              <Col className="law_cards" lg="3" md="4" sm="6" xs="6">
+                <Cannabis />
               </Col>
           </Row>
       </div>

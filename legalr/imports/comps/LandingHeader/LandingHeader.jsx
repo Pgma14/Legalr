@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignUpSignIn from './SignUpSignIn.jsx';
 import SignUp from './SignUp.jsx';
 import SignIn from './SignIn.jsx';
-
+import Form from './EmailInput.jsx';
 import './LandingHeader.css';
 
 export default class LandingHeader extends Component{
@@ -71,7 +71,10 @@ export default class LandingHeader extends Component{
               <h4>Learn about the issues that affect you. Make a difference.</h4>
               </Col>
               <Col md="12" sm="12" xs="12" className="text-center" id="alert-signup" >
+                <Form />
+                  {/*}
                 <InputGroup>
+
                   <Button id="GetStartedButton" color="primary" onClick={this.toggle}><h5>Get Started</h5></Button>
                  <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                    {this.state.SignUpClicked || this.state.SignInClicked ? (
@@ -94,7 +97,9 @@ export default class LandingHeader extends Component{
                       </Row>
                    </ModalBody>
                  </Modal>
+
                 </InputGroup>
+                {*/}
               </Col>
           </Col>
         </Row>

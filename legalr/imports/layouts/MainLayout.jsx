@@ -34,7 +34,6 @@ const MainLayout = () => {
           <Route exact path="/lawresult" component={IndividualLawPage} />
           <Route exact path="/resolutions" component={ResolutionsWrapper} />
           <Route exact path="/trackimpact" component={TrackImpact} />
-          <Route path="/about" component={About} />
           </Switch>
         </Router>
       </main>

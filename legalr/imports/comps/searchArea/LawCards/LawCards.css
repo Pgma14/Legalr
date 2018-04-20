@@ -152,11 +152,11 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
  }
 
  #SmallBusinessBackground{
-   background-color: rgba(121, 90, 71, 0.1);
+   background-color: rgba(55,35,164, 0.1);
  }
 
  #SmallBusinessIcon{
-   color:#795a47;
+   color: rgb(55,35,164);
  }
 
 #SmallBusinessBottom{

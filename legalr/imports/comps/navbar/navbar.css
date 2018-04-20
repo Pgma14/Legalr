@@ -36,11 +36,11 @@ margin-left: 20px;
 
 
     .navbar-brand_text{
-      font-weight: 700;
+      font-weight: 500;
       font-size: 30px;
       color: white;
       padding-left: 0px;
-      font-family: sans-serif;
+      font-family: roboto;
     }
 
     .navbar-brand_logo{
@@ -76,8 +76,9 @@ margin-left: 20px;
       text-align: right;
       padding-right: 2px;
       padding-left: 0px;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: sans-serif;
       height: auto;
     }
 
@@ -90,8 +91,9 @@ margin-left: 20px;
       color: white;
       text-align: right;
       padding-right: 30px;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: sans-serif;
       height: auto;
     }
 
