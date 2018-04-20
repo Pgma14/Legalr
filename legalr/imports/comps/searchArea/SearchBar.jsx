@@ -55,7 +55,7 @@ export default class SearchBar extends Component {
 
 
     <InputGroup id="adv-search">
-      <Input type="text" id="searchlawsinput" placeholder="Search key words, topics, etc..."
+      <Input type="text" id="searchlawsinput" placeholder="Search laws by key word, topic, etc..."
         onChange={event => this.onInputChange(event.target.value)}/>
       <InputGroupButtonDropdown id="dropdownbutton" className="input-group-btn" addonType="append" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
         <DropdownToggle split outline className="button" />

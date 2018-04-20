@@ -18,9 +18,6 @@
   border-radius: 1px;
 }
 
-.dropdown-menu.show select{
-  border-right: 1px !important;
-}
 #Search_laws{
   font-family: roboto;
 }
@@ -38,7 +35,6 @@
 
 #exampleSelect{
   margin-bottom: 10px;
-  border-right: 1px !important;
 }
 @media screen and (max-width: 500px) {
   #Search_laws{
@@ -108,7 +104,6 @@
 
 .btn-outline-secondary {
   border-color: #cccccc;
-  border-right: 0px;
   color: black;
 }
 
@@ -202,9 +197,6 @@
   border: 0px;
   height: auto;
 }
-.form-control{
-  border-right: 1px;
-}
 
 .button.dropdown-toggle.dropdown-toggle-split.btn.btn-outline-secondary{
   color: #cccccc;
@@ -287,7 +279,7 @@ input{
 
             .dropdown-menu
             {
-              transform: translate3d(-280px, 51px, 0px)!important;
+              transform: translate3d(-288px, 51px, 0px)!important;
               min-width:313px;
           }
       }
@@ -319,7 +311,7 @@ input{
               .dropdown-menu
               {
                 min-width:262px;
-                transform: translate3d(-234px, 38px, 0px)!important;
+                transform: translate3d(-236px, 51px, 0px)!important;
             }
       }
 @media screen and (max-width: 330px)
@@ -328,7 +320,7 @@ input{
         .dropdown-menu
         {
           min-width:193px;
-          transform: translate3d(-194px, 38px, 0px)!important;
+          transform: translate3d(-196px, 51px, 0px)!important;
       }
 }
 .caret{

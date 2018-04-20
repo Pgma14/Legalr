@@ -20,7 +20,7 @@ export default class WhatWeDoV2 extends Component {
                   </center>
                   <center>
                       <p className="heading-subtext">
-                        We give you unbiased access to the laws that affect you, and connect you with the next steps needed for you to make a difference.
+                        We give you unbiased access to the laws that affect you, and connect you with the next steps needed to make a difference.
                       </p>
                   </center>
             </div>
