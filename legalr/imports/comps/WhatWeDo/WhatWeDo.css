@@ -1,7 +1,8 @@
 #what_we_do_container {
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 150px;
+  padding-top: 150px;
 }
+
 
 .what_we_do-background1{
   padding-left: 0px;
@@ -9,15 +10,23 @@
 }
 @media screen and (max-width: 800px) {
   #what_we_do_container {
-    padding-bottom: 90px;
-    padding-top: 90px;
+    padding-bottom: 70px;
+    padding-top: 70px;
   }
+}
+
+
+.heading-subtext1{
+  font-family: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
   #what_we_do_container {
-    padding-bottom: 90px;
-    padding-top: 90px;
+    padding-bottom: 70px;
+    padding-top: 70px;
   }
 }
 
@@ -30,13 +39,19 @@
     max-width: 407px;
     padding-left: 0px;
   }
+  #what_we_do_container {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
 }
+
 
 @media screen and (max-width: 380px) {
   #what_we_do_h1_1 {
     max-width: 407px;
     padding-left: 0px;
   }
+
 }
 
 @media screen and (max-width: 330px) {

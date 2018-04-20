@@ -31,14 +31,14 @@ export default class SearchLayout extends Component {
     <div>
 
       <Row>
-      <Col className="instructions text-center" md="12" sm="12" xs="12" id="search_heading">
+      <Col className="instructions text-center" md="12" sm="12" xs="none" id="search_heading">
         <h1 id="Search_laws">Search laws</h1>
       </Col>
      </Row>
 
       <div className="container">
         <SearchBar onTermChange={this.handleTermChange} />
-        <GifList gifs={this.state.gifs} />
+      {/*}}  <GifList gifs={this.state.gifs} /> {{*/}
       </div>
       <div className="container" id="lawLayoutContainer">
         <LawLayout />

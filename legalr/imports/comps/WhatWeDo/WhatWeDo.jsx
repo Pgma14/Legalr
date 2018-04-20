@@ -17,7 +17,7 @@ export default class WhatWeDo extends Component {
                   </center>
                   <center>
                       <p className="heading-subtext1">
-                        We give you unbiased access to the laws that affect you, and connect you with the next steps needed for you to make a difference.
+                        Learn about the laws that affect you, take action, make a difference.
                       </p>
                   </center>
             </div>

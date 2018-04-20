@@ -8,10 +8,28 @@
 }
 
 
+#adv-search{
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 50px;
+}
+.dropdown-menu.show{
+  border-radius: 1px;
+}
+
+.dropdown-menu.show select{
+  border-right: 1px !important;
+}
+#Search_laws{
+  font-family: roboto;
+}
+
 @media screen and (max-width: 9000px) {
   #Search_laws{
     margin-bottom: 10px;
   }
+
 }
 
 #lawLayoutContainer{
@@ -20,6 +38,7 @@
 
 #exampleSelect{
   margin-bottom: 10px;
+  border-right: 1px !important;
 }
 @media screen and (max-width: 500px) {
   #Search_laws{
@@ -36,19 +55,22 @@
 #search_heading{
   background-color: #00004d;
   color: #fff;
-
 }
 @media screen and (max-width: 9000px) {#search_heading {background-color: #fff; color: #00004d; } }
 @media screen and (max-width: 420px) {#search_heading {background-color: #fff; color: #00004d; } }
 
 @media screen and (max-width: 1500px) {#search_heading h1 {font-size: 50px; padding-top: 10px; padding-bottom: 0px;} }
-@media screen and (max-width: 500px) {#search_heading h1 {font-size: 60px;} }
+@media screen and (max-width: 500px) {#search_heading h1 {font-size: 60px;}
+#search_heading{
+  display: none;
+}}
 @media screen and (max-width: 380px) {#search_heading h1 {font-size: 50px;} }
 @media screen and (max-width: 330px) {#search_heading h1 {font-size: 40px; } }
 
 
 .input-group-btn .btn-group {
     display: flex !important;
+
 }
 .form-group {
   margin-top: 15px;
@@ -60,8 +82,6 @@
 
 .form-group select{
     width: 100% !important;
-    border-radius: 6px !important;
-
 }
 .form-group label{
     font-weight: bold;
@@ -70,7 +90,12 @@
 
 #searchBarIcon{
   padding-right: 0px;
+  color: #cccccc;
 }
+#searchBarIcon:hover{
+  color: rgb(170,169,169);
+}
+
 
 .btn-group {
     display: flex !important;
@@ -83,17 +108,8 @@
 
 .btn-outline-secondary {
   border-color: #cccccc;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 0.3px;
   border-right: 0px;
   color: black;
-}
-
-.btn-outline-secondary:hover {
-  color: black;
-  background-color: #cccccc;
-  border-color: #cccccc;
 }
 
 .btn-outline-secondary:not([disabled]):not(.disabled):active, .btn-outline-secondary:not([disabled]):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
@@ -109,12 +125,13 @@
 }
 
 #searchButton {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px ;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px ;
-    border-left: 0px;
-
+    border: 0px;
+    background-color: white;
+    border-color: #cccccc;
 }
 
 .btn-outline-secondary.dropdown-toggle:focus {
@@ -142,10 +159,7 @@
   width: 100%;
 }
 
-#advanced-toggle:hover {
-  background-color: #fff;
-  border-color: #fff;
-}
+
 
 #advanced-toggle:focus {
   background-color: #fff;
@@ -153,9 +167,7 @@
   box-shadow: none;
 }
 
-.dropdown-item:hover {
-  background-color: #fff;
-}
+
 #advanced-toggle:active {
   background-color: #fff;
   border-color: #fff;
@@ -177,17 +189,27 @@
   box-shadow: none;
 }
 
-#searchButton:hover {
-background-color: #1353eb;
-}
+
 
 .form-horizontal .form-group {
     margin-left: 0;
     margin-right: 0;
 }
+
+#searchlawsinput{
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border: 0px;
+  height: auto;
+}
 .form-control{
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
+  border-right: 1px;
+}
+
+.button.dropdown-toggle.dropdown-toggle-split.btn.btn-outline-secondary{
+  color: #cccccc;
+  height: auto;
+  border: 0px;
 }
 
 .searchOptions{
@@ -211,17 +233,13 @@ input{
 }
 
 
-@media screen and (min-width: 768px) {
-.dropdown-menu{
-    transform: translate3d(-431px, 38px, 0px)!important;
-}
-}
+
 @media screen and (min-width: 768px) {
     #adv-search {
-        padding-top: 15px;
         width: 500px;
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        margin-top: 15px;
     }
     .dropdown.dropdown-lg {
         position: static !important;
@@ -229,11 +247,10 @@ input{
     .dropdown.dropdown-lg .dropdown-menu {
       min-width:459px;
     }
-  .dropdown-menu
-  {
-      transform: translate3d(-432px, 38px, 0px)!important;
-    min-width:459px;
-  }
+    .dropdown-menu
+    {
+      transform: translate3d(-436.5px, 51px, 0px)!important;
+    }
 }
 @media screen and (max-width: 767px)
 {
@@ -253,7 +270,7 @@ input{
 
           .dropdown-menu
           {
-            transform: translate3d(-287px, 38px, 0px)!important;
+            transform: translate3d(-290px, 51px, 0px)!important;
             min-width:314px;
         }
     }
@@ -270,7 +287,7 @@ input{
 
             .dropdown-menu
             {
-              transform: translate3d(-285px, 38px, 0px)!important;
+              transform: translate3d(-280px, 51px, 0px)!important;
               min-width:313px;
           }
       }
@@ -283,7 +300,7 @@ input{
 
             .dropdown-menu
             {
-              transform: translate3d(-247px, 38px, 0px)!important;
+              transform: translate3d(-242px, 51px, 0px)!important;
               min-width:247px;
           }
       }
@@ -293,7 +310,7 @@ input{
               .dropdown-menu
               {
                 min-width:277px;
-                transform: translate3d(-249px, 38px, 0px)!important;
+                transform: translate3d(-252px, 51px, 0px)!important;
             }
       }
       @media screen and (max-width: 370px)
@@ -322,7 +339,7 @@ input{
 }
 
 .caret:hover{
-  background-color: #cccccc;
+  background-color: #aaa9a9;
 }
 
 .btn:focus

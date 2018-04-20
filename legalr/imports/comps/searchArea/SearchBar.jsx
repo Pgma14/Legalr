@@ -55,9 +55,9 @@ export default class SearchBar extends Component {
 
 
     <InputGroup id="adv-search">
-      <Input type="text" placeholder="Search key words, topics, etc..."
+      <Input type="text" id="searchlawsinput" placeholder="Search key words, topics, etc..."
         onChange={event => this.onInputChange(event.target.value)}/>
-      <InputGroupButtonDropdown className="input-group-btn" addonType="append" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
+      <InputGroupButtonDropdown id="dropdownbutton" className="input-group-btn" addonType="append" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
         <DropdownToggle split outline className="button" />
         <DropdownMenu>
 
@@ -208,7 +208,7 @@ export default class SearchBar extends Component {
 
       </InputGroupButtonDropdown>
       <InputGroupAddon addonType="append" >
-        <Button color="primary" className="btn-group text-center" id="searchButton">
+        <Button className="btn-group text-center" id="searchButton">
           <span className="fa fa-search" id="searchBarIcon" aria-hidden="true">
           </span>
         </Button>
