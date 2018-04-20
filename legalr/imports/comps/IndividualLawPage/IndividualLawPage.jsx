@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Collapse } from 'reactstrap';
 import SearchToggle from '../Results/SearchToggle.jsx';
 import Minisearchbar from './Minisearchbar.jsx';
 import YearSelect from './YearSelect.jsx';
@@ -11,10 +11,30 @@ import './IndividualLawPage.css';
 import '../OurTeam/OurTeam.css';
 
 export default class IndividualLawPage extends Component {
+  constructor(props) {
+   super(props);
+   this.toggle = this.toggle.bind(this);
+   this.state = { collapse: false,
+                  ContactClicked: false,
+                };
+
+                this.ContactClick = this.ContactClick.bind(this);
+ }
+
 
   injectApi() {
   Meteor.call("checkTwitter", function(error, results) {
        console.log(results.content); //results.data should be a JSON object
+   });
+ }
+
+ toggle() {
+   this.setState({ collapse: !this.state.collapse });
+ }
+
+ ContactClick() {
+   this.setState({
+     ContactClicked: true,
    });
  }
 
@@ -43,7 +63,7 @@ export default class IndividualLawPage extends Component {
 
                 <Col md="9" sm="12" xs="12" className="text-center">
                   <Col md="12" sm="12" xs="12" className="text-center" id="ResultsContainer">
-                    <h3 id="LawTitle">The Tentant Act</h3>
+                    <h3 id="LawTitle">The Tenant Act</h3>
                     <Row id="SummaryRow">
                       <Col md="6" sm="12" xs="12" className="text-center SummaryCol">
                         <h5 id="SummaryH5">Summary</h5>
@@ -99,7 +119,7 @@ export default class IndividualLawPage extends Component {
                         </div>
                         </Col>
                     </Row>
-                    <button className="TakeActionButton"><p id="TakeAction">Take Action</p></button>
+                    <button className="TakeActionButton" onClick={this.toggle}><p id="TakeAction">Take Action</p></button>
                   {/*}
                     <Container>
                       <Row>
@@ -132,7 +152,7 @@ export default class IndividualLawPage extends Component {
                           data-show-faces="true">
                           </div>
                     </Col> {*/}
-
+                    <Collapse isOpen={this.state.collapse}>
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">Who to Contact</h4>
 
@@ -151,7 +171,7 @@ export default class IndividualLawPage extends Component {
                           </Col>
 
                           <Col md="12" sm="12" xs="12" className="sciencespo">
-                            <button className="ActionButton"><p>Contact</p></button>
+                            <button className="ActionButton" onClick={this.ContactClick}><p>Contact</p></button>
                           </Col>
                         </Row>
                       </Col>
@@ -170,13 +190,16 @@ export default class IndividualLawPage extends Component {
                           </Col>
 
                           <Col md="12" sm="12" xs="12" className="sciencespo">
-                            <button className="ActionButton"><p>Contact</p></button>
+                            <button className="ActionButton" onClick={this.ContactClick}><p>Contact</p></button>
                           </Col>
                         </Row>
                       </Col>
                     </Row>
                     </Col>
+                  </Collapse>
 
+
+                  {this.state.ContactClicked ? (
                     <Col md="12" sm="12" xs="12" className="text-center" id="EventsContainer">
                       <h4 id="EventsH4">How to Contact Them</h4>
                     <Row id="HowToContactRow">
@@ -200,6 +223,10 @@ export default class IndividualLawPage extends Component {
                         </Col>
                     </Row>
                     </Col>
+                  ) : (
+                    ''
+                )}
+
               </Col>
             </Row>
           </Container>

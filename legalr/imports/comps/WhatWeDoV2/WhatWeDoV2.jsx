@@ -7,7 +7,7 @@ import './WhatWeDoV2.css';
 export default class WhatWeDoV2 extends Component {
   render () {
     return (
-      <Container fluid className="section-what_we_do text-center" id="what_we_do">
+      <Container fluid className="section-what_we_do text-center" id="what_we_doV2">
         <Row>
           <Col md="12" sm="12" xs="12" className="what_we_do-background text-center" id="what_we_do-background">
             <ScrollAnimation animateIn="fadeInRight" animateOnce="true">
